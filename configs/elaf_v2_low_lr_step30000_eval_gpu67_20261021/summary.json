@@ -1,0 +1,144 @@
+{
+  "sim_smoke": {
+    "complete": true,
+    "episodes": 2,
+    "successes": 0,
+    "wall_seconds": 78.92951822280884,
+    "episodes_per_hour": 91.22062521242356,
+    "includes_model_load": true,
+    "groups": [
+      {
+        "complete": true,
+        "episodes": 2,
+        "successes": 0,
+        "success_rate": 0.0,
+        "wall_seconds": 38.658582013100386,
+        "episodes_per_hour": 186.24583792442536,
+        "control_steps": 500,
+        "control_steps_per_second": 12.93373874475176,
+        "environment_startup_seconds": 11.302491515874863,
+        "inference_seconds": 25.187754031270742,
+        "inference_calls": 63,
+        "summed_simulator_seconds": 29.471766032278538,
+        "mean_inference_batch": 1.0,
+        "max_inference_batch": 1,
+        "environments": 2,
+        "batch_size": 2,
+        "protocol_sha256": "430f9ec962cffd49a2f724dd5393c715478af8f414ef861096bc133f05b6f11d"
+      }
+    ],
+    "gpus": [
+      6
+    ],
+    "environments_per_gpu": 2,
+    "inference_batch_limit": 2
+  },
+  "clean": {
+    "complete": true,
+    "episodes": 200,
+    "successes": 46,
+    "wall_seconds": 946.8278734125197,
+    "episodes_per_hour": 760.4338868954126,
+    "includes_model_load": true,
+    "groups": [
+      {
+        "complete": true,
+        "episodes": 100,
+        "successes": 24,
+        "success_rate": 0.24,
+        "wall_seconds": 776.2156397830695,
+        "episodes_per_hour": 463.78864525405584,
+        "control_steps": 29370,
+        "control_steps_per_second": 37.83742364197672,
+        "environment_startup_seconds": 29.75350432097912,
+        "inference_seconds": 720.0749110523611,
+        "inference_calls": 504,
+        "summed_simulator_seconds": 1944.5756873656064,
+        "mean_inference_batch": 7.341269841269841,
+        "max_inference_batch": 8,
+        "environments": 24,
+        "batch_size": 8,
+        "protocol_sha256": "dd69c29ea6c94cfd253922be2311302c1fde349eff8b903c11bb2c06f4e492a2"
+      },
+      {
+        "complete": true,
+        "episodes": 100,
+        "successes": 22,
+        "success_rate": 0.22,
+        "wall_seconds": 881.3432238269597,
+        "episodes_per_hour": 408.4674282021612,
+        "control_steps": 29750,
+        "control_steps_per_second": 33.7552944139286,
+        "environment_startup_seconds": 29.740813560783863,
+        "inference_seconds": 822.7619031779468,
+        "inference_calls": 513,
+        "summed_simulator_seconds": 1961.196949372068,
+        "mean_inference_batch": 7.304093567251462,
+        "max_inference_batch": 8,
+        "environments": 24,
+        "batch_size": 8,
+        "protocol_sha256": "55b8b450d4c00a37dbef2cd79bae49f0b9eb9d32281042c391abbb35c1270e31"
+      }
+    ],
+    "gpus": [
+      6,
+      7
+    ],
+    "environments_per_gpu": 24,
+    "inference_batch_limit": 8
+  },
+  "plus": {
+    "complete": true,
+    "episodes": 280,
+    "successes": 22,
+    "wall_seconds": 2878.1657755021006,
+    "episodes_per_hour": 350.22305128485965,
+    "includes_model_load": true,
+    "groups": [
+      {
+        "complete": true,
+        "episodes": 140,
+        "successes": 12,
+        "success_rate": 0.08571428571428572,
+        "wall_seconds": 2802.834990248084,
+        "episodes_per_hour": 179.81793496712058,
+        "control_steps": 63458,
+        "control_steps_per_second": 22.640647851475272,
+        "environment_startup_seconds": 37.301787512376904,
+        "inference_seconds": 1541.0397594496608,
+        "inference_calls": 1140,
+        "summed_simulator_seconds": 8063.324893631041,
+        "mean_inference_batch": 6.978947368421053,
+        "max_inference_batch": 8,
+        "environments": 24,
+        "batch_size": 8,
+        "protocol_sha256": "57e688b8695102f7e9daa10065e1a92cab155291675f02a1d137939866276574"
+      },
+      {
+        "complete": true,
+        "episodes": 140,
+        "successes": 10,
+        "success_rate": 0.07142857142857142,
+        "wall_seconds": 2296.99468049407,
+        "episodes_per_hour": 219.41713852449695,
+        "control_steps": 63952,
+        "control_steps_per_second": 27.841596910552838,
+        "environment_startup_seconds": 37.020119396969676,
+        "inference_seconds": 1495.7329380121082,
+        "inference_calls": 1155,
+        "summed_simulator_seconds": 8164.127791052684,
+        "mean_inference_batch": 6.941991341991342,
+        "max_inference_batch": 8,
+        "environments": 24,
+        "batch_size": 8,
+        "protocol_sha256": "0f98d6653ce08c766ff03efd387c38049fff3441e4b1406816eef46afb1b8ca0"
+      }
+    ],
+    "gpus": [
+      6,
+      7
+    ],
+    "environments_per_gpu": 24,
+    "inference_batch_limit": 8
+  }
+}

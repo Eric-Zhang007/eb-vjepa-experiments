@@ -1,0 +1,2 @@
+Linux 1kmnh2padxkebe 5.15.0-161-generic #171-Ubuntu SMP Sat Oct 11 08:17:01 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+

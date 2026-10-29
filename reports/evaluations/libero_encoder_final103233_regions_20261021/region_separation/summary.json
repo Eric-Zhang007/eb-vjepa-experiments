@@ -1,0 +1,68 @@
+{
+  "object": {
+    "official": {
+      "within_cosine": 0.6629340747992197,
+      "background_margin": 0.384052870174249,
+      "distractor_margin": 0.10661889612674713
+    },
+    "grid11000": {
+      "within_cosine": 0.6405692398548126,
+      "background_margin": 0.32686905066172284,
+      "distractor_margin": 0.06263641268014908
+    },
+    "full100000": {
+      "within_cosine": 0.7409480810165405,
+      "background_margin": 0.3782029002904892,
+      "distractor_margin": 0.10949668288230896
+    },
+    "full103233": {
+      "within_cosine": 0.7411751548449198,
+      "background_margin": 0.37639599045117694,
+      "distractor_margin": 0.1063629537820816
+    }
+  },
+  "target": {
+    "official": {
+      "within_cosine": 0.6170203487078348,
+      "background_margin": 0.3052334437767665,
+      "distractor_margin": 0.14425770938396454
+    },
+    "grid11000": {
+      "within_cosine": 0.6203844249248505,
+      "background_margin": 0.24464107553164163,
+      "distractor_margin": 0.07970893383026123
+    },
+    "full100000": {
+      "within_cosine": 0.7173069417476654,
+      "background_margin": 0.30229079723358154,
+      "distractor_margin": 0.10220284759998322
+    },
+    "full103233": {
+      "within_cosine": 0.717866450548172,
+      "background_margin": 0.3027305255333583,
+      "distractor_margin": 0.10238364338874817
+    }
+  },
+  "gripper": {
+    "official": {
+      "within_cosine": 0.6032780011494955,
+      "background_margin": 0.31255290905634564,
+      "distractor_margin": 0.17126398533582687
+    },
+    "grid11000": {
+      "within_cosine": 0.6382991472880045,
+      "background_margin": 0.311298410097758,
+      "distractor_margin": 0.1928180605173111
+    },
+    "full100000": {
+      "within_cosine": 0.7302605907122294,
+      "background_margin": 0.37363489468892414,
+      "distractor_margin": 0.26345787197351456
+    },
+    "full103233": {
+      "within_cosine": 0.7316339115301768,
+      "background_margin": 0.3748595416545868,
+      "distractor_margin": 0.2584380656480789
+    }
+  }
+}

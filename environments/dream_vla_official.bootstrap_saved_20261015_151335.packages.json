@@ -1,0 +1,33 @@
+{
+  "executable": "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official.bootstrap_saved_20261015_151335/bin/python",
+  "sys_path": [
+    "",
+    "/usr/lib/python310.zip",
+    "/usr/lib/python3.10",
+    "/usr/lib/python3.10/lib-dynload",
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official.bootstrap_saved_20261015_151335/lib/python3.10/site-packages"
+  ],
+  "packages": [
+    {
+      "name": "setuptools",
+      "version": "84.0.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official.bootstrap_saved_20261015_151335/lib/python3.10/site-packages"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official.bootstrap_saved_20261015_151335/lib/python3.10/site-packages"
+    },
+    {
+      "name": "wheel",
+      "version": "0.48.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official.bootstrap_saved_20261015_151335/lib/python3.10/site-packages"
+    },
+    {
+      "name": "pip",
+      "version": "26.2.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official.bootstrap_saved_20261015_151335/lib/python3.10/site-packages"
+    }
+  ]
+}
+

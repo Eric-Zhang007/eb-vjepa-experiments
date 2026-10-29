@@ -1,0 +1,88 @@
+{
+  "config": {
+    "version": "elaf_fresh_fp32_flowclip_2k",
+    "manifest": "/data/users/jiachangzhang/eb_vjepa/data/elaf_v0_grid11k_raw/manifest.json",
+    "seed": 239,
+    "dream_repo": "/data/users/jiachangzhang/eb_vjepa/repos/Dream-VLX",
+    "checkpoint": "/data/users/jiachangzhang/eb_vjepa/checkpoints/dream_vla/Dream-VLA-7B",
+    "future_encoder": {
+      "name": "grid11k",
+      "checkpoint": "/data/users/jiachangzhang/eb_vjepa/experiments/ctp_grid20k_20261008/embodied_vjepa_encoder_011000.pt",
+      "sha256": "468d7af3a5bdae9fb2205718ab0f86a13f5395afcc53700500439d993baf987a",
+      "frozen": true,
+      "feature_dim": 1024,
+      "raw_features_only": true
+    },
+    "backbone_training": "lora",
+    "lora_rank": 32,
+    "lora_alpha": 16,
+    "gradient_checkpointing": false,
+    "precision": "bf16",
+    "batch_size": 8,
+    "gradient_accumulation": 1,
+    "max_steps": 200000,
+    "save_every": 500,
+    "workers": 0,
+    "action_loss_weight": 1.0,
+    "delta_loss_weight": 1.0,
+    "delta_scale": 1.0,
+    "delta_tokens": 32,
+    "action_horizon": 8,
+    "action_dim": 7,
+    "resampler_dim": 256,
+    "resampler_heads": 8,
+    "sampling_steps": 4,
+    "optimizer": {
+      "lora_lr": 2e-05,
+      "resampler_lr": 5e-05,
+      "new_modules_lr": 0.0001,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0,
+      "scheduler": "warmup_constant",
+      "max_grad_norm": 1.0,
+      "milestones": [
+        100000
+      ],
+      "gamma": 0.1,
+      "warmup_steps": 200,
+      "clip_mode": "group",
+      "clip_partition": "flow"
+    },
+    "diagnostics": {
+      "samples": 1024,
+      "step_zero_required": true,
+      "steps": [
+        0,
+        100,
+        300,
+        500,
+        1000,
+        1200,
+        1500,
+        2000
+      ],
+      "interval_after_1000": 500,
+      "rank_cap": 256
+    },
+    "wandb_project": "eb_vjepa",
+    "wandb_entity": "zjc010100000-xi-an-jiaotong-university-",
+    "wandb_group": "elaf_v0",
+    "image_aug": true,
+    "resampler_fp32": true,
+    "recovery_diagnostics_every": 10
+  },
+  "world_size": 6,
+  "manifest_sha256": "3c31ed474c1254e70644b25d5f7dacedfa80d53f44ca1ed39cd6036eadb9e21f",
+  "source_sha256": {
+    "/data/users/jiachangzhang/eb_vjepa/elaf/v0_train.py": "17bb57463586f73c4dec7fabaf84d609cfcf64be11bc2fc4257fcc9d3ecee926",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/v0_training.py": "4405a4eee66dd3220a8ef605f257c35e785578cff90ca34c0f41ecbdafd60ee7",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/v0_model.py": "4baad892db5534baf1004948a46e8e9d1c0d671312ba6da97ee5dd7714e11f92",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/model.py": "bda489ac72b7f9c1921144db282f58a58e8a6184f9763c48f5812385ba6646a7",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/v0_dataset.py": "c37812085d1935128e1e7904dbf89bbd5911492ed021bad7b787eee2568505ff",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/v0_data.py": "16e8c7a79620e080dca15c09c8aa9673f4c4a64c12b471106c2db920a17c38ff",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/v0_cache.py": "41edd6c428d39e2bb927a713f74ab1f71e26b9768cf067c226e12b7a4841c7ee",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/v0_prefetch.py": "2a042a54b0f8c418faa7bf2052d6b7756c5254d91909b4c9aee20b9050396bb4"
+  },
+  "base_config_sha256": "98fc998dc3bc137c52295911ada4f1fa9c4ff17829344dfd8206f0d1eb39c009",
+  "base_receipt_sha256": "7d9858cd5c53050d11a279196bee511375eb4641f5eea8bb5e416ce369cfa755"
+}

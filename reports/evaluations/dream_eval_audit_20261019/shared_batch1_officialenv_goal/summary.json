@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "episodes": 10,
+  "successes": 7,
+  "success_rate": 0.7,
+  "wall_seconds": 181.2859912980348,
+  "episodes_per_hour": 198.5812568430391,
+  "control_steps": 1877,
+  "control_steps_per_second": 10.353806085955123,
+  "environment_startup_seconds": 9.642491353675723,
+  "inference_seconds": 86.12595076858997,
+  "inference_calls": 239,
+  "summed_simulator_seconds": 87.08898130618036,
+  "mean_inference_batch": 1.0,
+  "max_inference_batch": 1,
+  "environments": 1,
+  "batch_size": 1,
+  "protocol_sha256": "e8c32795d3a50e541204214548d50765fb2a699ea31c2d815b52d1ece3851975"
+}

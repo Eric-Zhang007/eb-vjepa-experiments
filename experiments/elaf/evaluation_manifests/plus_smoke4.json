@@ -1,0 +1,62 @@
+[
+  {
+    "suite": "libero_spatial",
+    "task_id": 639,
+    "category": "Camera Viewpoints",
+    "trials": 1,
+    "index": 0,
+    "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_24_15_100_0_0_initstate_0",
+    "language": "pick the akita black bowl next to the ramekin and place it on the plate",
+    "benchmark": "plus",
+    "trial": 0,
+    "seed": 239,
+    "env_seed": 239,
+    "manifest_path": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/libero_20k_plus_280_shared/manifest.json",
+    "manifest_sha256": "af04a4e7cecf3fb2b1f1c706bdbdd05f37903e5eb0605fd348ee57c6b0e2e35f"
+  },
+  {
+    "suite": "libero_spatial",
+    "task_id": 660,
+    "category": "Camera Viewpoints",
+    "trials": 1,
+    "index": 1,
+    "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_6_354_initstate_0",
+    "language": "pick the akita black bowl from table center and place it on the plate",
+    "benchmark": "plus",
+    "trial": 0,
+    "seed": 244,
+    "env_seed": 244,
+    "manifest_path": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/libero_20k_plus_280_shared/manifest.json",
+    "manifest_sha256": "af04a4e7cecf3fb2b1f1c706bdbdd05f37903e5eb0605fd348ee57c6b0e2e35f"
+  },
+  {
+    "suite": "libero_spatial",
+    "task_id": 668,
+    "category": "Camera Viewpoints",
+    "trials": 1,
+    "index": 2,
+    "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_36_0_100_0_0_initstate_0",
+    "language": "pick the akita black bowl from table center and place it on the plate",
+    "benchmark": "plus",
+    "trial": 0,
+    "seed": 249,
+    "env_seed": 249,
+    "manifest_path": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/libero_20k_plus_280_shared/manifest.json",
+    "manifest_sha256": "af04a4e7cecf3fb2b1f1c706bdbdd05f37903e5eb0605fd348ee57c6b0e2e35f"
+  },
+  {
+    "suite": "libero_spatial",
+    "task_id": 684,
+    "category": "Camera Viewpoints",
+    "trials": 1,
+    "index": 3,
+    "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_44_15_100_0_0_initstate_0",
+    "language": "pick the akita black bowl from table center and place it on the plate",
+    "benchmark": "plus",
+    "trial": 0,
+    "seed": 254,
+    "env_seed": 254,
+    "manifest_path": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/libero_20k_plus_280_shared/manifest.json",
+    "manifest_sha256": "af04a4e7cecf3fb2b1f1c706bdbdd05f37903e5eb0605fd348ee57c6b0e2e35f"
+  }
+]

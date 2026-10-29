@@ -1,0 +1,16 @@
+{
+  "pid": 1191303,
+  "cmd": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+    "-m",
+    "scripts.diagnose_elaf_flow",
+    "--config",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/configs/fresh_flowclip_2k.json",
+    "--checkpoint",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_recovery_from5000_20261019/checkpoints/generation_001000_b239b8e41a5d455cbcb57c95fd13163a",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_flow_diagnostic_20261019",
+    "--updates",
+    "60"
+  ]
+}

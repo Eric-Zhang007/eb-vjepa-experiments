@@ -1,0 +1,22 @@
+{
+  "pid": 3982585,
+  "commands": [
+    [
+      "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+      "-u",
+      "/data/users/jiachangzhang/eb_vjepa/scripts/compare_libero_encoder_latents.py",
+      "--root",
+      "/data/users/jiachangzhang/eb_vjepa",
+      "--output",
+      "/data/users/jiachangzhang/eb_vjepa/experiments/libero_encoder_longrun_latents_20261021",
+      "--long-run"
+    ],
+    [
+      "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+      "-u",
+      "/data/users/jiachangzhang/eb_vjepa/scripts/inspect_task_region_latents.py",
+      "--input",
+      "/data/users/jiachangzhang/eb_vjepa/experiments/libero_encoder_longrun_latents_20261021"
+    ]
+  ]
+}

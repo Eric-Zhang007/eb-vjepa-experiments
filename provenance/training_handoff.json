@@ -1,0 +1,13 @@
+{
+  "run": "/home/jiachangzhang/dream_jepa_dualview_20261023/Dream_JEPA_dualview_base_200k",
+  "resume_checkpoint": "/data/users/jiachangzhang/eb_vjepa/experiments/dream_jepa_dualview_20261023/checkpoint_overflow/Dream_JEPA_dualview_base_200k/generation_156500_47d6d0ab0d7a47a690a903ec3bed3abe",
+  "best_checkpoint": "/data/users/jiachangzhang/eb_vjepa/experiments/dream_jepa_dualview_20261023/checkpoint_overflow/Dream_JEPA_dualview_base_200k/generation_155000_390f736d09674b59bcd4b7e050491d35",
+  "stopped_at_optimizer_step": 156500,
+  "training_source": "/data/users/jiachangzhang/eb_vjepa/experiments/dream_jepa_dualview_20261023/infra_source/vla",
+  "base_weights": "/data/users/jiachangzhang/eb_vjepa/checkpoints/dream_vla/Dream-VLA-7B",
+  "data_root": "/data/users/jiachangzhang/DNFT4RP/upstream/vla_adapter/datasets/rlds",
+  "world_size": 6,
+  "global_batch": 48,
+  "target_steps": 200000,
+  "restore_warning": "Checkpoint includes six rank-specific TensorFlow iterator states. Preserve world size and compatible TensorFlow/PyTorch versions for exact resume. Map old paths before resuming; do not automatically launch on the new cluster."
+}

@@ -1,0 +1,2009 @@
+{
+  "episodes": 200,
+  "successes": 137,
+  "checkpoint_sha256": "a5fce465325315ec3facd2d370f1fdfe63a10870470e4976230b28cd83d398fc",
+  "records": [
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "language": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 239,
+      "recorded_steps": 77,
+      "elapsed_seconds": 9.340980548411608
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "language": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 240,
+      "recorded_steps": 74,
+      "elapsed_seconds": 17.444769352674484
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "language": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 241,
+      "recorded_steps": 77,
+      "elapsed_seconds": 25.65959352441132
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "language": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 242,
+      "recorded_steps": 76,
+      "elapsed_seconds": 33.90256382711232
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "language": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "trial": 4,
+      "success": true,
+      "seed": 243,
+      "recorded_steps": 70,
+      "elapsed_seconds": 41.829688370227814
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "language": "pick the akita black bowl next to the plate and place it on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 279,
+      "recorded_steps": 98,
+      "elapsed_seconds": 9.390222512185574
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "language": "pick the akita black bowl next to the plate and place it on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 280,
+      "recorded_steps": 105,
+      "elapsed_seconds": 19.13297592662275
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "language": "pick the akita black bowl next to the plate and place it on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 281,
+      "recorded_steps": 100,
+      "elapsed_seconds": 28.712066246196628
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "language": "pick the akita black bowl next to the plate and place it on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 282,
+      "recorded_steps": 91,
+      "elapsed_seconds": 38.10189099609852
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "language": "pick the akita black bowl next to the plate and place it on the plate",
+      "trial": 4,
+      "success": false,
+      "seed": 283,
+      "recorded_steps": 400,
+      "elapsed_seconds": 62.656093779951334
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "language": "pick the butter and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 319,
+      "recorded_steps": 147,
+      "elapsed_seconds": 9.951640900224447
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "language": "pick the butter and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 320,
+      "recorded_steps": 136,
+      "elapsed_seconds": 19.563279883936048
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "language": "pick the butter and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 321,
+      "recorded_steps": 145,
+      "elapsed_seconds": 29.676992336288095
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "language": "pick the butter and place it in the basket",
+      "trial": 3,
+      "success": true,
+      "seed": 322,
+      "recorded_steps": 142,
+      "elapsed_seconds": 39.48694528080523
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "language": "pick the butter and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 323,
+      "recorded_steps": 144,
+      "elapsed_seconds": 49.589309295639396
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "language": "put the bowl on the top of the drawer",
+      "trial": 0,
+      "success": true,
+      "seed": 359,
+      "recorded_steps": 152,
+      "elapsed_seconds": 10.63734351284802
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "language": "put the bowl on the top of the drawer",
+      "trial": 1,
+      "success": false,
+      "seed": 360,
+      "recorded_steps": 400,
+      "elapsed_seconds": 32.938665729016066
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "language": "put the bowl on the top of the drawer",
+      "trial": 2,
+      "success": false,
+      "seed": 361,
+      "recorded_steps": 400,
+      "elapsed_seconds": 54.737379625439644
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "language": "put the bowl on the top of the drawer",
+      "trial": 3,
+      "success": false,
+      "seed": 362,
+      "recorded_steps": 400,
+      "elapsed_seconds": 76.94627472572029
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "language": "put the bowl on the top of the drawer",
+      "trial": 4,
+      "success": false,
+      "seed": 363,
+      "recorded_steps": 400,
+      "elapsed_seconds": 98.94878427498043
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "language": "turn on the stove and put the moka pot on it",
+      "trial": 0,
+      "success": true,
+      "seed": 399,
+      "recorded_steps": 237,
+      "elapsed_seconds": 12.507610380649567
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "language": "turn on the stove and put the moka pot on it",
+      "trial": 1,
+      "success": true,
+      "seed": 400,
+      "recorded_steps": 240,
+      "elapsed_seconds": 25.09481630846858
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "language": "turn on the stove and put the moka pot on it",
+      "trial": 2,
+      "success": true,
+      "seed": 401,
+      "recorded_steps": 243,
+      "elapsed_seconds": 38.00659716501832
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "language": "turn on the stove and put the moka pot on it",
+      "trial": 3,
+      "success": true,
+      "seed": 402,
+      "recorded_steps": 244,
+      "elapsed_seconds": 50.869160644710064
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "language": "turn on the stove and put the moka pot on it",
+      "trial": 4,
+      "success": true,
+      "seed": 403,
+      "recorded_steps": 236,
+      "elapsed_seconds": 63.36561802402139
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "language": "pick the akita black bowl next to the ramekin and place it on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 244,
+      "recorded_steps": 150,
+      "elapsed_seconds": 13.140282982960343
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "language": "pick the akita black bowl next to the ramekin and place it on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 245,
+      "recorded_steps": 150,
+      "elapsed_seconds": 25.187052186578512
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "language": "pick the akita black bowl next to the ramekin and place it on the plate",
+      "trial": 2,
+      "success": false,
+      "seed": 246,
+      "recorded_steps": 400,
+      "elapsed_seconds": 50.345974596217275
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "language": "pick the akita black bowl next to the ramekin and place it on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 247,
+      "recorded_steps": 184,
+      "elapsed_seconds": 64.25773529149592
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "language": "pick the akita black bowl next to the ramekin and place it on the plate",
+      "trial": 4,
+      "success": true,
+      "seed": 248,
+      "recorded_steps": 221,
+      "elapsed_seconds": 80.20211117714643
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "language": "pick the akita black bowl on the wooden cabinet and place it on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 284,
+      "recorded_steps": 124,
+      "elapsed_seconds": 11.199439655989408
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "language": "pick the akita black bowl on the wooden cabinet and place it on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 285,
+      "recorded_steps": 153,
+      "elapsed_seconds": 23.983176983892918
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "language": "pick the akita black bowl on the wooden cabinet and place it on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 286,
+      "recorded_steps": 118,
+      "elapsed_seconds": 35.09758541546762
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "language": "pick the akita black bowl on the wooden cabinet and place it on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 287,
+      "recorded_steps": 121,
+      "elapsed_seconds": 46.169896276667714
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "language": "pick the akita black bowl on the wooden cabinet and place it on the plate",
+      "trial": 4,
+      "success": true,
+      "seed": 288,
+      "recorded_steps": 161,
+      "elapsed_seconds": 59.476924585178494
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "language": "pick the milk and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 324,
+      "recorded_steps": 125,
+      "elapsed_seconds": 9.0111253708601
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "language": "pick the milk and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 325,
+      "recorded_steps": 122,
+      "elapsed_seconds": 18.011265629902482
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "language": "pick the milk and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 326,
+      "recorded_steps": 130,
+      "elapsed_seconds": 27.097267327830195
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "language": "pick the milk and place it in the basket",
+      "trial": 3,
+      "success": true,
+      "seed": 327,
+      "recorded_steps": 124,
+      "elapsed_seconds": 36.16012225672603
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "language": "pick the milk and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 328,
+      "recorded_steps": 123,
+      "elapsed_seconds": 45.26298787072301
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "language": "push the plate to the front of the stove",
+      "trial": 0,
+      "success": false,
+      "seed": 364,
+      "recorded_steps": 400,
+      "elapsed_seconds": 21.637456744909286
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "language": "push the plate to the front of the stove",
+      "trial": 1,
+      "success": false,
+      "seed": 365,
+      "recorded_steps": 400,
+      "elapsed_seconds": 43.49792071059346
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "language": "push the plate to the front of the stove",
+      "trial": 2,
+      "success": true,
+      "seed": 366,
+      "recorded_steps": 191,
+      "elapsed_seconds": 56.07460257969797
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "language": "push the plate to the front of the stove",
+      "trial": 3,
+      "success": false,
+      "seed": 367,
+      "recorded_steps": 400,
+      "elapsed_seconds": 78.02797961421311
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "language": "push the plate to the front of the stove",
+      "trial": 4,
+      "success": false,
+      "seed": 368,
+      "recorded_steps": 400,
+      "elapsed_seconds": 100.06483429670334
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "language": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "trial": 0,
+      "success": true,
+      "seed": 404,
+      "recorded_steps": 301,
+      "elapsed_seconds": 16.44285572320223
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "language": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "trial": 1,
+      "success": true,
+      "seed": 405,
+      "recorded_steps": 223,
+      "elapsed_seconds": 29.536731714382768
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "language": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "trial": 2,
+      "success": true,
+      "seed": 406,
+      "recorded_steps": 219,
+      "elapsed_seconds": 42.28153277747333
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "language": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "trial": 3,
+      "success": true,
+      "seed": 407,
+      "recorded_steps": 267,
+      "elapsed_seconds": 57.0760209467262
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "language": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "trial": 4,
+      "success": true,
+      "seed": 408,
+      "recorded_steps": 219,
+      "elapsed_seconds": 69.77620526775718
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "language": "pick the akita black bowl from table center and place it on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 249,
+      "recorded_steps": 99,
+      "elapsed_seconds": 10.59193485043943
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "language": "pick the akita black bowl from table center and place it on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 250,
+      "recorded_steps": 99,
+      "elapsed_seconds": 20.505369449034333
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "language": "pick the akita black bowl from table center and place it on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 251,
+      "recorded_steps": 102,
+      "elapsed_seconds": 30.686100888997316
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "language": "pick the akita black bowl from table center and place it on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 252,
+      "recorded_steps": 94,
+      "elapsed_seconds": 40.1170989330858
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "language": "pick the akita black bowl from table center and place it on the plate",
+      "trial": 4,
+      "success": true,
+      "seed": 253,
+      "recorded_steps": 98,
+      "elapsed_seconds": 49.59244037233293
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "language": "pick the alphabet soup and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 289,
+      "recorded_steps": 142,
+      "elapsed_seconds": 10.64034940674901
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "language": "pick the alphabet soup and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 290,
+      "recorded_steps": 142,
+      "elapsed_seconds": 21.220185928046703
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "language": "pick the alphabet soup and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 291,
+      "recorded_steps": 134,
+      "elapsed_seconds": 31.193162847310305
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "language": "pick the alphabet soup and place it in the basket",
+      "trial": 3,
+      "success": true,
+      "seed": 292,
+      "recorded_steps": 211,
+      "elapsed_seconds": 44.93616381660104
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "language": "pick the alphabet soup and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 293,
+      "recorded_steps": 130,
+      "elapsed_seconds": 54.60797858797014
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "language": "pick the chocolate pudding and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 329,
+      "recorded_steps": 149,
+      "elapsed_seconds": 10.008874597027898
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "language": "pick the chocolate pudding and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 330,
+      "recorded_steps": 146,
+      "elapsed_seconds": 20.075670970603824
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "language": "pick the chocolate pudding and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 331,
+      "recorded_steps": 149,
+      "elapsed_seconds": 30.175243197008967
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "language": "pick the chocolate pudding and place it in the basket",
+      "trial": 3,
+      "success": true,
+      "seed": 332,
+      "recorded_steps": 150,
+      "elapsed_seconds": 40.20819742791355
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "language": "pick the chocolate pudding and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 333,
+      "recorded_steps": 147,
+      "elapsed_seconds": 50.17666876502335
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "language": "put the cream cheese on the bowl",
+      "trial": 0,
+      "success": false,
+      "seed": 369,
+      "recorded_steps": 400,
+      "elapsed_seconds": 22.68805842474103
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "language": "put the cream cheese on the bowl",
+      "trial": 1,
+      "success": false,
+      "seed": 370,
+      "recorded_steps": 400,
+      "elapsed_seconds": 46.050082106143236
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "language": "put the cream cheese on the bowl",
+      "trial": 2,
+      "success": false,
+      "seed": 371,
+      "recorded_steps": 400,
+      "elapsed_seconds": 68.7980135269463
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "language": "put the cream cheese on the bowl",
+      "trial": 3,
+      "success": true,
+      "seed": 372,
+      "recorded_steps": 88,
+      "elapsed_seconds": 76.66905954666436
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "language": "put the cream cheese on the bowl",
+      "trial": 4,
+      "success": false,
+      "seed": 373,
+      "recorded_steps": 400,
+      "elapsed_seconds": 99.18370858579874
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "language": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "trial": 0,
+      "success": false,
+      "seed": 409,
+      "recorded_steps": 700,
+      "elapsed_seconds": 37.23602912388742
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "language": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "trial": 1,
+      "success": false,
+      "seed": 410,
+      "recorded_steps": 700,
+      "elapsed_seconds": 74.22501562163234
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "language": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "trial": 2,
+      "success": false,
+      "seed": 411,
+      "recorded_steps": 700,
+      "elapsed_seconds": 111.56453142128885
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "language": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "trial": 3,
+      "success": false,
+      "seed": 412,
+      "recorded_steps": 700,
+      "elapsed_seconds": 147.71603883430362
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "language": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "trial": 4,
+      "success": false,
+      "seed": 413,
+      "recorded_steps": 700,
+      "elapsed_seconds": 184.12844880856574
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "language": "pick the akita black bowl on the cookies box and place it on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 254,
+      "recorded_steps": 172,
+      "elapsed_seconds": 15.071141563355923
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "language": "pick the akita black bowl on the cookies box and place it on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 255,
+      "recorded_steps": 85,
+      "elapsed_seconds": 24.222273198887706
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "language": "pick the akita black bowl on the cookies box and place it on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 256,
+      "recorded_steps": 86,
+      "elapsed_seconds": 33.495401160791516
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "language": "pick the akita black bowl on the cookies box and place it on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 257,
+      "recorded_steps": 81,
+      "elapsed_seconds": 42.352343302220106
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "language": "pick the akita black bowl on the cookies box and place it on the plate",
+      "trial": 4,
+      "success": true,
+      "seed": 258,
+      "recorded_steps": 88,
+      "elapsed_seconds": 51.544524593278766
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "language": "pick the cream cheese and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 294,
+      "recorded_steps": 123,
+      "elapsed_seconds": 9.198261307552457
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "language": "pick the cream cheese and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 295,
+      "recorded_steps": 129,
+      "elapsed_seconds": 18.591673554852605
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "language": "pick the cream cheese and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 296,
+      "recorded_steps": 121,
+      "elapsed_seconds": 27.728547852486372
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "language": "pick the cream cheese and place it in the basket",
+      "trial": 3,
+      "success": true,
+      "seed": 297,
+      "recorded_steps": 128,
+      "elapsed_seconds": 36.95313313603401
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "language": "pick the cream cheese and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 298,
+      "recorded_steps": 121,
+      "elapsed_seconds": 46.01381241157651
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "language": "pick the orange juice and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 334,
+      "recorded_steps": 116,
+      "elapsed_seconds": 8.6523024905473
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "language": "pick the orange juice and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 335,
+      "recorded_steps": 120,
+      "elapsed_seconds": 17.405291963368654
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "language": "pick the orange juice and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 336,
+      "recorded_steps": 130,
+      "elapsed_seconds": 26.59296520613134
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "language": "pick the orange juice and place it in the basket",
+      "trial": 3,
+      "success": true,
+      "seed": 337,
+      "recorded_steps": 119,
+      "elapsed_seconds": 35.38357942737639
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "language": "pick the orange juice and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 338,
+      "recorded_steps": 128,
+      "elapsed_seconds": 44.468393785879016
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "language": "turn on the stove",
+      "trial": 0,
+      "success": true,
+      "seed": 374,
+      "recorded_steps": 80,
+      "elapsed_seconds": 7.356119403615594
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "language": "turn on the stove",
+      "trial": 1,
+      "success": true,
+      "seed": 375,
+      "recorded_steps": 89,
+      "elapsed_seconds": 14.953257519751787
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "language": "turn on the stove",
+      "trial": 2,
+      "success": true,
+      "seed": 376,
+      "recorded_steps": 85,
+      "elapsed_seconds": 22.4913633428514
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "language": "turn on the stove",
+      "trial": 3,
+      "success": true,
+      "seed": 377,
+      "recorded_steps": 75,
+      "elapsed_seconds": 29.55928043089807
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "language": "turn on the stove",
+      "trial": 4,
+      "success": true,
+      "seed": 378,
+      "recorded_steps": 75,
+      "elapsed_seconds": 36.516731932759285
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "language": "pick up the book and place it in the back compartment of the caddy",
+      "trial": 0,
+      "success": false,
+      "seed": 414,
+      "recorded_steps": 700,
+      "elapsed_seconds": 31.704085391014814
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "language": "pick up the book and place it in the back compartment of the caddy",
+      "trial": 1,
+      "success": false,
+      "seed": 415,
+      "recorded_steps": 700,
+      "elapsed_seconds": 63.27381771430373
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "language": "pick up the book and place it in the back compartment of the caddy",
+      "trial": 2,
+      "success": false,
+      "seed": 416,
+      "recorded_steps": 700,
+      "elapsed_seconds": 95.0535424593836
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "language": "pick up the book and place it in the back compartment of the caddy",
+      "trial": 3,
+      "success": false,
+      "seed": 417,
+      "recorded_steps": 700,
+      "elapsed_seconds": 126.88516956754029
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "language": "pick up the book and place it in the back compartment of the caddy",
+      "trial": 4,
+      "success": false,
+      "seed": 418,
+      "recorded_steps": 700,
+      "elapsed_seconds": 158.53205839917064
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "language": "pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 259,
+      "recorded_steps": 126,
+      "elapsed_seconds": 12.269976077601314
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "language": "pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 260,
+      "recorded_steps": 114,
+      "elapsed_seconds": 22.961576962843537
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "language": "pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 261,
+      "recorded_steps": 127,
+      "elapsed_seconds": 34.06939665786922
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "language": "pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate",
+      "trial": 3,
+      "success": false,
+      "seed": 262,
+      "recorded_steps": 400,
+      "elapsed_seconds": 60.04199967905879
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "language": "pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate",
+      "trial": 4,
+      "success": false,
+      "seed": 263,
+      "recorded_steps": 400,
+      "elapsed_seconds": 84.95078298822045
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "language": "pick the salad dressing and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 299,
+      "recorded_steps": 122,
+      "elapsed_seconds": 9.092598443850875
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "language": "pick the salad dressing and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 300,
+      "recorded_steps": 117,
+      "elapsed_seconds": 17.815518084913492
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "language": "pick the salad dressing and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 301,
+      "recorded_steps": 115,
+      "elapsed_seconds": 26.482924785465002
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "language": "pick the salad dressing and place it in the basket",
+      "trial": 3,
+      "success": true,
+      "seed": 302,
+      "recorded_steps": 114,
+      "elapsed_seconds": 35.094484152272344
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "language": "pick the salad dressing and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 303,
+      "recorded_steps": 110,
+      "elapsed_seconds": 43.59537442214787
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "language": "open the middle layer of the drawer",
+      "trial": 0,
+      "success": true,
+      "seed": 339,
+      "recorded_steps": 145,
+      "elapsed_seconds": 9.970465341582894
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "language": "open the middle layer of the drawer",
+      "trial": 1,
+      "success": false,
+      "seed": 340,
+      "recorded_steps": 400,
+      "elapsed_seconds": 31.8355163782835
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "language": "open the middle layer of the drawer",
+      "trial": 2,
+      "success": true,
+      "seed": 341,
+      "recorded_steps": 151,
+      "elapsed_seconds": 42.30639879964292
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "language": "open the middle layer of the drawer",
+      "trial": 3,
+      "success": true,
+      "seed": 342,
+      "recorded_steps": 144,
+      "elapsed_seconds": 52.23327102698386
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "language": "open the middle layer of the drawer",
+      "trial": 4,
+      "success": true,
+      "seed": 343,
+      "recorded_steps": 174,
+      "elapsed_seconds": 63.57355728559196
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "language": "put the bowl on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 379,
+      "recorded_steps": 77,
+      "elapsed_seconds": 7.047046842053533
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "language": "put the bowl on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 380,
+      "recorded_steps": 77,
+      "elapsed_seconds": 13.987602083012462
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "language": "put the bowl on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 381,
+      "recorded_steps": 79,
+      "elapsed_seconds": 21.024147402495146
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "language": "put the bowl on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 382,
+      "recorded_steps": 76,
+      "elapsed_seconds": 27.969859793782234
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "language": "put the bowl on the plate",
+      "trial": 4,
+      "success": true,
+      "seed": 383,
+      "recorded_steps": 81,
+      "elapsed_seconds": 35.29737564176321
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "language": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "trial": 0,
+      "success": false,
+      "seed": 419,
+      "recorded_steps": 700,
+      "elapsed_seconds": 33.767462983727455
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "language": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "trial": 1,
+      "success": false,
+      "seed": 420,
+      "recorded_steps": 700,
+      "elapsed_seconds": 67.78775371238589
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "language": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "trial": 2,
+      "success": false,
+      "seed": 421,
+      "recorded_steps": 700,
+      "elapsed_seconds": 101.5473321992904
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "language": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "trial": 3,
+      "success": false,
+      "seed": 422,
+      "recorded_steps": 700,
+      "elapsed_seconds": 135.67581715248525
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "language": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "trial": 4,
+      "success": false,
+      "seed": 423,
+      "recorded_steps": 700,
+      "elapsed_seconds": 168.69296981953084
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "language": "pick the akita black bowl on the ramekin and place it on the plate",
+      "trial": 0,
+      "success": false,
+      "seed": 264,
+      "recorded_steps": 400,
+      "elapsed_seconds": 26.839987087994814
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "language": "pick the akita black bowl on the ramekin and place it on the plate",
+      "trial": 1,
+      "success": false,
+      "seed": 265,
+      "recorded_steps": 400,
+      "elapsed_seconds": 51.97274353541434
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "language": "pick the akita black bowl on the ramekin and place it on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 266,
+      "recorded_steps": 124,
+      "elapsed_seconds": 62.99203799292445
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "language": "pick the akita black bowl on the ramekin and place it on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 267,
+      "recorded_steps": 134,
+      "elapsed_seconds": 74.48432173766196
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "language": "pick the akita black bowl on the ramekin and place it on the plate",
+      "trial": 4,
+      "success": false,
+      "seed": 268,
+      "recorded_steps": 400,
+      "elapsed_seconds": 98.46149669587612
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "language": "pick the bbq sauce and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 304,
+      "recorded_steps": 126,
+      "elapsed_seconds": 8.894675506278872
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "language": "pick the bbq sauce and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 305,
+      "recorded_steps": 155,
+      "elapsed_seconds": 19.03801578655839
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "language": "pick the bbq sauce and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 306,
+      "recorded_steps": 119,
+      "elapsed_seconds": 27.56663690134883
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "language": "pick the bbq sauce and place it in the basket",
+      "trial": 3,
+      "success": false,
+      "seed": 307,
+      "recorded_steps": 400,
+      "elapsed_seconds": 48.12100939266384
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "language": "pick the bbq sauce and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 308,
+      "recorded_steps": 162,
+      "elapsed_seconds": 58.67494795843959
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "language": "put the bowl on the stove",
+      "trial": 0,
+      "success": true,
+      "seed": 344,
+      "recorded_steps": 91,
+      "elapsed_seconds": 7.809408472850919
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "language": "put the bowl on the stove",
+      "trial": 1,
+      "success": true,
+      "seed": 345,
+      "recorded_steps": 89,
+      "elapsed_seconds": 15.30192792788148
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "language": "put the bowl on the stove",
+      "trial": 2,
+      "success": true,
+      "seed": 346,
+      "recorded_steps": 89,
+      "elapsed_seconds": 22.767076708376408
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "language": "put the bowl on the stove",
+      "trial": 3,
+      "success": true,
+      "seed": 347,
+      "recorded_steps": 91,
+      "elapsed_seconds": 30.435809085145593
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "language": "put the bowl on the stove",
+      "trial": 4,
+      "success": true,
+      "seed": 348,
+      "recorded_steps": 91,
+      "elapsed_seconds": 38.19069276750088
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "language": "put the wine bottle on the rack",
+      "trial": 0,
+      "success": true,
+      "seed": 384,
+      "recorded_steps": 141,
+      "elapsed_seconds": 9.928575104102492
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "language": "put the wine bottle on the rack",
+      "trial": 1,
+      "success": false,
+      "seed": 385,
+      "recorded_steps": 400,
+      "elapsed_seconds": 31.724210659042
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "language": "put the wine bottle on the rack",
+      "trial": 2,
+      "success": true,
+      "seed": 386,
+      "recorded_steps": 145,
+      "elapsed_seconds": 41.9244962465018
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "language": "put the wine bottle on the rack",
+      "trial": 3,
+      "success": false,
+      "seed": 387,
+      "recorded_steps": 400,
+      "elapsed_seconds": 63.8817313760519
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "language": "put the wine bottle on the rack",
+      "trial": 4,
+      "success": false,
+      "seed": 388,
+      "recorded_steps": 400,
+      "elapsed_seconds": 85.61276171170175
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "language": "put both the alphabet soup and the cream cheese box in the basket",
+      "trial": 0,
+      "success": false,
+      "seed": 424,
+      "recorded_steps": 700,
+      "elapsed_seconds": 32.45514029636979
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "language": "put both the alphabet soup and the cream cheese box in the basket",
+      "trial": 1,
+      "success": false,
+      "seed": 425,
+      "recorded_steps": 700,
+      "elapsed_seconds": 65.08094509318471
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "language": "put both the alphabet soup and the cream cheese box in the basket",
+      "trial": 2,
+      "success": false,
+      "seed": 426,
+      "recorded_steps": 700,
+      "elapsed_seconds": 97.40079537592828
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "language": "put both the alphabet soup and the cream cheese box in the basket",
+      "trial": 3,
+      "success": false,
+      "seed": 427,
+      "recorded_steps": 700,
+      "elapsed_seconds": 129.90183164551854
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "language": "put both the alphabet soup and the cream cheese box in the basket",
+      "trial": 4,
+      "success": false,
+      "seed": 428,
+      "recorded_steps": 700,
+      "elapsed_seconds": 162.4316983781755
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "language": "pick the akita black bowl next to the cookies box and place it on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 269,
+      "recorded_steps": 116,
+      "elapsed_seconds": 11.899612804874778
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "language": "pick the akita black bowl next to the cookies box and place it on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 270,
+      "recorded_steps": 105,
+      "elapsed_seconds": 22.166802868247032
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "language": "pick the akita black bowl next to the cookies box and place it on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 271,
+      "recorded_steps": 113,
+      "elapsed_seconds": 32.781692299991846
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "language": "pick the akita black bowl next to the cookies box and place it on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 272,
+      "recorded_steps": 113,
+      "elapsed_seconds": 43.350633984431624
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "language": "pick the akita black bowl next to the cookies box and place it on the plate",
+      "trial": 4,
+      "success": true,
+      "seed": 273,
+      "recorded_steps": 109,
+      "elapsed_seconds": 53.75128469057381
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "language": "pick the ketchup and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 309,
+      "recorded_steps": 137,
+      "elapsed_seconds": 9.653711108490825
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "language": "pick the ketchup and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 310,
+      "recorded_steps": 134,
+      "elapsed_seconds": 19.444712916389108
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "language": "pick the ketchup and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 311,
+      "recorded_steps": 132,
+      "elapsed_seconds": 28.864352472126484
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "language": "pick the ketchup and place it in the basket",
+      "trial": 3,
+      "success": true,
+      "seed": 312,
+      "recorded_steps": 137,
+      "elapsed_seconds": 38.6291195359081
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "language": "pick the ketchup and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 313,
+      "recorded_steps": 132,
+      "elapsed_seconds": 48.171142188832164
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "language": "put the wine bottle on the top of the drawer",
+      "trial": 0,
+      "success": true,
+      "seed": 349,
+      "recorded_steps": 177,
+      "elapsed_seconds": 12.138765141367912
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "language": "put the wine bottle on the top of the drawer",
+      "trial": 1,
+      "success": false,
+      "seed": 350,
+      "recorded_steps": 400,
+      "elapsed_seconds": 34.252581272274256
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "language": "put the wine bottle on the top of the drawer",
+      "trial": 2,
+      "success": false,
+      "seed": 351,
+      "recorded_steps": 400,
+      "elapsed_seconds": 56.55717261135578
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "language": "put the wine bottle on the top of the drawer",
+      "trial": 3,
+      "success": false,
+      "seed": 352,
+      "recorded_steps": 400,
+      "elapsed_seconds": 78.86612224765122
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "language": "put the wine bottle on the top of the drawer",
+      "trial": 4,
+      "success": true,
+      "seed": 353,
+      "recorded_steps": 202,
+      "elapsed_seconds": 92.13095864839852
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "language": "put both the alphabet soup and the tomato sauce in the basket",
+      "trial": 0,
+      "success": false,
+      "seed": 389,
+      "recorded_steps": 700,
+      "elapsed_seconds": 36.70357026346028
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "language": "put both the alphabet soup and the tomato sauce in the basket",
+      "trial": 1,
+      "success": false,
+      "seed": 390,
+      "recorded_steps": 700,
+      "elapsed_seconds": 73.44131839461625
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "language": "put both the alphabet soup and the tomato sauce in the basket",
+      "trial": 2,
+      "success": false,
+      "seed": 391,
+      "recorded_steps": 700,
+      "elapsed_seconds": 111.58479855023324
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "language": "put both the alphabet soup and the tomato sauce in the basket",
+      "trial": 3,
+      "success": false,
+      "seed": 392,
+      "recorded_steps": 700,
+      "elapsed_seconds": 148.59849029406905
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "language": "put both the alphabet soup and the tomato sauce in the basket",
+      "trial": 4,
+      "success": false,
+      "seed": 393,
+      "recorded_steps": 700,
+      "elapsed_seconds": 185.43406234681606
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "language": "put both moka pots on the stove",
+      "trial": 0,
+      "success": true,
+      "seed": 429,
+      "recorded_steps": 370,
+      "elapsed_seconds": 18.66688655130565
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "language": "put both moka pots on the stove",
+      "trial": 1,
+      "success": true,
+      "seed": 430,
+      "recorded_steps": 368,
+      "elapsed_seconds": 37.24225529842079
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "language": "put both moka pots on the stove",
+      "trial": 2,
+      "success": true,
+      "seed": 431,
+      "recorded_steps": 472,
+      "elapsed_seconds": 60.52604021690786
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "language": "put both moka pots on the stove",
+      "trial": 3,
+      "success": false,
+      "seed": 432,
+      "recorded_steps": 700,
+      "elapsed_seconds": 94.51980736851692
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "language": "put both moka pots on the stove",
+      "trial": 4,
+      "success": true,
+      "seed": 433,
+      "recorded_steps": 451,
+      "elapsed_seconds": 117.38662855513394
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "language": "pick the akita black bowl on the stove and place it on the plate",
+      "trial": 0,
+      "success": true,
+      "seed": 274,
+      "recorded_steps": 121,
+      "elapsed_seconds": 12.360296469181776
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "language": "pick the akita black bowl on the stove and place it on the plate",
+      "trial": 1,
+      "success": true,
+      "seed": 275,
+      "recorded_steps": 121,
+      "elapsed_seconds": 23.60495407693088
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "language": "pick the akita black bowl on the stove and place it on the plate",
+      "trial": 2,
+      "success": true,
+      "seed": 276,
+      "recorded_steps": 113,
+      "elapsed_seconds": 34.8171172272414
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "language": "pick the akita black bowl on the stove and place it on the plate",
+      "trial": 3,
+      "success": true,
+      "seed": 277,
+      "recorded_steps": 121,
+      "elapsed_seconds": 45.73903174139559
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "language": "pick the akita black bowl on the stove and place it on the plate",
+      "trial": 4,
+      "success": true,
+      "seed": 278,
+      "recorded_steps": 129,
+      "elapsed_seconds": 57.22382721863687
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "language": "pick the tomato sauce and place it in the basket",
+      "trial": 0,
+      "success": true,
+      "seed": 314,
+      "recorded_steps": 128,
+      "elapsed_seconds": 9.2997218798846
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "language": "pick the tomato sauce and place it in the basket",
+      "trial": 1,
+      "success": true,
+      "seed": 315,
+      "recorded_steps": 119,
+      "elapsed_seconds": 18.020118843764067
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "language": "pick the tomato sauce and place it in the basket",
+      "trial": 2,
+      "success": true,
+      "seed": 316,
+      "recorded_steps": 129,
+      "elapsed_seconds": 27.3773553352803
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "language": "pick the tomato sauce and place it in the basket",
+      "trial": 3,
+      "success": true,
+      "seed": 317,
+      "recorded_steps": 131,
+      "elapsed_seconds": 36.90793711319566
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "language": "pick the tomato sauce and place it in the basket",
+      "trial": 4,
+      "success": true,
+      "seed": 318,
+      "recorded_steps": 121,
+      "elapsed_seconds": 46.16664218343794
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "language": "open the top layer of the drawer and put the bowl inside",
+      "trial": 0,
+      "success": true,
+      "seed": 354,
+      "recorded_steps": 190,
+      "elapsed_seconds": 12.609117235988379
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "language": "open the top layer of the drawer and put the bowl inside",
+      "trial": 1,
+      "success": false,
+      "seed": 355,
+      "recorded_steps": 400,
+      "elapsed_seconds": 34.82485810481012
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "language": "open the top layer of the drawer and put the bowl inside",
+      "trial": 2,
+      "success": true,
+      "seed": 356,
+      "recorded_steps": 179,
+      "elapsed_seconds": 46.761520931497216
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "language": "open the top layer of the drawer and put the bowl inside",
+      "trial": 3,
+      "success": true,
+      "seed": 357,
+      "recorded_steps": 191,
+      "elapsed_seconds": 59.35099641606212
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "language": "open the top layer of the drawer and put the bowl inside",
+      "trial": 4,
+      "success": false,
+      "seed": 358,
+      "recorded_steps": 400,
+      "elapsed_seconds": 81.5456375144422
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "language": "put both the cream cheese box and the butter in the basket",
+      "trial": 0,
+      "success": false,
+      "seed": 394,
+      "recorded_steps": 700,
+      "elapsed_seconds": 35.86711963638663
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "language": "put both the cream cheese box and the butter in the basket",
+      "trial": 1,
+      "success": false,
+      "seed": 395,
+      "recorded_steps": 700,
+      "elapsed_seconds": 72.08579519577324
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "language": "put both the cream cheese box and the butter in the basket",
+      "trial": 2,
+      "success": false,
+      "seed": 396,
+      "recorded_steps": 700,
+      "elapsed_seconds": 107.73303002677858
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "language": "put both the cream cheese box and the butter in the basket",
+      "trial": 3,
+      "success": false,
+      "seed": 397,
+      "recorded_steps": 700,
+      "elapsed_seconds": 143.7986663877964
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "language": "put both the cream cheese box and the butter in the basket",
+      "trial": 4,
+      "success": false,
+      "seed": 398,
+      "recorded_steps": 700,
+      "elapsed_seconds": 179.12265747599304
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "language": "put the yellow and white mug in the microwave and close it",
+      "trial": 0,
+      "success": false,
+      "seed": 434,
+      "recorded_steps": 700,
+      "elapsed_seconds": 33.114954924210906
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "language": "put the yellow and white mug in the microwave and close it",
+      "trial": 1,
+      "success": true,
+      "seed": 435,
+      "recorded_steps": 255,
+      "elapsed_seconds": 47.418970715254545
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "language": "put the yellow and white mug in the microwave and close it",
+      "trial": 2,
+      "success": true,
+      "seed": 436,
+      "recorded_steps": 237,
+      "elapsed_seconds": 60.70101105980575
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "language": "put the yellow and white mug in the microwave and close it",
+      "trial": 3,
+      "success": false,
+      "seed": 437,
+      "recorded_steps": 700,
+      "elapsed_seconds": 94.28047345206141
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "language": "put the yellow and white mug in the microwave and close it",
+      "trial": 4,
+      "success": false,
+      "seed": 438,
+      "recorded_steps": 700,
+      "elapsed_seconds": 128.16458467766643
+    }
+  ],
+  "protocol": "Matched exploratory subset; not full benchmark",
+  "success_rate": 0.685
+}

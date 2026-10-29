@@ -1,0 +1,11 @@
+{
+  "pid": 3000629,
+  "command": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/action_only_test/bin/python",
+    "/data/users/jiachangzhang/eb_vjepa/scripts/run_predictive_context_experiment.py",
+    "--root",
+    "/data/users/jiachangzhang/eb_vjepa",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/grid11k_latent_wm_20261021"
+  ]
+}

@@ -1,0 +1,21 @@
+policy_name: ELAF
+protocol: ws
+host: 127.0.0.1
+port: 18081
+service_host: 127.0.0.1
+service_port: 18080
+auth_file: /data/users/jiachangzhang/eb_vjepa/experiments/elaf_policy.auth
+action_type: joint
+action_space: xpolicy_joint_absolute
+normalization: service_physical
+arm_dims: [6, 6]
+gripper_dims: [1, 1]
+camera: cam_head
+flip_vertical: false
+state_fields:
+  - {key: left_arm_joint_state, dim: 6}
+  - {key: left_ee_joint_state, dim: 1}
+  - {key: right_arm_joint_state, dim: 6}
+  - {key: right_ee_joint_state, dim: 1}
+execute_steps: 8
+eval_batch: true

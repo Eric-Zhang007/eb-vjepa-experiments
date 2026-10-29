@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "episodes": 10,
+  "successes": 3,
+  "wall_seconds": 160.94741602428257,
+  "episodes_per_hour": 223.6755388142956,
+  "includes_model_load": true,
+  "groups": [
+    {
+      "complete": true,
+      "episodes": 10,
+      "successes": 3,
+      "success_rate": 0.3,
+      "wall_seconds": 118.02067102119327,
+      "episodes_per_hour": 305.03131094327864,
+      "control_steps": 3078,
+      "control_steps_per_second": 26.080177085650327,
+      "environment_startup_seconds": 12.347923871129751,
+      "inference_seconds": 96.16875091195107,
+      "inference_calls": 243,
+      "summed_simulator_seconds": 146.34477584809065,
+      "mean_inference_batch": 1.5884773662551441,
+      "max_inference_batch": 3,
+      "environments": 4,
+      "batch_size": 4,
+      "protocol_sha256": "24baca18ca2371112131b1212cad7f61dbd70564995dfb3ce57f928b79629ab3"
+    }
+  ],
+  "gpus": [
+    6
+  ],
+  "environments_per_gpu": 4,
+  "inference_batch_limit": 4
+}

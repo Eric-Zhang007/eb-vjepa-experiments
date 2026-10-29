@@ -1,0 +1,26 @@
+# @package _global_
+defaults:
+  - libero_dits
+  - _self_
+
+run_name: libero_action_only_${encoder_tag}
+encoder_tag: ???
+wandb:
+  enabled: true
+  project: eb-vjepa
+  name: ${run_name}
+  mode: online
+model:
+  action_only: true
+  future_size: 0
+  image_predict_weight: 0.0
+  backbone:
+    ckpt_path: ???
+    torch_hub_dir: /data/users/jiachangzhang/eb_vjepa/repos/vjepa2
+  latent_norm_stats_path: ???
+data:
+  train:
+    action_only: true
+    rgb_latent_cache_dir: ???
+    encoder_checkpoint_path: ${model.backbone.ckpt_path}
+fp32_master_weights: true

@@ -1,0 +1,2 @@
+
+/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python: No module named pip

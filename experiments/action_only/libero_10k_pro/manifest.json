@@ -1,0 +1,1452 @@
+{
+  "benchmark": "pro",
+  "source": "/data/users/jiachangzhang/eb_vjepa/repos/LIBERO-PRO-official",
+  "source_commit": "eafdb809426b13153aa1e4c42d6601844217dfec",
+  "seed": 239,
+  "entries": [
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 0,
+      "category": "lan",
+      "trials": 5,
+      "index": 0,
+      "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "language": "lift the black bowl between the plate and ramekin and set it on the plate"
+    },
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 1,
+      "category": "lan",
+      "trials": 5,
+      "index": 1,
+      "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "language": "take black bowl next to ramekin and place on plate"
+    },
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 2,
+      "category": "lan",
+      "trials": 5,
+      "index": 2,
+      "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "language": "lift the black bowl from the table center and put it on the plate"
+    },
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 3,
+      "category": "lan",
+      "trials": 5,
+      "index": 3,
+      "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "language": "lift black bowl from cookie box and put it on plate"
+    },
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 4,
+      "category": "lan",
+      "trials": 5,
+      "index": 4,
+      "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "take the black bowl from the top drawer and put it on plate"
+    },
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 5,
+      "category": "lan",
+      "trials": 5,
+      "index": 5,
+      "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "language": "grab black bowl on ramekin and set it on plate"
+    },
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 6,
+      "category": "lan",
+      "trials": 5,
+      "index": 6,
+      "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "language": "grab the black bowl beside the cookie box and set it on plate"
+    },
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 7,
+      "category": "lan",
+      "trials": 5,
+      "index": 7,
+      "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "language": "lift bowl from stove and set on plate"
+    },
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 8,
+      "category": "lan",
+      "trials": 5,
+      "index": 8,
+      "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "language": "pick the bowl beside the plate and put it on plate"
+    },
+    {
+      "suite": "libero_spatial_lan",
+      "task_id": 9,
+      "category": "lan",
+      "trials": 5,
+      "index": 9,
+      "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "lift bowl from cabinet and put on plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 0,
+      "category": "object",
+      "trials": 5,
+      "index": 10,
+      "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 1,
+      "category": "object",
+      "trials": 5,
+      "index": 11,
+      "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl next to the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 2,
+      "category": "object",
+      "trials": 5,
+      "index": 12,
+      "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl from table center and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 3,
+      "category": "object",
+      "trials": 5,
+      "index": 13,
+      "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the cookies box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 4,
+      "category": "object",
+      "trials": 5,
+      "index": 14,
+      "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 5,
+      "category": "object",
+      "trials": 5,
+      "index": 15,
+      "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 6,
+      "category": "object",
+      "trials": 5,
+      "index": 16,
+      "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl next to the cookies box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 7,
+      "category": "object",
+      "trials": 5,
+      "index": 17,
+      "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the stove and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 8,
+      "category": "object",
+      "trials": 5,
+      "index": 18,
+      "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl next to the plate and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_object",
+      "task_id": 9,
+      "category": "object",
+      "trials": 5,
+      "index": 19,
+      "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 0,
+      "category": "swap",
+      "trials": 5,
+      "index": 20,
+      "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 1,
+      "category": "swap",
+      "trials": 5,
+      "index": 21,
+      "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl next to the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 2,
+      "category": "swap",
+      "trials": 5,
+      "index": 22,
+      "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl from table center and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 3,
+      "category": "swap",
+      "trials": 5,
+      "index": 23,
+      "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the cookies box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 4,
+      "category": "swap",
+      "trials": 5,
+      "index": 24,
+      "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 5,
+      "category": "swap",
+      "trials": 5,
+      "index": 25,
+      "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 6,
+      "category": "swap",
+      "trials": 5,
+      "index": 26,
+      "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl next to the cookies box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 7,
+      "category": "swap",
+      "trials": 5,
+      "index": 27,
+      "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the stove and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 8,
+      "category": "swap",
+      "trials": 5,
+      "index": 28,
+      "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl next to the plate and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_swap",
+      "task_id": 9,
+      "category": "swap",
+      "trials": 5,
+      "index": 29,
+      "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 0,
+      "category": "task",
+      "trials": 5,
+      "index": 30,
+      "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl not between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 1,
+      "category": "task",
+      "trials": 5,
+      "index": 31,
+      "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl next to the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 2,
+      "category": "task",
+      "trials": 5,
+      "index": 32,
+      "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl next to the plate and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 3,
+      "category": "task",
+      "trials": 5,
+      "index": 33,
+      "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the top of the cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 4,
+      "category": "task",
+      "trials": 5,
+      "index": 34,
+      "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the top of the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 5,
+      "category": "task",
+      "trials": 5,
+      "index": 35,
+      "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 6,
+      "category": "task",
+      "trials": 5,
+      "index": 36,
+      "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the stove and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 7,
+      "category": "task",
+      "trials": 5,
+      "index": 37,
+      "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the top of the cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 8,
+      "category": "task",
+      "trials": 5,
+      "index": 38,
+      "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl next to the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial_task",
+      "task_id": 9,
+      "category": "task",
+      "trials": 5,
+      "index": 39,
+      "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick the akita black bowl on the stove and place it on the plate"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 0,
+      "category": "lan",
+      "trials": 5,
+      "index": 40,
+      "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "language": "grab alphabet soup and put it into basket"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 1,
+      "category": "lan",
+      "trials": 5,
+      "index": 41,
+      "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "language": "grab cream cheese and put into basket"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 2,
+      "category": "lan",
+      "trials": 5,
+      "index": 42,
+      "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+      "language": "grab salad dressing and put into basket"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 3,
+      "category": "lan",
+      "trials": 5,
+      "index": 43,
+      "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+      "language": "pick up bbq sauce and put it into basket"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 4,
+      "category": "lan",
+      "trials": 5,
+      "index": 44,
+      "name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+      "language": "lift ketchup and put it in basket"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 5,
+      "category": "lan",
+      "trials": 5,
+      "index": 45,
+      "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "language": "pick tomato sauce and put it in basket"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 6,
+      "category": "lan",
+      "trials": 5,
+      "index": 46,
+      "name": "pick_up_the_butter_and_place_it_in_the_basket",
+      "language": "grab butter and put it into basket"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 7,
+      "category": "lan",
+      "trials": 5,
+      "index": 47,
+      "name": "pick_up_the_milk_and_place_it_in_the_basket",
+      "language": "grab milk and put into basket"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 8,
+      "category": "lan",
+      "trials": 5,
+      "index": 48,
+      "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+      "language": "lift chocolate pudding and put it in basket"
+    },
+    {
+      "suite": "libero_object_lan",
+      "task_id": 9,
+      "category": "lan",
+      "trials": 5,
+      "index": 49,
+      "name": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+      "language": "pick orange juice and put into basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 0,
+      "category": "object",
+      "trials": 5,
+      "index": 50,
+      "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "language": "pick the alphabet soup and place it in the basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 1,
+      "category": "object",
+      "trials": 5,
+      "index": 51,
+      "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "language": "pick the cream cheese and place it in the basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 2,
+      "category": "object",
+      "trials": 5,
+      "index": 52,
+      "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+      "language": "pick the salad dressing and place it in the basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 3,
+      "category": "object",
+      "trials": 5,
+      "index": 53,
+      "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+      "language": "pick the bbq sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 4,
+      "category": "object",
+      "trials": 5,
+      "index": 54,
+      "name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+      "language": "pick the ketchup and place it in the basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 5,
+      "category": "object",
+      "trials": 5,
+      "index": 55,
+      "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "language": "pick the tomato sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 6,
+      "category": "object",
+      "trials": 5,
+      "index": 56,
+      "name": "pick_up_the_butter_and_place_it_in_the_basket",
+      "language": "pick the butter and place it in the basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 7,
+      "category": "object",
+      "trials": 5,
+      "index": 57,
+      "name": "pick_up_the_milk_and_place_it_in_the_basket",
+      "language": "pick the milk and place it in the basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 8,
+      "category": "object",
+      "trials": 5,
+      "index": 58,
+      "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+      "language": "pick the chocolate pudding and place it in the basket"
+    },
+    {
+      "suite": "libero_object_object",
+      "task_id": 9,
+      "category": "object",
+      "trials": 5,
+      "index": 59,
+      "name": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+      "language": "pick the orange juice and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 0,
+      "category": "swap",
+      "trials": 5,
+      "index": 60,
+      "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "language": "pick the alphabet soup and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 1,
+      "category": "swap",
+      "trials": 5,
+      "index": 61,
+      "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "language": "pick the cream cheese and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 2,
+      "category": "swap",
+      "trials": 5,
+      "index": 62,
+      "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+      "language": "pick the salad dressing and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 3,
+      "category": "swap",
+      "trials": 5,
+      "index": 63,
+      "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+      "language": "pick the bbq sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 4,
+      "category": "swap",
+      "trials": 5,
+      "index": 64,
+      "name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+      "language": "pick the ketchup and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 5,
+      "category": "swap",
+      "trials": 5,
+      "index": 65,
+      "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "language": "pick the tomato sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 6,
+      "category": "swap",
+      "trials": 5,
+      "index": 66,
+      "name": "pick_up_the_butter_and_place_it_in_the_basket",
+      "language": "pick the butter and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 7,
+      "category": "swap",
+      "trials": 5,
+      "index": 67,
+      "name": "pick_up_the_milk_and_place_it_in_the_basket",
+      "language": "pick the milk and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 8,
+      "category": "swap",
+      "trials": 5,
+      "index": 68,
+      "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+      "language": "pick the chocolate pudding and place it in the basket"
+    },
+    {
+      "suite": "libero_object_swap",
+      "task_id": 9,
+      "category": "swap",
+      "trials": 5,
+      "index": 69,
+      "name": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+      "language": "pick the orange juice and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 0,
+      "category": "task",
+      "trials": 5,
+      "index": 70,
+      "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "language": "pick the cream cheese and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 1,
+      "category": "task",
+      "trials": 5,
+      "index": 71,
+      "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "language": "pick the alphabet soup and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 2,
+      "category": "task",
+      "trials": 5,
+      "index": 72,
+      "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+      "language": "pick the tomato sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 3,
+      "category": "task",
+      "trials": 5,
+      "index": 73,
+      "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+      "language": "pick the ketchup and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 4,
+      "category": "task",
+      "trials": 5,
+      "index": 74,
+      "name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+      "language": "pick the milk and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 5,
+      "category": "task",
+      "trials": 5,
+      "index": 75,
+      "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "language": "pick the bbq sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 6,
+      "category": "task",
+      "trials": 5,
+      "index": 76,
+      "name": "pick_up_the_butter_and_place_it_in_the_basket",
+      "language": "pick the orange juice and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 7,
+      "category": "task",
+      "trials": 5,
+      "index": 77,
+      "name": "pick_up_the_milk_and_place_it_in_the_basket",
+      "language": "pick the butter and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 8,
+      "category": "task",
+      "trials": 5,
+      "index": 78,
+      "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+      "language": "pick the salad dressing and place it in the basket"
+    },
+    {
+      "suite": "libero_object_task",
+      "task_id": 9,
+      "category": "task",
+      "trials": 5,
+      "index": 79,
+      "name": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+      "language": "pick the chocolate pudding and place it in the basket"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 0,
+      "category": "lan",
+      "trials": 5,
+      "index": 80,
+      "name": "open_the_middle_drawer_of_the_cabinet",
+      "language": "open the cabinet\u2019s middle drawer"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 1,
+      "category": "lan",
+      "trials": 5,
+      "index": 81,
+      "name": "put_the_bowl_on_the_stove",
+      "language": "place the bowl on the stove"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 2,
+      "category": "lan",
+      "trials": 5,
+      "index": 82,
+      "name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "language": "place the wine bottle on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 3,
+      "category": "lan",
+      "trials": 5,
+      "index": 83,
+      "name": "open_the_top_drawer_and_put_the_bowl_inside",
+      "language": "slide open the top drawer and place the bowl in it"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 4,
+      "category": "lan",
+      "trials": 5,
+      "index": 84,
+      "name": "put_the_bowl_on_top_of_the_cabinet",
+      "language": "place the bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 5,
+      "category": "lan",
+      "trials": 5,
+      "index": 85,
+      "name": "push_the_plate_to_the_front_of_the_stove",
+      "language": "move the plate to the stove\u2019s front"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 6,
+      "category": "lan",
+      "trials": 5,
+      "index": 86,
+      "name": "put_the_cream_cheese_in_the_bowl",
+      "language": "place the cream cheese inside the bowl"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 7,
+      "category": "lan",
+      "trials": 5,
+      "index": 87,
+      "name": "turn_on_the_stove",
+      "language": "switch on the stove"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 8,
+      "category": "lan",
+      "trials": 5,
+      "index": 88,
+      "name": "put_the_bowl_on_the_plate",
+      "language": "place the bowl on top of the plate"
+    },
+    {
+      "suite": "libero_goal_lan",
+      "task_id": 9,
+      "category": "lan",
+      "trials": 5,
+      "index": 89,
+      "name": "put_the_wine_bottle_on_the_rack",
+      "language": "place the wine bottle on the rack"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 0,
+      "category": "object",
+      "trials": 5,
+      "index": 90,
+      "name": "open_the_middle_drawer_of_the_cabinet",
+      "language": "open the middle layer of the drawer"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 1,
+      "category": "object",
+      "trials": 5,
+      "index": 91,
+      "name": "put_the_bowl_on_the_stove",
+      "language": "put the bowl on the stove"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 2,
+      "category": "object",
+      "trials": 5,
+      "index": 92,
+      "name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "language": "put the wine bottle on the top of the drawer"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 3,
+      "category": "object",
+      "trials": 5,
+      "index": 93,
+      "name": "open_the_top_drawer_and_put_the_bowl_inside",
+      "language": "open the top layer of the drawer and put the bowl inside"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 4,
+      "category": "object",
+      "trials": 5,
+      "index": 94,
+      "name": "put_the_bowl_on_top_of_the_cabinet",
+      "language": "put the bowl on the top of the drawer"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 5,
+      "category": "object",
+      "trials": 5,
+      "index": 95,
+      "name": "push_the_plate_to_the_front_of_the_stove",
+      "language": "push the plate to the front of the stove"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 6,
+      "category": "object",
+      "trials": 5,
+      "index": 96,
+      "name": "put_the_cream_cheese_in_the_bowl",
+      "language": "put the cream cheese on the bowl"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 7,
+      "category": "object",
+      "trials": 5,
+      "index": 97,
+      "name": "turn_on_the_stove",
+      "language": "turn on the stove"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 8,
+      "category": "object",
+      "trials": 5,
+      "index": 98,
+      "name": "put_the_bowl_on_the_plate",
+      "language": "put the bowl on the plate"
+    },
+    {
+      "suite": "libero_goal_object",
+      "task_id": 9,
+      "category": "object",
+      "trials": 5,
+      "index": 99,
+      "name": "put_the_wine_bottle_on_the_rack",
+      "language": "put the wine bottle on the rack"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 0,
+      "category": "swap",
+      "trials": 5,
+      "index": 100,
+      "name": "open_the_middle_drawer_of_the_cabinet",
+      "language": "open the middle layer of the drawer"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 1,
+      "category": "swap",
+      "trials": 5,
+      "index": 101,
+      "name": "put_the_bowl_on_the_stove",
+      "language": "put the bowl on the stove"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 2,
+      "category": "swap",
+      "trials": 5,
+      "index": 102,
+      "name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "language": "put the wine bottle on the top of the drawer"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 3,
+      "category": "swap",
+      "trials": 5,
+      "index": 103,
+      "name": "open_the_top_drawer_and_put_the_bowl_inside",
+      "language": "open the top layer of the drawer and put the bowl inside"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 4,
+      "category": "swap",
+      "trials": 5,
+      "index": 104,
+      "name": "put_the_bowl_on_top_of_the_cabinet",
+      "language": "put the bowl on the top of the drawer"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 5,
+      "category": "swap",
+      "trials": 5,
+      "index": 105,
+      "name": "push_the_plate_to_the_front_of_the_stove",
+      "language": "push the plate to the front of the stove"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 6,
+      "category": "swap",
+      "trials": 5,
+      "index": 106,
+      "name": "put_the_cream_cheese_in_the_bowl",
+      "language": "put the cream cheese on the bowl"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 7,
+      "category": "swap",
+      "trials": 5,
+      "index": 107,
+      "name": "turn_on_the_stove",
+      "language": "turn on the stove"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 8,
+      "category": "swap",
+      "trials": 5,
+      "index": 108,
+      "name": "put_the_bowl_on_the_plate",
+      "language": "put the bowl on the plate"
+    },
+    {
+      "suite": "libero_goal_swap",
+      "task_id": 9,
+      "category": "swap",
+      "trials": 5,
+      "index": 109,
+      "name": "put_the_wine_bottle_on_the_rack",
+      "language": "put the wine bottle on the rack"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 0,
+      "category": "task",
+      "trials": 5,
+      "index": 110,
+      "name": "open_the_middle_drawer_of_the_cabinet",
+      "language": "open the bottom drawer of the cabinet"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 1,
+      "category": "task",
+      "trials": 5,
+      "index": 111,
+      "name": "put_the_bowl_on_the_stove",
+      "language": "put the plate on the stove"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 2,
+      "category": "task",
+      "trials": 5,
+      "index": 112,
+      "name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "language": "put the wine bottle in the bowl"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 3,
+      "category": "task",
+      "trials": 5,
+      "index": 113,
+      "name": "open_the_top_drawer_and_put_the_bowl_inside",
+      "language": "open the top layer of the drawer and put the cream cheese inside"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 4,
+      "category": "task",
+      "trials": 5,
+      "index": 114,
+      "name": "put_the_bowl_on_top_of_the_cabinet",
+      "language": "put the plate on the top of the drawer"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 5,
+      "category": "task",
+      "trials": 5,
+      "index": 115,
+      "name": "push_the_plate_to_the_front_of_the_stove",
+      "language": "push the cream cheese to the front of the stove"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 6,
+      "category": "task",
+      "trials": 5,
+      "index": 116,
+      "name": "put_the_cream_cheese_in_the_bowl",
+      "language": "put the wine bottle in the bowl"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 7,
+      "category": "task",
+      "trials": 5,
+      "index": 117,
+      "name": "turn_on_the_stove",
+      "language": "turn off the stove"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 8,
+      "category": "task",
+      "trials": 5,
+      "index": 118,
+      "name": "put_the_bowl_on_the_plate",
+      "language": "put the wine bottle on the plate"
+    },
+    {
+      "suite": "libero_goal_task",
+      "task_id": 9,
+      "category": "task",
+      "trials": 5,
+      "index": 119,
+      "name": "put_the_wine_bottle_on_the_rack",
+      "language": "put the cream cheese on the rack"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 0,
+      "category": "lan",
+      "trials": 5,
+      "index": 120,
+      "name": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+      "language": "place alphabet soup and tomato sauce into basket"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 1,
+      "category": "lan",
+      "trials": 5,
+      "index": 121,
+      "name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "language": "place cream cheese box and butter into basket"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 2,
+      "category": "lan",
+      "trials": 5,
+      "index": 122,
+      "name": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "language": "switch stove on and put moka pot on it"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 3,
+      "category": "lan",
+      "trials": 5,
+      "index": 123,
+      "name": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+      "language": "put black bowl inside bottom drawer and close it"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 4,
+      "category": "lan",
+      "trials": 5,
+      "index": 124,
+      "name": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+      "language": "place white mug on left plate and yellow-white mug on right plate"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 5,
+      "category": "lan",
+      "trials": 5,
+      "index": 125,
+      "name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+      "language": "pick up the book and place in back compartment"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 6,
+      "category": "lan",
+      "trials": 5,
+      "index": 126,
+      "name": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+      "language": "place white mug on plate and chocolate pudding to right"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 7,
+      "category": "lan",
+      "trials": 5,
+      "index": 127,
+      "name": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+      "language": "put alphabet soup and cream cheese box in basket"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 8,
+      "category": "lan",
+      "trials": 5,
+      "index": 128,
+      "name": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+      "language": "place both moka pots on stove"
+    },
+    {
+      "suite": "libero_10_lan",
+      "task_id": 9,
+      "category": "lan",
+      "trials": 5,
+      "index": 129,
+      "name": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "language": "place yellow and white mug in microwave and close door"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 0,
+      "category": "object",
+      "trials": 5,
+      "index": 130,
+      "name": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+      "language": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 1,
+      "category": "object",
+      "trials": 5,
+      "index": 131,
+      "name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "language": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 2,
+      "category": "object",
+      "trials": 5,
+      "index": 132,
+      "name": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "language": "turn on the stove and put the moka pot on it"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 3,
+      "category": "object",
+      "trials": 5,
+      "index": 133,
+      "name": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+      "language": "put the black bowl in the bottom drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 4,
+      "category": "object",
+      "trials": 5,
+      "index": 134,
+      "name": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+      "language": "put the white mug on the left plate and put the yellow and white mug on the right plate"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 5,
+      "category": "object",
+      "trials": 5,
+      "index": 135,
+      "name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+      "language": "pick up the book and place it in the back compartment of the caddy"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 6,
+      "category": "object",
+      "trials": 5,
+      "index": 136,
+      "name": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+      "language": "put the white mug on the plate and put the chocolate pudding to the right of the plate"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 7,
+      "category": "object",
+      "trials": 5,
+      "index": 137,
+      "name": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+      "language": "put both the alphabet soup and the cream cheese box in the basket"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 8,
+      "category": "object",
+      "trials": 5,
+      "index": 138,
+      "name": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+      "language": "put both moka pots on the stove"
+    },
+    {
+      "suite": "libero_10_object",
+      "task_id": 9,
+      "category": "object",
+      "trials": 5,
+      "index": 139,
+      "name": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "language": "put the yellow and white mug in the microwave and close it"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 0,
+      "category": "swap",
+      "trials": 5,
+      "index": 140,
+      "name": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+      "language": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 1,
+      "category": "swap",
+      "trials": 5,
+      "index": 141,
+      "name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "language": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 2,
+      "category": "swap",
+      "trials": 5,
+      "index": 142,
+      "name": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "language": "turn on the stove and put the moka pot on it"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 3,
+      "category": "swap",
+      "trials": 5,
+      "index": 143,
+      "name": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+      "language": "put the black bowl in the bottom drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 4,
+      "category": "swap",
+      "trials": 5,
+      "index": 144,
+      "name": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+      "language": "put the white mug on the left plate and put the yellow and white mug on the right plate"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 5,
+      "category": "swap",
+      "trials": 5,
+      "index": 145,
+      "name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+      "language": "pick up the book and place it in the back compartment of the caddy"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 6,
+      "category": "swap",
+      "trials": 5,
+      "index": 146,
+      "name": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+      "language": "put the white mug on the plate and put the chocolate pudding to the right of the plate"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 7,
+      "category": "swap",
+      "trials": 5,
+      "index": 147,
+      "name": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+      "language": "put both the alphabet soup and the cream cheese box in the basket"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 8,
+      "category": "swap",
+      "trials": 5,
+      "index": 148,
+      "name": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+      "language": "put both moka pots on the stove"
+    },
+    {
+      "suite": "libero_10_swap",
+      "task_id": 9,
+      "category": "swap",
+      "trials": 5,
+      "index": 149,
+      "name": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "language": "put the yellow and white mug in the microwave and close it"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 0,
+      "category": "task",
+      "trials": 5,
+      "index": 150,
+      "name": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+      "language": "put both the cream cheese and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 1,
+      "category": "task",
+      "trials": 5,
+      "index": 151,
+      "name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "language": "put both the alphabet soup and the butter in the basket"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 2,
+      "category": "task",
+      "trials": 5,
+      "index": 152,
+      "name": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "language": "turn on the stove and put the pan on it"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 3,
+      "category": "task",
+      "trials": 5,
+      "index": 153,
+      "name": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+      "language": "put the bottle in the bottom drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 4,
+      "category": "task",
+      "trials": 5,
+      "index": 154,
+      "name": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+      "language": "put the yellow and white mug on the left plate and put the white mug on the right plate"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 5,
+      "category": "task",
+      "trials": 5,
+      "index": 155,
+      "name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+      "language": "pick up the cup and place it in the back compartment of the caddy"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 6,
+      "category": "task",
+      "trials": 5,
+      "index": 156,
+      "name": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+      "language": "put the red mug on the plate and put the chocolate pudding to the right of the plate"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 7,
+      "category": "task",
+      "trials": 5,
+      "index": 157,
+      "name": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+      "language": "put both the ketchup and the cream cheese box in the basket"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 8,
+      "category": "task",
+      "trials": 5,
+      "index": 158,
+      "name": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+      "language": "put the left moka pot on the stove"
+    },
+    {
+      "suite": "libero_10_task",
+      "task_id": 9,
+      "category": "task",
+      "trials": 5,
+      "index": 159,
+      "name": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "language": "put the white mug in the microwave and close it"
+    }
+  ],
+  "episodes": 800,
+  "protocol": "Four installed official perturbation families",
+  "excluded_pro_dimension": "environment (no verified pre-generated assets)",
+  "horizons": "400 for spatial/object/goal; 700 for libero_10 (same as clean probe)"
+}

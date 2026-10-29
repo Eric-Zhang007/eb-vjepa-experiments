@@ -1,0 +1,62 @@
+[
+  {
+    "suite": "libero_spatial_lan",
+    "task_id": 0,
+    "category": "lan",
+    "trials": 5,
+    "index": 0,
+    "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+    "language": "lift the black bowl between the plate and ramekin and set it on the plate",
+    "benchmark": "pro",
+    "trial": 0,
+    "seed": 239,
+    "env_seed": 239,
+    "manifest_path": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/libero_10k_pro/manifest.json",
+    "manifest_sha256": "56ca6b6d1124652f45b0f9241d376b1a780e7ec2957fe313a3ff98b00e27de22"
+  },
+  {
+    "suite": "libero_spatial_lan",
+    "task_id": 0,
+    "category": "lan",
+    "trials": 5,
+    "index": 0,
+    "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+    "language": "lift the black bowl between the plate and ramekin and set it on the plate",
+    "benchmark": "pro",
+    "trial": 1,
+    "seed": 240,
+    "env_seed": 239,
+    "manifest_path": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/libero_10k_pro/manifest.json",
+    "manifest_sha256": "56ca6b6d1124652f45b0f9241d376b1a780e7ec2957fe313a3ff98b00e27de22"
+  },
+  {
+    "suite": "libero_spatial_lan",
+    "task_id": 0,
+    "category": "lan",
+    "trials": 5,
+    "index": 0,
+    "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+    "language": "lift the black bowl between the plate and ramekin and set it on the plate",
+    "benchmark": "pro",
+    "trial": 2,
+    "seed": 241,
+    "env_seed": 239,
+    "manifest_path": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/libero_10k_pro/manifest.json",
+    "manifest_sha256": "56ca6b6d1124652f45b0f9241d376b1a780e7ec2957fe313a3ff98b00e27de22"
+  },
+  {
+    "suite": "libero_spatial_lan",
+    "task_id": 0,
+    "category": "lan",
+    "trials": 5,
+    "index": 0,
+    "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+    "language": "lift the black bowl between the plate and ramekin and set it on the plate",
+    "benchmark": "pro",
+    "trial": 3,
+    "seed": 242,
+    "env_seed": 239,
+    "manifest_path": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/libero_10k_pro/manifest.json",
+    "manifest_sha256": "56ca6b6d1124652f45b0f9241d376b1a780e7ec2957fe313a3ff98b00e27de22"
+  }
+]

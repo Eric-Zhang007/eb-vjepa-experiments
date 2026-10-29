@@ -1,0 +1,1109 @@
+{
+  "executable": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/bin/python",
+  "sys_path": [
+    "",
+    "/home/jiachangzhang/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python311.zip",
+    "/home/jiachangzhang/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11",
+    "/home/jiachangzhang/.local/share/uv/python/cpython-3.11-linux-x86_64-gnu/lib/python3.11/lib-dynload",
+    "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages",
+    "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+  ],
+  "packages": [
+    {
+      "name": "tokenizers",
+      "version": "0.21.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "peft",
+      "version": "0.17.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "einops",
+      "version": "0.8.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "sentencepiece",
+      "version": "0.2.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "av",
+      "version": "18.1.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "diffusers",
+      "version": "0.33.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "filelock",
+      "version": "4.2.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "zipp",
+      "version": "4.1.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.34.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "transformers",
+      "version": "4.51.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "importlib_metadata",
+      "version": "9.0.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pyarrow",
+      "version": "17.0.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "accelerate",
+      "version": "1.10.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.7.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/elaf/lib/python3.11/site-packages"
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "scikit-image",
+      "version": "0.26.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "asttokens",
+      "version": "3.0.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "absl-py",
+      "version": "2.5.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "ipywidgets",
+      "version": "8.1.9",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pyarrow",
+      "version": "25.0.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "torchvision",
+      "version": "0.26.0+cu128",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "wcwidth",
+      "version": "0.9.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "ipython_pygments_lexers",
+      "version": "1.1.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cublas-cu12",
+      "version": "12.8.4.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyter_core",
+      "version": "5.9.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "torch",
+      "version": "2.11.0+cu128",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "opencv-python",
+      "version": "5.0.0.93",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "widgetsnbextension",
+      "version": "4.0.16",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "einops",
+      "version": "0.8.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "decord",
+      "version": "0.6.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.6.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "accelerate",
+      "version": "1.15.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "lark",
+      "version": "1.3.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyterlab",
+      "version": "4.6.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "av",
+      "version": "18.1.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-curand-cu12",
+      "version": "10.3.9.90",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyter-lsp",
+      "version": "2.3.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "fire",
+      "version": "0.7.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "tinycss2",
+      "version": "1.5.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "async-lru",
+      "version": "2.3.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nbformat",
+      "version": "5.11.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cudnn-cu12",
+      "version": "9.19.0.56",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "tifffile",
+      "version": "2026.3.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "tensorboard",
+      "version": "2.21.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-nvjitlink-cu12",
+      "version": "12.8.93",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cusparse-cu12",
+      "version": "12.5.8.93",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cufft-cu12",
+      "version": "11.3.3.83",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "comm",
+      "version": "0.2.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "stack-data",
+      "version": "0.6.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "grpcio",
+      "version": "1.84.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cusparselt-cu12",
+      "version": "0.7.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyter_server",
+      "version": "2.21.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.5",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "cuda-toolkit",
+      "version": "12.8.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "ptyprocess",
+      "version": "0.7.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "rfc3339-validator",
+      "version": "0.1.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jedi",
+      "version": "0.20.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "portalocker",
+      "version": "4.4.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "peft",
+      "version": "0.21.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "beartype",
+      "version": "0.22.9",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nbconvert",
+      "version": "7.17.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "arrow",
+      "version": "1.4.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pure_eval",
+      "version": "0.2.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "soupsieve",
+      "version": "2.10",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "vjepa2",
+      "version": "0.0.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "python-json-logger",
+      "version": "4.2.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "fqdn",
+      "version": "1.6.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "opentelemetry-semantic-conventions",
+      "version": "0.66b0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "typer",
+      "version": "0.27.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyterlab_server",
+      "version": "2.28.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "prometheus_client",
+      "version": "0.26.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "wandb",
+      "version": "0.30.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyter_server_terminals",
+      "version": "0.5.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "rfc3986-validator",
+      "version": "0.1.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "rfc3987-syntax",
+      "version": "1.1.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "argon2-cffi",
+      "version": "25.1.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-http",
+      "version": "1.45.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "executing",
+      "version": "2.2.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.12.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cuda-cupti-cu12",
+      "version": "12.8.90",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "webencodings",
+      "version": "0.6.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "beautifulsoup4",
+      "version": "4.15.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "submitit",
+      "version": "1.5.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "prompt_toolkit",
+      "version": "3.0.53",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "termcolor",
+      "version": "3.3.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "argon2-cffi-bindings",
+      "version": "26.1.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "opentelemetry-sdk",
+      "version": "1.45.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "triton",
+      "version": "3.6.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyterlab_pygments",
+      "version": "0.3.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "opentelemetry-proto",
+      "version": "1.45.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-nccl-cu12",
+      "version": "2.28.9",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "h5py",
+      "version": "3.16.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pexpect",
+      "version": "4.9.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pyzmq",
+      "version": "27.2.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "cuda-pathfinder",
+      "version": "1.8.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.33.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cuda-runtime-cu12",
+      "version": "12.8.90",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyter-console",
+      "version": "6.6.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyter-events",
+      "version": "0.12.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "googleapis-common-protos",
+      "version": "1.75.5",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "babel",
+      "version": "2.18.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.6.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nest-asyncio2",
+      "version": "1.7.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "cuda-bindings",
+      "version": "12.9.9",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "python-box",
+      "version": "7.4.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "lazy-loader",
+      "version": "0.6",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cusolver-cu12",
+      "version": "11.7.3.90",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "traitlets",
+      "version": "5.16.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "debugpy",
+      "version": "1.8.22",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "webdataset",
+      "version": "1.0.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "transformers",
+      "version": "5.18.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nbclient",
+      "version": "0.11.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-nvtx-cu12",
+      "version": "12.8.90",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cufile-cu12",
+      "version": "1.13.1.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "tensorboard-data-server",
+      "version": "0.7.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "protobuf",
+      "version": "7.36.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyterlab_widgets",
+      "version": "3.0.17",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "xxhash",
+      "version": "4.0.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-cuda-nvrtc-cu12",
+      "version": "12.8.93",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "Send2Trash",
+      "version": "2.1.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "ipython",
+      "version": "9.17.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyter",
+      "version": "1.1.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "isoduration",
+      "version": "20.11.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyter_builder",
+      "version": "1.2.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "ImageIO",
+      "version": "2.38.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "json5",
+      "version": "0.15.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "webcolors",
+      "version": "25.10.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "opentelemetry-exporter-http-transport",
+      "version": "0.66b0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "timm",
+      "version": "1.0.30",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "ftfy",
+      "version": "6.3.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "version": "1.45.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "notebook_shim",
+      "version": "0.2.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "Werkzeug",
+      "version": "3.1.9",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "ipykernel",
+      "version": "7.4.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "parso",
+      "version": "0.8.7",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "overrides",
+      "version": "7.7.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "iopath",
+      "version": "0.1.10",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pandas",
+      "version": "3.0.6",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jsonpointer",
+      "version": "3.1.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "jupyter_client",
+      "version": "8.10.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "matplotlib-inline",
+      "version": "0.2.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "fastjsonschema",
+      "version": "2.22.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "braceexpand",
+      "version": "0.1.7",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-common",
+      "version": "0.66b0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "filelock",
+      "version": "4.0.8",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "nvidia-nvshmem-cu12",
+      "version": "3.4.5",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "uri-template",
+      "version": "1.3.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "pandocfilters",
+      "version": "1.5.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.23.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "mistune",
+      "version": "3.3.4",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "terminado",
+      "version": "0.18.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "websocket-client",
+      "version": "1.9.2",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "Markdown",
+      "version": "3.11",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "tornado",
+      "version": "6.5.10",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "bleach",
+      "version": "6.4.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "setuptools",
+      "version": "81.0.0",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    },
+    {
+      "name": "notebook",
+      "version": "7.6.3",
+      "path": "/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/lib/python3.11/site-packages"
+    }
+  ]
+}
+

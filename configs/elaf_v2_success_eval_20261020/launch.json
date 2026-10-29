@@ -1,0 +1,14 @@
+{
+  "smoke_pid": 586808,
+  "watcher_pid": 586809,
+  "watcher_command": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+    "scripts/run_elaf_v2_success_eval.py",
+    "--root",
+    "/data/users/jiachangzhang/eb_vjepa",
+    "--run",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_lora10x_20261020",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_success_eval_20261020"
+  ]
+}

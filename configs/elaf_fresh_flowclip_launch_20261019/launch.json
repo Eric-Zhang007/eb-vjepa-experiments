@@ -1,0 +1,19 @@
+{
+  "pid": 1196227,
+  "command": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+    "-m",
+    "torch.distributed.run",
+    "--standalone",
+    "--nnodes=1",
+    "--nproc-per-node=6",
+    "-m",
+    "elaf.v0_train",
+    "--config",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/configs/fresh_flowclip_2k.json",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_fresh_flowclip_2k_20261019"
+  ],
+  "fixed_batch_test": "experiments/elaf_flow_diagnostic_20261019",
+  "fresh_initialization": true
+}

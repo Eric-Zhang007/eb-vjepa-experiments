@@ -1,0 +1,91 @@
+{
+  "n_pairs": 32,
+  "n_episodes": 16,
+  "medians": {
+    "official": {
+      "rms": 1.8810161352157593,
+      "delta_rms": 0.7537046670913696,
+      "relative_delta": 0.4018027037382126,
+      "spatial_var": 2.051070213317871,
+      "spatial_erank": 39.4646110534668,
+      "spatial_mean_cosine": 0.42855657637119293,
+      "temporal_cosine": 0.9239417314529419,
+      "top_pixel_quartile_delta_energy_fraction": 0.9555864632129669,
+      "bottom_pixel_half_delta_rms": 0.17110148817300797,
+      "pixel_delta_spearman": 0.7086195392174384,
+      "cka_to_official": 1.0000001788139343,
+      "cka_to_grid11k": 0.7617590129375458
+    },
+    "grid11000": {
+      "rms": 2.0438992977142334,
+      "delta_rms": 0.8527930676937103,
+      "relative_delta": 0.41776683926582336,
+      "spatial_var": 2.4905096292495728,
+      "spatial_erank": 40.072919845581055,
+      "spatial_mean_cosine": 0.4133833348751068,
+      "temporal_cosine": 0.9114398956298828,
+      "top_pixel_quartile_delta_energy_fraction": 0.8524558544158936,
+      "bottom_pixel_half_delta_rms": 0.36481474339962006,
+      "pixel_delta_spearman": 0.6761488701954559,
+      "cka_to_official": 0.7617590129375458,
+      "cka_to_grid11k": 1.0000001192092896
+    },
+    "full10000": {
+      "rms": 2.022398591041565,
+      "delta_rms": 0.8325541019439697,
+      "relative_delta": 0.4126998037099838,
+      "spatial_var": 2.4257036447525024,
+      "spatial_erank": 40.152299880981445,
+      "spatial_mean_cosine": 0.41559119522571564,
+      "temporal_cosine": 0.9121441841125488,
+      "top_pixel_quartile_delta_energy_fraction": 0.8623532354831696,
+      "bottom_pixel_half_delta_rms": 0.3608701229095459,
+      "pixel_delta_spearman": 0.6847192526643386,
+      "cka_to_official": 0.7746149897575378,
+      "cka_to_grid11k": 0.881217360496521
+    },
+    "full20000": {
+      "rms": 2.224165439605713,
+      "delta_rms": 0.905018150806427,
+      "relative_delta": 0.4070475548505783,
+      "spatial_var": 2.822392225265503,
+      "spatial_erank": 39.56882858276367,
+      "spatial_mean_cosine": 0.42447979748249054,
+      "temporal_cosine": 0.9154185354709625,
+      "top_pixel_quartile_delta_energy_fraction": 0.8912683725357056,
+      "bottom_pixel_half_delta_rms": 0.3377549946308136,
+      "pixel_delta_spearman": 0.6852658993482845,
+      "cka_to_official": 0.8574159145355225,
+      "cka_to_grid11k": 0.825938880443573
+    },
+    "full40000": {
+      "rms": 2.2350356578826904,
+      "delta_rms": 0.89082270860672,
+      "relative_delta": 0.39938338100910187,
+      "spatial_var": 2.8366403579711914,
+      "spatial_erank": 41.203224182128906,
+      "spatial_mean_cosine": 0.4292777180671692,
+      "temporal_cosine": 0.9213097393512726,
+      "top_pixel_quartile_delta_energy_fraction": 0.8937025964260101,
+      "bottom_pixel_half_delta_rms": 0.30060887336730957,
+      "pixel_delta_spearman": 0.6750755557042879,
+      "cka_to_official": 0.8312579989433289,
+      "cka_to_grid11k": 0.7403940260410309
+    },
+    "full100000": {
+      "rms": 2.2211148738861084,
+      "delta_rms": 0.847566694021225,
+      "relative_delta": 0.383461594581604,
+      "spatial_var": 2.5491180419921875,
+      "spatial_erank": 32.62576866149902,
+      "spatial_mean_cosine": 0.4829498678445816,
+      "temporal_cosine": 0.9283223152160645,
+      "top_pixel_quartile_delta_energy_fraction": 0.9107787013053894,
+      "bottom_pixel_half_delta_rms": 0.26700980961322784,
+      "pixel_delta_spearman": 0.6647212191040388,
+      "cka_to_official": 0.7977406680583954,
+      "cka_to_grid11k": 0.6755581498146057
+    }
+  },
+  "caveat": "Descriptive demonstration subset; no object labels, no causal attribution to control performance."
+}

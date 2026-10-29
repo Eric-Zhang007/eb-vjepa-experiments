@@ -1,0 +1,3666 @@
+{
+  "umt5_valid_token_mean": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.863985337086698,
+    "mean_relative_l2": 0.5264300746997629,
+    "within_to_between_unit_distance": 1.098884638990624,
+    "standardized_shift_to_between": 1.385056306084765,
+    "within_variance_to_between_variance": 0.797122353681446,
+    "retrieval_accuracy": 0.75,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.8555452224921628,
+        "unit_squared_distance": 0.2889095550156724,
+        "relative_l2": 0.5633733177703268,
+        "standardized_mse": 3.288845184731975,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.8512783763235988,
+        "unit_squared_distance": 0.297443247352801,
+        "relative_l2": 0.5772772831313019,
+        "standardized_mse": 3.4876088145070554,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.8692793923504787,
+        "unit_squared_distance": 0.26144121529903974,
+        "relative_l2": 0.5282923108113127,
+        "standardized_mse": 2.9048030066317456,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.860200805239551,
+        "unit_squared_distance": 0.279598389520896,
+        "relative_l2": 0.5238084806938048,
+        "standardized_mse": 2.681123034396408,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.8513555675482544,
+        "unit_squared_distance": 0.2972888649034907,
+        "relative_l2": 0.575736454652746,
+        "standardized_mse": 3.5268219806280117,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.8134167568170119,
+        "unit_squared_distance": 0.3731664863659747,
+        "relative_l2": 0.6623734180318164,
+        "standardized_mse": 4.629636110122262,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.8599021411147066,
+        "unit_squared_distance": 0.2801957177705847,
+        "relative_l2": 0.5234367109554335,
+        "standardized_mse": 3.150298501066358,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.7207541581108796,
+        "unit_squared_distance": 0.5584916837782385,
+        "relative_l2": 0.7489723666373342,
+        "standardized_mse": 5.962976563190332,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.8783281056861143,
+        "unit_squared_distance": 0.24334378862776906,
+        "relative_l2": 0.5239583810669031,
+        "standardized_mse": 3.033384869959902,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.8382893893819485,
+        "unit_squared_distance": 0.32342122123609984,
+        "relative_l2": 0.5853258236550951,
+        "standardized_mse": 3.6872147488318587,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.8849734763928075,
+        "unit_squared_distance": 0.23005304721438513,
+        "relative_l2": 0.4888272817451513,
+        "standardized_mse": 2.583930383256965,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.8926362573474697,
+        "unit_squared_distance": 0.21472748530505786,
+        "relative_l2": 0.4592421498336519,
+        "standardized_mse": 2.175077124374857,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.89419218661642,
+        "unit_squared_distance": 0.21161562676715695,
+        "relative_l2": 0.4684555302073384,
+        "standardized_mse": 2.1827683523600236,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9317814072237717,
+        "unit_squared_distance": 0.1364371855524535,
+        "relative_l2": 0.3668952781538201,
+        "standardized_mse": 1.2374389948237772,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.8224707063054346,
+        "unit_squared_distance": 0.35505858738912754,
+        "relative_l2": 0.6293646115875328,
+        "standardized_mse": 3.871617853946793,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9545196784516894,
+        "unit_squared_distance": 0.09096064309662216,
+        "relative_l2": 0.30201776747850795,
+        "standardized_mse": 0.8774911357036288,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.8162707849619854,
+        "unit_squared_distance": 0.3674584300760291,
+        "relative_l2": 0.6377781526755354,
+        "standardized_mse": 3.7571128808030934,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.8452937442954077,
+        "unit_squared_distance": 0.3094125114091865,
+        "relative_l2": 0.5785978826827225,
+        "standardized_mse": 3.1060817401344716,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.8649203454907999,
+        "unit_squared_distance": 0.2701593090183988,
+        "relative_l2": 0.5245943046728507,
+        "standardized_mse": 2.5444636187935834,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9531858542777039,
+        "unit_squared_distance": 0.09362829144458967,
+        "relative_l2": 0.3055894149300109,
+        "standardized_mse": 0.951009027695875,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.8164404506819049,
+        "unit_squared_distance": 0.36711909863618963,
+        "relative_l2": 0.6304601328436065,
+        "standardized_mse": 3.474594387737139,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.8857388739774972,
+        "unit_squared_distance": 0.22852225204500398,
+        "relative_l2": 0.46996383475893017,
+        "standardized_mse": 1.9126046993082642,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.7862853683497771,
+        "unit_squared_distance": 0.4274292633004451,
+        "relative_l2": 0.6734197693074825,
+        "standardized_mse": 3.873969894622398,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.8758243070554026,
+        "unit_squared_distance": 0.24835138588919442,
+        "relative_l2": 0.5086919985097987,
+        "standardized_mse": 2.632233948097145,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.9263101180629385,
+        "unit_squared_distance": 0.14737976387412163,
+        "relative_l2": 0.3813803565538288,
+        "standardized_mse": 1.5592097862106478,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9127902483879973,
+        "unit_squared_distance": 0.17441950322400707,
+        "relative_l2": 0.41282559021428394,
+        "standardized_mse": 1.4902176839095973,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9132451406798103,
+        "unit_squared_distance": 0.1735097186403784,
+        "relative_l2": 0.4149789837503125,
+        "standardized_mse": 1.5644181953820104,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.8345357914385579,
+        "unit_squared_distance": 0.33092841712288434,
+        "relative_l2": 0.6016278880499838,
+        "standardized_mse": 3.3004781594246237,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.8007643276806612,
+        "unit_squared_distance": 0.3984713446386757,
+        "relative_l2": 0.6976998108234819,
+        "standardized_mse": 4.15735892125881,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.8110465848141071,
+        "unit_squared_distance": 0.3779068303717861,
+        "relative_l2": 0.6357922499205807,
+        "standardized_mse": 3.5703627677923144,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.8387640721825089,
+        "unit_squared_distance": 0.3224718556349814,
+        "relative_l2": 0.579409055490075,
+        "standardized_mse": 3.345863311978274,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8624190105079239,
+        "unit_squared_distance": 0.27516197898415096,
+        "relative_l2": 0.5589777296813823,
+        "standardized_mse": 3.156925822602146,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8266439684415092,
+        "unit_squared_distance": 0.34671206311698116,
+        "relative_l2": 0.6108505813613945,
+        "standardized_mse": 4.018542321615381,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9414868774933716,
+        "unit_squared_distance": 0.11702624501325512,
+        "relative_l2": 0.3471959202513293,
+        "standardized_mse": 1.2478128114503988,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.864117496848842,
+        "unit_squared_distance": 0.2717650063023138,
+        "relative_l2": 0.5441703052059358,
+        "standardized_mse": 3.2211581381453103,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8289327682074916,
+        "unit_squared_distance": 0.34213446358501604,
+        "relative_l2": 0.596351497787265,
+        "standardized_mse": 3.8178471808543866,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.8816984328851634,
+        "unit_squared_distance": 0.2366031342296702,
+        "relative_l2": 0.48224774205825144,
+        "standardized_mse": 2.7468268875980404,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.8624912197440574,
+        "unit_squared_distance": 0.27501756051188175,
+        "relative_l2": 0.536038476565861,
+        "standardized_mse": 3.1916068128726116,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.8923021683203864,
+        "unit_squared_distance": 0.21539566335922422,
+        "relative_l2": 0.4571977488231474,
+        "standardized_mse": 2.454695395263092,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.938981901279823,
+        "unit_squared_distance": 0.12203619744034988,
+        "relative_l2": 0.34400639466038524,
+        "standardized_mse": 1.2237566636315493,
+        "nearest_canonical_correct": true
+      }
+    ]
+  },
+  "dream_scene40_time0.0": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.9463692577943343,
+    "mean_relative_l2": 0.35814385240597535,
+    "within_to_between_unit_distance": 0.8035383494103674,
+    "standardized_shift_to_between": 0.8220845958596531,
+    "within_variance_to_between_variance": 0.44125084203949727,
+    "retrieval_accuracy": 0.175,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9734627769396423,
+        "unit_squared_distance": 0.0530744461207133,
+        "relative_l2": 0.27939987484103784,
+        "standardized_mse": 1.0428031096593868,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9760517016329828,
+        "unit_squared_distance": 0.04789659673403364,
+        "relative_l2": 0.2604727533553402,
+        "standardized_mse": 0.9528605029579721,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9503856507286456,
+        "unit_squared_distance": 0.0992286985427109,
+        "relative_l2": 0.43335970486188646,
+        "standardized_mse": 1.8816068157428905,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9654199876336922,
+        "unit_squared_distance": 0.06916002473261731,
+        "relative_l2": 0.31212061840604083,
+        "standardized_mse": 1.3056867254259328,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9520344799831235,
+        "unit_squared_distance": 0.0959310400337529,
+        "relative_l2": 0.3972934822041696,
+        "standardized_mse": 1.6900318381239272,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9555785388455003,
+        "unit_squared_distance": 0.08884292230899872,
+        "relative_l2": 0.378789270918479,
+        "standardized_mse": 1.6359528688514342,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9472754808803536,
+        "unit_squared_distance": 0.10544903823929347,
+        "relative_l2": 0.4180125290100548,
+        "standardized_mse": 1.8628605176780293,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.9149302743176804,
+        "unit_squared_distance": 0.1701394513646384,
+        "relative_l2": 0.5170396055316764,
+        "standardized_mse": 2.1600764452565704,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9430366865235069,
+        "unit_squared_distance": 0.11392662695298429,
+        "relative_l2": 0.3961085239921915,
+        "standardized_mse": 1.6543817453320646,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9513897204820686,
+        "unit_squared_distance": 0.09722055903586231,
+        "relative_l2": 0.34660116734563573,
+        "standardized_mse": 1.3922584378861091,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9914857023743241,
+        "unit_squared_distance": 0.01702859525135233,
+        "relative_l2": 0.13089778161980836,
+        "standardized_mse": 0.42382698259370866,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9801548571476055,
+        "unit_squared_distance": 0.03969028570478986,
+        "relative_l2": 0.2043376285448257,
+        "standardized_mse": 0.9686844137471148,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.9265408725778641,
+        "unit_squared_distance": 0.14691825484427218,
+        "relative_l2": 0.47760417818686096,
+        "standardized_mse": 2.243119008552705,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9617941440017395,
+        "unit_squared_distance": 0.07641171199652133,
+        "relative_l2": 0.32250323727676783,
+        "standardized_mse": 1.6431576298903958,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9807084885707869,
+        "unit_squared_distance": 0.03858302285842653,
+        "relative_l2": 0.20337402771771337,
+        "standardized_mse": 0.7823704366836617,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9763004677823406,
+        "unit_squared_distance": 0.047399064435318966,
+        "relative_l2": 0.26397696184139935,
+        "standardized_mse": 1.0871221033093235,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9533442930578947,
+        "unit_squared_distance": 0.09331141388421105,
+        "relative_l2": 0.376135558181886,
+        "standardized_mse": 1.9381017545982357,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9646348726986921,
+        "unit_squared_distance": 0.07073025460261699,
+        "relative_l2": 0.2944491281986013,
+        "standardized_mse": 1.6156057537121118,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9654349125068968,
+        "unit_squared_distance": 0.06913017498620584,
+        "relative_l2": 0.2607542228724847,
+        "standardized_mse": 1.4692424189817956,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9655133360009274,
+        "unit_squared_distance": 0.06897332799814412,
+        "relative_l2": 0.3652744443317635,
+        "standardized_mse": 1.4938303490596831,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9782167694470486,
+        "unit_squared_distance": 0.043566461105903634,
+        "relative_l2": 0.21657069011920213,
+        "standardized_mse": 1.1284243945128434,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9792006042522289,
+        "unit_squared_distance": 0.04159879149554101,
+        "relative_l2": 0.21228175494649806,
+        "standardized_mse": 1.202833653632953,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9782007288115647,
+        "unit_squared_distance": 0.04359854237687011,
+        "relative_l2": 0.2080554618886906,
+        "standardized_mse": 1.0294561245032792,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.9803604901042879,
+        "unit_squared_distance": 0.03927901979142373,
+        "relative_l2": 0.21834429946927877,
+        "standardized_mse": 0.8936096945184051,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.966359599305178,
+        "unit_squared_distance": 0.0672808013896453,
+        "relative_l2": 0.26421944028613603,
+        "standardized_mse": 1.545257689186847,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.934581554736334,
+        "unit_squared_distance": 0.13083689052733227,
+        "relative_l2": 0.43845483806543994,
+        "standardized_mse": 2.5273919171121437,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9312503024729343,
+        "unit_squared_distance": 0.13749939505413214,
+        "relative_l2": 0.4433383286732052,
+        "standardized_mse": 2.536498064598416,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.785876347834827,
+        "unit_squared_distance": 0.4282473043303469,
+        "relative_l2": 0.840374292800272,
+        "standardized_mse": 5.289568589888694,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.7884116941153354,
+        "unit_squared_distance": 0.42317661176932997,
+        "relative_l2": 0.8289802480743196,
+        "standardized_mse": 5.280925029217436,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.8101230734336176,
+        "unit_squared_distance": 0.37975385313276433,
+        "relative_l2": 0.7539332091888299,
+        "standardized_mse": 4.337907801224531,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.9664158540207515,
+        "unit_squared_distance": 0.06716829195849569,
+        "relative_l2": 0.25734470182173,
+        "standardized_mse": 1.346573908643173,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9439363732560335,
+        "unit_squared_distance": 0.11212725348793498,
+        "relative_l2": 0.3762847510981389,
+        "standardized_mse": 1.4278418252962106,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9423243998290765,
+        "unit_squared_distance": 0.11535120034184752,
+        "relative_l2": 0.3938734395636268,
+        "standardized_mse": 1.5044490807113522,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9137892896809615,
+        "unit_squared_distance": 0.17242142063807836,
+        "relative_l2": 0.5369903300976301,
+        "standardized_mse": 2.6430327351801934,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.872557921406558,
+        "unit_squared_distance": 0.2548841571868863,
+        "relative_l2": 0.6591106658356836,
+        "standardized_mse": 3.217996549069343,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9325816389385709,
+        "unit_squared_distance": 0.13483672212285963,
+        "relative_l2": 0.4356636055855374,
+        "standardized_mse": 1.9850970028889012,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9946009476365463,
+        "unit_squared_distance": 0.010798104726907683,
+        "relative_l2": 0.12457263567294642,
+        "standardized_mse": 0.2990291266061368,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.989133432142208,
+        "unit_squared_distance": 0.021733135715584048,
+        "relative_l2": 0.1470533247557771,
+        "standardized_mse": 0.5726439668023663,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9909529776683292,
+        "unit_squared_distance": 0.01809404466334148,
+        "relative_l2": 0.13475925411509213,
+        "standardized_mse": 0.4484072761907458,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9804190679947128,
+        "unit_squared_distance": 0.03916186401057483,
+        "relative_l2": 0.19704412494235715,
+        "standardized_mse": 0.7676522056174456,
+        "nearest_canonical_correct": true
+      }
+    ],
+    "centered_retrieval_accuracy": 0.125,
+    "canonical_pairwise_unit_distance": 0.13348645337218762
+  },
+  "dream_scene40_time0.5": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.9317073571591358,
+    "mean_relative_l2": 0.3766608535556656,
+    "within_to_between_unit_distance": 0.7171799680757887,
+    "standardized_shift_to_between": 0.7693181749175197,
+    "within_variance_to_between_variance": 0.4222526707642504,
+    "retrieval_accuracy": 0.25,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9628059953474053,
+        "unit_squared_distance": 0.07438800930518683,
+        "relative_l2": 0.28186070830448823,
+        "standardized_mse": 0.9585254747199355,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.959688566203791,
+        "unit_squared_distance": 0.08062286759241724,
+        "relative_l2": 0.30548146250880936,
+        "standardized_mse": 1.042480917009529,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9198497123969098,
+        "unit_squared_distance": 0.16030057520617896,
+        "relative_l2": 0.45724352143962843,
+        "standardized_mse": 1.8572597972731923,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9420313294351726,
+        "unit_squared_distance": 0.11593734112965472,
+        "relative_l2": 0.3425959585057852,
+        "standardized_mse": 1.3446778841294162,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9454316969411156,
+        "unit_squared_distance": 0.1091366061177691,
+        "relative_l2": 0.3541883846106848,
+        "standardized_mse": 1.3187126585635458,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9417045714437751,
+        "unit_squared_distance": 0.11659085711244942,
+        "relative_l2": 0.36646361205499717,
+        "standardized_mse": 1.4328618852393553,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9249359375413649,
+        "unit_squared_distance": 0.15012812491726957,
+        "relative_l2": 0.45711543689078943,
+        "standardized_mse": 1.9781854376316463,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.916349111725973,
+        "unit_squared_distance": 0.16730177654805273,
+        "relative_l2": 0.4132191846638129,
+        "standardized_mse": 1.4498921928341681,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9347759662258552,
+        "unit_squared_distance": 0.13044806754828842,
+        "relative_l2": 0.3743806500199011,
+        "standardized_mse": 1.3474850934824019,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9539566803937822,
+        "unit_squared_distance": 0.092086639212434,
+        "relative_l2": 0.3000600229095051,
+        "standardized_mse": 1.0205777165246188,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9683375397073933,
+        "unit_squared_distance": 0.0633249205852135,
+        "relative_l2": 0.2615138733944508,
+        "standardized_mse": 0.8022520978029793,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9461704517574986,
+        "unit_squared_distance": 0.10765909648500324,
+        "relative_l2": 0.32768548803325726,
+        "standardized_mse": 1.3016629329491576,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.9272468074492071,
+        "unit_squared_distance": 0.14550638510158626,
+        "relative_l2": 0.41824653621273167,
+        "standardized_mse": 1.7613717456970128,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9370906153171417,
+        "unit_squared_distance": 0.12581876936571684,
+        "relative_l2": 0.36433396661436224,
+        "standardized_mse": 1.768885259244175,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9639650722021016,
+        "unit_squared_distance": 0.07206985559579618,
+        "relative_l2": 0.2743229493614099,
+        "standardized_mse": 0.9219745029296279,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9659879517578258,
+        "unit_squared_distance": 0.06802409648434753,
+        "relative_l2": 0.271857362681238,
+        "standardized_mse": 1.0421170035638654,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9362687668510423,
+        "unit_squared_distance": 0.12746246629791533,
+        "relative_l2": 0.3592039078786149,
+        "standardized_mse": 1.6562499011941618,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9317104349051057,
+        "unit_squared_distance": 0.13657913018978574,
+        "relative_l2": 0.376977701900511,
+        "standardized_mse": 1.8935804142707213,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9214909691532882,
+        "unit_squared_distance": 0.15701806169342247,
+        "relative_l2": 0.38841174925556016,
+        "standardized_mse": 2.000782778603558,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9518247559702852,
+        "unit_squared_distance": 0.09635048805942668,
+        "relative_l2": 0.33752638362319676,
+        "standardized_mse": 1.2082636308445507,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.939814841250792,
+        "unit_squared_distance": 0.12037031749841462,
+        "relative_l2": 0.3422851674719233,
+        "standardized_mse": 1.7443623892533826,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9362057983678397,
+        "unit_squared_distance": 0.12758840326431997,
+        "relative_l2": 0.3708818623118676,
+        "standardized_mse": 2.164615949964324,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.932696796679994,
+        "unit_squared_distance": 0.13460640664001194,
+        "relative_l2": 0.3607277049555449,
+        "standardized_mse": 1.8200965591756038,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.9610741370799198,
+        "unit_squared_distance": 0.0778517258401615,
+        "relative_l2": 0.2816931658656717,
+        "standardized_mse": 1.0307591359201447,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.917943770336755,
+        "unit_squared_distance": 0.16411245932648938,
+        "relative_l2": 0.3986062268733234,
+        "standardized_mse": 2.110674001449417,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9126264589115061,
+        "unit_squared_distance": 0.17474708217698626,
+        "relative_l2": 0.4525358711405976,
+        "standardized_mse": 2.500324377786046,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9120513463766273,
+        "unit_squared_distance": 0.17589730724674424,
+        "relative_l2": 0.44284296649695426,
+        "standardized_mse": 2.371207023172366,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.8570574034631676,
+        "unit_squared_distance": 0.2858851930736639,
+        "relative_l2": 0.5775938314579135,
+        "standardized_mse": 3.0313162980294357,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.852601913642451,
+        "unit_squared_distance": 0.2947961727150987,
+        "relative_l2": 0.5875034934467811,
+        "standardized_mse": 3.277425468870977,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.8925071139172329,
+        "unit_squared_distance": 0.21498577216553585,
+        "relative_l2": 0.47298204138321165,
+        "standardized_mse": 2.1813334836980713,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.933590008567798,
+        "unit_squared_distance": 0.13281998286440141,
+        "relative_l2": 0.36399669169335863,
+        "standardized_mse": 1.7086258608084546,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.926353465143684,
+        "unit_squared_distance": 0.14729306971263156,
+        "relative_l2": 0.3941977703170023,
+        "standardized_mse": 1.3692653270324027,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9159311204769351,
+        "unit_squared_distance": 0.16813775904613032,
+        "relative_l2": 0.43128553554519633,
+        "standardized_mse": 1.5814208760275146,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9138566907919923,
+        "unit_squared_distance": 0.172286618416018,
+        "relative_l2": 0.4429995549218207,
+        "standardized_mse": 1.8667436843321297,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.855790754202189,
+        "unit_squared_distance": 0.288418491595623,
+        "relative_l2": 0.5736136942311885,
+        "standardized_mse": 2.3532038606203742,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8847237678165133,
+        "unit_squared_distance": 0.23055246436697402,
+        "relative_l2": 0.5346317834011266,
+        "standardized_mse": 2.4059978651799363,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9853563790147866,
+        "unit_squared_distance": 0.02928724197042565,
+        "relative_l2": 0.17209093904781178,
+        "standardized_mse": 0.3913467268230008,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9680750219906247,
+        "unit_squared_distance": 0.06384995601874863,
+        "relative_l2": 0.25171866976365187,
+        "standardized_mse": 0.89051700662329,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9641479855519888,
+        "unit_squared_distance": 0.0717040288960204,
+        "relative_l2": 0.2782878055736038,
+        "standardized_mse": 0.8189039819369407,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9542665800566005,
+        "unit_squared_distance": 0.09146683988679463,
+        "relative_l2": 0.3032705054643394,
+        "standardized_mse": 1.0587492128954945,
+        "nearest_canonical_correct": true
+      }
+    ],
+    "centered_retrieval_accuracy": 0.35,
+    "canonical_pairwise_unit_distance": 0.19044771432781285
+  },
+  "dream_input_embedding": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.8154592638042081,
+    "mean_relative_l2": 0.569280382142763,
+    "within_to_between_unit_distance": 0.9520530520889529,
+    "standardized_shift_to_between": 0.9805844935615546,
+    "within_variance_to_between_variance": 0.5508480219303006,
+    "retrieval_accuracy": 0.775,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9176939617133874,
+        "unit_squared_distance": 0.16461207657322396,
+        "relative_l2": 0.39970648314254476,
+        "standardized_mse": 0.8378180722545897,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9118406169872516,
+        "unit_squared_distance": 0.17631876602549681,
+        "relative_l2": 0.4131875893147131,
+        "standardized_mse": 0.9095901269488236,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.916815843656283,
+        "unit_squared_distance": 0.16636831268743238,
+        "relative_l2": 0.39949762093844293,
+        "standardized_mse": 0.9405975704798387,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.8472143897126585,
+        "unit_squared_distance": 0.305571220574683,
+        "relative_l2": 0.5313189369057284,
+        "standardized_mse": 1.8197921767777276,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.812984722182103,
+        "unit_squared_distance": 0.37403055563579307,
+        "relative_l2": 0.5839734870234592,
+        "standardized_mse": 1.9198222131426073,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.7700514603066189,
+        "unit_squared_distance": 0.4598970793867626,
+        "relative_l2": 0.638096811928506,
+        "standardized_mse": 1.8209220591189192,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.7826110053928621,
+        "unit_squared_distance": 0.4347779892142764,
+        "relative_l2": 0.6447970283587044,
+        "standardized_mse": 1.9697166775271338,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.7164881640272633,
+        "unit_squared_distance": 0.5670236719454733,
+        "relative_l2": 0.7019032426320545,
+        "standardized_mse": 2.733311778706877,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.8749085374709307,
+        "unit_squared_distance": 0.2501829250581384,
+        "relative_l2": 0.4986666957615446,
+        "standardized_mse": 1.204110988917052,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9213400827430014,
+        "unit_squared_distance": 0.15731983451399753,
+        "relative_l2": 0.40532452251486684,
+        "standardized_mse": 0.8835687911916912,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9189007500194072,
+        "unit_squared_distance": 0.1621984999611873,
+        "relative_l2": 0.400409136365567,
+        "standardized_mse": 0.7053696884955022,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.8510875758890699,
+        "unit_squared_distance": 0.29782484822186217,
+        "relative_l2": 0.5258827947760512,
+        "standardized_mse": 1.5987402751991138,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.8167191297235608,
+        "unit_squared_distance": 0.3665617405528779,
+        "relative_l2": 0.5848908869662613,
+        "standardized_mse": 2.0098549219201285,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.8100609771768097,
+        "unit_squared_distance": 0.3798780456463802,
+        "relative_l2": 0.6171565206566206,
+        "standardized_mse": 2.0396182910449516,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.881371902217777,
+        "unit_squared_distance": 0.23725619556444635,
+        "relative_l2": 0.4736392745762946,
+        "standardized_mse": 1.1846840531047562,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.8312554569987718,
+        "unit_squared_distance": 0.3374890860024581,
+        "relative_l2": 0.5625550624530609,
+        "standardized_mse": 1.928468877643365,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.7002990067113881,
+        "unit_squared_distance": 0.5994019865772249,
+        "relative_l2": 0.7189639915751724,
+        "standardized_mse": 2.8389916209959862,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.7228679250720949,
+        "unit_squared_distance": 0.5542641498558116,
+        "relative_l2": 0.6983969971430194,
+        "standardized_mse": 3.0206234642708485,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.7547128873918032,
+        "unit_squared_distance": 0.4905742252163915,
+        "relative_l2": 0.6582539598079231,
+        "standardized_mse": 2.7625714328168525,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.8405620304701473,
+        "unit_squared_distance": 0.3188759390597071,
+        "relative_l2": 0.5504338592240422,
+        "standardized_mse": 1.6769870427055282,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.7541506412277159,
+        "unit_squared_distance": 0.4916987175445654,
+        "relative_l2": 0.6627831260281222,
+        "standardized_mse": 2.9149591092866047,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.7131201771403195,
+        "unit_squared_distance": 0.573759645719357,
+        "relative_l2": 0.7146970186108579,
+        "standardized_mse": 5.064367174440069,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.7556700088259725,
+        "unit_squared_distance": 0.4886599823480501,
+        "relative_l2": 0.6611626497107929,
+        "standardized_mse": 3.365320720446543,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.8977895279116509,
+        "unit_squared_distance": 0.2044209441766955,
+        "relative_l2": 0.46419080138769875,
+        "standardized_mse": 1.0047302949553378,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.7997432737664815,
+        "unit_squared_distance": 0.40051345246703485,
+        "relative_l2": 0.6044374825704332,
+        "standardized_mse": 3.23151752241671,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.7892292016365525,
+        "unit_squared_distance": 0.4215415967268926,
+        "relative_l2": 0.6290063049312704,
+        "standardized_mse": 2.6333182274379143,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.7774938870013494,
+        "unit_squared_distance": 0.44501222599729984,
+        "relative_l2": 0.6478409141437569,
+        "standardized_mse": 2.5860252935626713,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.7922586121264584,
+        "unit_squared_distance": 0.41548277574708403,
+        "relative_l2": 0.6103712413972165,
+        "standardized_mse": 2.558558072596633,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.5974841661719281,
+        "unit_squared_distance": 0.805031667656145,
+        "relative_l2": 0.8136419516023001,
+        "standardized_mse": 4.519841718353018,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.8014967921268136,
+        "unit_squared_distance": 0.39700641574637285,
+        "relative_l2": 0.6048499441619389,
+        "standardized_mse": 2.3962226027164206,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.6608368679584844,
+        "unit_squared_distance": 0.6783262640830308,
+        "relative_l2": 0.7700906755455501,
+        "standardized_mse": 3.2518828394396855,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8884427161378823,
+        "unit_squared_distance": 0.2231145677242375,
+        "relative_l2": 0.46883926379659663,
+        "standardized_mse": 1.3201359896208427,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8253543331102815,
+        "unit_squared_distance": 0.34929133377943544,
+        "relative_l2": 0.5746265443466068,
+        "standardized_mse": 1.786552254155584,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8151079324797175,
+        "unit_squared_distance": 0.36978413504056096,
+        "relative_l2": 0.5814305713197593,
+        "standardized_mse": 2.1244739019728227,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8499153506055466,
+        "unit_squared_distance": 0.30016929878890664,
+        "relative_l2": 0.5280462131659704,
+        "standardized_mse": 1.4743608692933954,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.7300512864956048,
+        "unit_squared_distance": 0.5398974270087905,
+        "relative_l2": 0.6835740365509055,
+        "standardized_mse": 2.4976640134900903,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9660868570764272,
+        "unit_squared_distance": 0.06782628584714462,
+        "relative_l2": 0.28208216213462634,
+        "standardized_mse": 0.4964186760062847,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.7712636590734514,
+        "unit_squared_distance": 0.457472681853096,
+        "relative_l2": 0.6366064912354995,
+        "standardized_mse": 2.6333860428987066,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9441168879414175,
+        "unit_squared_distance": 0.11176622411716541,
+        "relative_l2": 0.35548384844961345,
+        "standardized_mse": 0.5591892648893128,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.8889719474910771,
+        "unit_squared_distance": 0.22205610501784306,
+        "relative_l2": 0.470399142556424,
+        "standardized_mse": 1.3514515886794443,
+        "nearest_canonical_correct": true
+      }
+    ],
+    "centered_retrieval_accuracy": 0.6,
+    "canonical_pairwise_unit_distance": 0.38766901863479253
+  },
+  "dream_scene80_time0.0": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.9776484559780068,
+    "mean_relative_l2": 0.21470266872131738,
+    "within_to_between_unit_distance": 0.6691785089774893,
+    "standardized_shift_to_between": 0.6891791350611352,
+    "within_variance_to_between_variance": 0.40873275930742403,
+    "retrieval_accuracy": 0.35,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9901370365714064,
+        "unit_squared_distance": 0.019725926857186972,
+        "relative_l2": 0.17074167368528018,
+        "standardized_mse": 0.780627196970685,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9897788190946398,
+        "unit_squared_distance": 0.02044236181072054,
+        "relative_l2": 0.17787170869362579,
+        "standardized_mse": 0.8298707224185181,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9809931126065766,
+        "unit_squared_distance": 0.038013774786844576,
+        "relative_l2": 0.19806505971940408,
+        "standardized_mse": 1.1977773988760931,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9759734033652707,
+        "unit_squared_distance": 0.04805319326945832,
+        "relative_l2": 0.2415922157908602,
+        "standardized_mse": 1.4398844857485418,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9886094686385138,
+        "unit_squared_distance": 0.02278106272297152,
+        "relative_l2": 0.15098027177783654,
+        "standardized_mse": 0.8425681761494024,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9831771987780595,
+        "unit_squared_distance": 0.03364560244388167,
+        "relative_l2": 0.2308240340066526,
+        "standardized_mse": 1.2811916731502764,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9776520852357642,
+        "unit_squared_distance": 0.04469582952847327,
+        "relative_l2": 0.21572313943597268,
+        "standardized_mse": 1.3739155128219431,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.986948735334908,
+        "unit_squared_distance": 0.026102529330182957,
+        "relative_l2": 0.16681390110413094,
+        "standardized_mse": 0.9322292648195157,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.981971384610461,
+        "unit_squared_distance": 0.03605723077907885,
+        "relative_l2": 0.19833479896379363,
+        "standardized_mse": 1.0178865275132947,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.980840527424359,
+        "unit_squared_distance": 0.03831894515128324,
+        "relative_l2": 0.20325561345556098,
+        "standardized_mse": 1.1139610205043753,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9929506787139655,
+        "unit_squared_distance": 0.014098642572069317,
+        "relative_l2": 0.1226734891759716,
+        "standardized_mse": 0.5637550674712274,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9866557776134974,
+        "unit_squared_distance": 0.026688444773006144,
+        "relative_l2": 0.16720571159016995,
+        "standardized_mse": 1.032719875185111,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.9861488462393059,
+        "unit_squared_distance": 0.027702307521389004,
+        "relative_l2": 0.16586918890881874,
+        "standardized_mse": 1.0754608108185246,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9417406258459794,
+        "unit_squared_distance": 0.11651874830804053,
+        "relative_l2": 0.35880598773310135,
+        "standardized_mse": 3.9320580393707494,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9876929068433906,
+        "unit_squared_distance": 0.024614186313218482,
+        "relative_l2": 0.15680075621937511,
+        "standardized_mse": 0.8257952712112904,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9855308813210644,
+        "unit_squared_distance": 0.028938237357871353,
+        "relative_l2": 0.18671315154087775,
+        "standardized_mse": 1.0821155123309087,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9717725074655754,
+        "unit_squared_distance": 0.05645498506884921,
+        "relative_l2": 0.2510822948882583,
+        "standardized_mse": 2.083166254758798,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9881793730569475,
+        "unit_squared_distance": 0.02364125388610395,
+        "relative_l2": 0.15331585628470698,
+        "standardized_mse": 1.0522697091056143,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.987184070823347,
+        "unit_squared_distance": 0.02563185835330535,
+        "relative_l2": 0.16272866804314612,
+        "standardized_mse": 1.1048001963201248,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9937636333553426,
+        "unit_squared_distance": 0.012472733289315804,
+        "relative_l2": 0.11214217526144851,
+        "standardized_mse": 0.5572694249917688,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9780119916399577,
+        "unit_squared_distance": 0.04397601672008381,
+        "relative_l2": 0.2261958745615683,
+        "standardized_mse": 1.7961093953284393,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9666847708466956,
+        "unit_squared_distance": 0.06663045830660635,
+        "relative_l2": 0.2620728410418938,
+        "standardized_mse": 2.648144351098486,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9768414237675811,
+        "unit_squared_distance": 0.046317152464835594,
+        "relative_l2": 0.2149341749667394,
+        "standardized_mse": 1.3745925857182069,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.9620916614894844,
+        "unit_squared_distance": 0.07581667702103238,
+        "relative_l2": 0.2878609384223758,
+        "standardized_mse": 1.9931822866066067,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.9743944409446157,
+        "unit_squared_distance": 0.051211118110768145,
+        "relative_l2": 0.2319195554395761,
+        "standardized_mse": 1.9844144415696696,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9259893208204494,
+        "unit_squared_distance": 0.1480213583591001,
+        "relative_l2": 0.480144044817986,
+        "standardized_mse": 3.9617626002280937,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9389201848882125,
+        "unit_squared_distance": 0.12215963022357437,
+        "relative_l2": 0.3712486735921896,
+        "standardized_mse": 3.028611100654907,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9762661655845419,
+        "unit_squared_distance": 0.04746766883091531,
+        "relative_l2": 0.235289394376925,
+        "standardized_mse": 1.8170966621708806,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9858140515320775,
+        "unit_squared_distance": 0.02837189693584584,
+        "relative_l2": 0.16869500985797717,
+        "standardized_mse": 1.2208870040497362,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9893022616445726,
+        "unit_squared_distance": 0.021395476710854906,
+        "relative_l2": 0.1474615553366703,
+        "standardized_mse": 0.8828476536380324,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.9558926610101484,
+        "unit_squared_distance": 0.08821467797970284,
+        "relative_l2": 0.30865933546858915,
+        "standardized_mse": 2.872662611655224,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.984332831852759,
+        "unit_squared_distance": 0.0313343362944814,
+        "relative_l2": 0.17638347179911926,
+        "standardized_mse": 0.9045729652453541,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9779179345240759,
+        "unit_squared_distance": 0.044164130951846764,
+        "relative_l2": 0.22150255279262873,
+        "standardized_mse": 1.1400140186608454,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9716963399230016,
+        "unit_squared_distance": 0.056607320153994105,
+        "relative_l2": 0.24320638342947093,
+        "standardized_mse": 1.6973104042871832,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9553325423320295,
+        "unit_squared_distance": 0.08933491533594026,
+        "relative_l2": 0.3414131369192393,
+        "standardized_mse": 1.8944994082138433,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9636640459302439,
+        "unit_squared_distance": 0.07267190813951055,
+        "relative_l2": 0.3153842134010024,
+        "standardized_mse": 2.0415278641988146,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9944789506889853,
+        "unit_squared_distance": 0.011042098622030257,
+        "relative_l2": 0.1165135821906122,
+        "standardized_mse": 0.4236177073916853,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9882200352509949,
+        "unit_squared_distance": 0.023559929498010217,
+        "relative_l2": 0.1825365693534457,
+        "standardized_mse": 0.9702346474055016,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.992030859596387,
+        "unit_squared_distance": 0.01593828080722669,
+        "relative_l2": 0.12601183299941035,
+        "standardized_mse": 0.5665140726543932,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9903546919150797,
+        "unit_squared_distance": 0.01929061616984132,
+        "relative_l2": 0.1391339118062823,
+        "standardized_mse": 0.698213768046081,
+        "nearest_canonical_correct": true
+      }
+    ],
+    "centered_retrieval_accuracy": 0.5,
+    "canonical_pairwise_unit_distance": 0.06680293441027121
+  },
+  "dream_scene80_time0.5": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.9478512445610703,
+    "mean_relative_l2": 0.3185385999523753,
+    "within_to_between_unit_distance": 0.5889593310735816,
+    "standardized_shift_to_between": 0.6322020271284142,
+    "within_variance_to_between_variance": 0.35874117175843345,
+    "retrieval_accuracy": 0.375,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9677184764035123,
+        "unit_squared_distance": 0.06456304719297404,
+        "relative_l2": 0.27453046474734955,
+        "standardized_mse": 0.8498105512875564,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9665724423487809,
+        "unit_squared_distance": 0.06685511530243671,
+        "relative_l2": 0.2838446097548742,
+        "standardized_mse": 0.8882499141982505,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9558094014140571,
+        "unit_squared_distance": 0.08838119717188705,
+        "relative_l2": 0.30341575114674196,
+        "standardized_mse": 1.1096504071429816,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.951309642440131,
+        "unit_squared_distance": 0.09738071511973789,
+        "relative_l2": 0.3134938511295725,
+        "standardized_mse": 1.1607660338232435,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9705389049647287,
+        "unit_squared_distance": 0.05892219007054304,
+        "relative_l2": 0.2412793948731977,
+        "standardized_mse": 0.8388694848977168,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9343171928393683,
+        "unit_squared_distance": 0.13136561432126406,
+        "relative_l2": 0.40601413262097286,
+        "standardized_mse": 1.4911198000865828,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9510706707419724,
+        "unit_squared_distance": 0.09785865851605673,
+        "relative_l2": 0.3167482036205581,
+        "standardized_mse": 1.1616251012445467,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.955052231083558,
+        "unit_squared_distance": 0.0898955378328827,
+        "relative_l2": 0.29665958847050783,
+        "standardized_mse": 1.0331707307584377,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9494802267681307,
+        "unit_squared_distance": 0.10103954646373742,
+        "relative_l2": 0.3247656252916458,
+        "standardized_mse": 1.0729440382187687,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9513589407852717,
+        "unit_squared_distance": 0.09728211842945692,
+        "relative_l2": 0.3163049323836909,
+        "standardized_mse": 1.1069219966363104,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9806478234786173,
+        "unit_squared_distance": 0.0387043530427653,
+        "relative_l2": 0.19596563255193702,
+        "standardized_mse": 0.5733851926395627,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9594736074645974,
+        "unit_squared_distance": 0.08105278507080568,
+        "relative_l2": 0.28268647157197546,
+        "standardized_mse": 1.1621736817443113,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.9649504263000728,
+        "unit_squared_distance": 0.07009914739985293,
+        "relative_l2": 0.2624937680490751,
+        "standardized_mse": 1.04866374009292,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9077632152044438,
+        "unit_squared_distance": 0.18447356959111305,
+        "relative_l2": 0.4196444489562123,
+        "standardized_mse": 2.4078066525757538,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9646687389974893,
+        "unit_squared_distance": 0.0706625220050197,
+        "relative_l2": 0.2639131410929433,
+        "standardized_mse": 0.9132541609320837,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9752274325472157,
+        "unit_squared_distance": 0.049545134905569166,
+        "relative_l2": 0.22247430345762467,
+        "standardized_mse": 0.7287025183530463,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9386141350625538,
+        "unit_squared_distance": 0.12277172987489296,
+        "relative_l2": 0.345934402856343,
+        "standardized_mse": 1.662925736867179,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9501947868056062,
+        "unit_squared_distance": 0.09961042638878706,
+        "relative_l2": 0.31201996024518514,
+        "standardized_mse": 1.519298264050865,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9541130799385449,
+        "unit_squared_distance": 0.09177384012290984,
+        "relative_l2": 0.30019434534343714,
+        "standardized_mse": 1.3928841429670664,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9695063638650443,
+        "unit_squared_distance": 0.06098727226991078,
+        "relative_l2": 0.26580763361464455,
+        "standardized_mse": 0.9366556939287692,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9350290324085715,
+        "unit_squared_distance": 0.12994193518285554,
+        "relative_l2": 0.3591215520600154,
+        "standardized_mse": 1.9204457737901677,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9190981966361575,
+        "unit_squared_distance": 0.16180360672768485,
+        "relative_l2": 0.3941767709287169,
+        "standardized_mse": 2.4818438852731335,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.931289145821515,
+        "unit_squared_distance": 0.13742170835696968,
+        "relative_l2": 0.3647007136493416,
+        "standardized_mse": 1.6630632354452455,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.9571354921718515,
+        "unit_squared_distance": 0.08572901565629919,
+        "relative_l2": 0.29235563403604864,
+        "standardized_mse": 0.9246860769822784,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.895898332263479,
+        "unit_squared_distance": 0.20820333547303957,
+        "relative_l2": 0.4613343495795601,
+        "standardized_mse": 2.466529881736801,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.8950249925106972,
+        "unit_squared_distance": 0.2099500149786044,
+        "relative_l2": 0.468892162404104,
+        "standardized_mse": 2.5586261117225093,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.891399635898299,
+        "unit_squared_distance": 0.21720072820339958,
+        "relative_l2": 0.46512301591373423,
+        "standardized_mse": 2.501257122324558,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9491408661196133,
+        "unit_squared_distance": 0.10171826776077245,
+        "relative_l2": 0.3171762414882501,
+        "standardized_mse": 1.4493921014513265,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9328415647948479,
+        "unit_squared_distance": 0.13431687041030343,
+        "relative_l2": 0.37568600666500324,
+        "standardized_mse": 1.9127891561714847,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9579698318867057,
+        "unit_squared_distance": 0.08406033622658711,
+        "relative_l2": 0.29013898715618225,
+        "standardized_mse": 1.1889115880339693,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.9167355335530546,
+        "unit_squared_distance": 0.16652893289388968,
+        "relative_l2": 0.3994949665788356,
+        "standardized_mse": 2.158409255100055,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9668137334036682,
+        "unit_squared_distance": 0.06637253319266212,
+        "relative_l2": 0.25591613585606626,
+        "standardized_mse": 0.7824021441419216,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9478499042030448,
+        "unit_squared_distance": 0.1043001915939113,
+        "relative_l2": 0.331954524105735,
+        "standardized_mse": 1.1225579293296055,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9425390811723969,
+        "unit_squared_distance": 0.1149218376552068,
+        "relative_l2": 0.34353399189048944,
+        "standardized_mse": 1.4258078470212858,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9222743673220536,
+        "unit_squared_distance": 0.15545126535589315,
+        "relative_l2": 0.4098582737178537,
+        "standardized_mse": 1.4553270574659385,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9281850572192081,
+        "unit_squared_distance": 0.14362988556158557,
+        "relative_l2": 0.402813406563147,
+        "standardized_mse": 1.6201428675937168,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9875826891255923,
+        "unit_squared_distance": 0.024834621748813786,
+        "relative_l2": 0.1580592960047239,
+        "standardized_mse": 0.35308527417380375,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9729458852567536,
+        "unit_squared_distance": 0.054108229486490564,
+        "relative_l2": 0.23985020607053006,
+        "standardized_mse": 0.8019435026019587,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9744001654450959,
+        "unit_squared_distance": 0.05119966910980438,
+        "relative_l2": 0.2261572076828063,
+        "standardized_mse": 0.654071076032131,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9715085357765076,
+        "unit_squared_distance": 0.0569829284469822,
+        "relative_l2": 0.23700989396537933,
+        "standardized_mse": 0.7378957135549326,
+        "nearest_canonical_correct": true
+      }
+    ],
+    "centered_retrieval_accuracy": 0.6,
+    "canonical_pairwise_unit_distance": 0.17708779770538782
+  },
+  "action_velocity_scene40_time0.0": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.9933493068704898,
+    "mean_relative_l2": 0.1114235437771995,
+    "within_to_between_unit_distance": 0.3879252567630852,
+    "standardized_shift_to_between": 0.5265131399678321,
+    "within_variance_to_between_variance": 0.23074719508392394,
+    "retrieval_accuracy": 0.25,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9919215837995567,
+        "unit_squared_distance": 0.016156832400886174,
+        "relative_l2": 0.12748758258147347,
+        "standardized_mse": 1.2145999756818473,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9923518303811398,
+        "unit_squared_distance": 0.015296339237720051,
+        "relative_l2": 0.12409199625805331,
+        "standardized_mse": 1.217659497907211,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9908225300058717,
+        "unit_squared_distance": 0.018354939988256512,
+        "relative_l2": 0.13516936689962367,
+        "standardized_mse": 1.3765006331819638,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9953575926378363,
+        "unit_squared_distance": 0.009284814724327255,
+        "relative_l2": 0.09645352615341636,
+        "standardized_mse": 0.8212247826738667,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9879806123747226,
+        "unit_squared_distance": 0.024038775250555,
+        "relative_l2": 0.16457082094415754,
+        "standardized_mse": 2.9358785962335974,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9944942491393893,
+        "unit_squared_distance": 0.01101150172122134,
+        "relative_l2": 0.1075567918975307,
+        "standardized_mse": 0.9165641981773562,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9958308674207084,
+        "unit_squared_distance": 0.008338265158583241,
+        "relative_l2": 0.09838591250051483,
+        "standardized_mse": 0.891398149248911,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.9893145859878945,
+        "unit_squared_distance": 0.021370828024210847,
+        "relative_l2": 0.15344923731694032,
+        "standardized_mse": 1.5291669233553098,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9931717752013329,
+        "unit_squared_distance": 0.01365644959733391,
+        "relative_l2": 0.11675463487716803,
+        "standardized_mse": 1.667028110669668,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9939562758643656,
+        "unit_squared_distance": 0.012087448271268664,
+        "relative_l2": 0.1098286541794631,
+        "standardized_mse": 1.1868751837160345,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9980756269765774,
+        "unit_squared_distance": 0.003848746046845432,
+        "relative_l2": 0.06909291867639585,
+        "standardized_mse": 0.38063587746497324,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9932937958232867,
+        "unit_squared_distance": 0.013412408353426856,
+        "relative_l2": 0.12074868533684086,
+        "standardized_mse": 0.7887496924160965,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.992912388294629,
+        "unit_squared_distance": 0.014175223410741887,
+        "relative_l2": 0.12543662050697013,
+        "standardized_mse": 1.09538337326661,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.986730316910021,
+        "unit_squared_distance": 0.026539366179958012,
+        "relative_l2": 0.16392824780650836,
+        "standardized_mse": 2.4416176469052404,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9985335413898855,
+        "unit_squared_distance": 0.0029329172202288687,
+        "relative_l2": 0.054179979820042794,
+        "standardized_mse": 0.2754612403374926,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9972538349334011,
+        "unit_squared_distance": 0.005492330133197314,
+        "relative_l2": 0.07571089395690893,
+        "standardized_mse": 0.5584035679689527,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9936227563352691,
+        "unit_squared_distance": 0.012754487329462185,
+        "relative_l2": 0.11396791668768749,
+        "standardized_mse": 0.880277124273366,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9880099278825554,
+        "unit_squared_distance": 0.023980144234889082,
+        "relative_l2": 0.17346055345791384,
+        "standardized_mse": 2.249647374463512,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9793576148160368,
+        "unit_squared_distance": 0.04128477036792603,
+        "relative_l2": 0.20999559852806765,
+        "standardized_mse": 2.8790251393728306,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9965664341847925,
+        "unit_squared_distance": 0.00686713163041534,
+        "relative_l2": 0.08313248812122573,
+        "standardized_mse": 0.8617836890046755,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9932132041723054,
+        "unit_squared_distance": 0.013573591655388982,
+        "relative_l2": 0.11737346324167822,
+        "standardized_mse": 0.8542896023182353,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9867024680759542,
+        "unit_squared_distance": 0.026595063848091557,
+        "relative_l2": 0.16503197356859395,
+        "standardized_mse": 1.1030311382430393,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9942227642688561,
+        "unit_squared_distance": 0.011554471462288286,
+        "relative_l2": 0.10797630957409286,
+        "standardized_mse": 1.3167839148933922,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.9967240399430102,
+        "unit_squared_distance": 0.006551920113979649,
+        "relative_l2": 0.08246027221741192,
+        "standardized_mse": 0.7148134473813605,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.9956897890669439,
+        "unit_squared_distance": 0.008620421866112116,
+        "relative_l2": 0.09512933451772856,
+        "standardized_mse": 0.31829597890683525,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9914112896214414,
+        "unit_squared_distance": 0.017177420757117465,
+        "relative_l2": 0.13135546016740227,
+        "standardized_mse": 1.5081782865148585,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9921119996255687,
+        "unit_squared_distance": 0.015776000748863,
+        "relative_l2": 0.12723887714877233,
+        "standardized_mse": 1.4885257320705008,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.995936236619439,
+        "unit_squared_distance": 0.00812752676112216,
+        "relative_l2": 0.0902970382042444,
+        "standardized_mse": 0.9364828851987105,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9901132696035022,
+        "unit_squared_distance": 0.01977346079299557,
+        "relative_l2": 0.1418717301447862,
+        "standardized_mse": 1.6999699503185945,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.996576445058599,
+        "unit_squared_distance": 0.006847109882801832,
+        "relative_l2": 0.08420762466445568,
+        "standardized_mse": 0.6573139655106,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.9985674123592803,
+        "unit_squared_distance": 0.002865175281439512,
+        "relative_l2": 0.05449767908948784,
+        "standardized_mse": 0.26231558648440856,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.995132205772572,
+        "unit_squared_distance": 0.009735588454856003,
+        "relative_l2": 0.09862460851243697,
+        "standardized_mse": 0.42783915245853704,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9971328062340892,
+        "unit_squared_distance": 0.005734387531822127,
+        "relative_l2": 0.07567225178012514,
+        "standardized_mse": 0.40513319490051364,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.991582227569702,
+        "unit_squared_distance": 0.016835544860596137,
+        "relative_l2": 0.1312492073914341,
+        "standardized_mse": 1.1435298273763894,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9982355331183208,
+        "unit_squared_distance": 0.003528933763358594,
+        "relative_l2": 0.0627409491209852,
+        "standardized_mse": 0.8856629203453047,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9857833770060683,
+        "unit_squared_distance": 0.028433245987863613,
+        "relative_l2": 0.16970181147593902,
+        "standardized_mse": 1.4533008718520275,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.999539877989994,
+        "unit_squared_distance": 0.0009202440200120595,
+        "relative_l2": 0.030405884368195715,
+        "standardized_mse": 0.10343680379980921,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9893126310161551,
+        "unit_squared_distance": 0.02137473796768992,
+        "relative_l2": 0.14693287462509508,
+        "standardized_mse": 2.25364992263613,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9989830076705236,
+        "unit_squared_distance": 0.002033984658952871,
+        "relative_l2": 0.04602079692184734,
+        "standardized_mse": 0.2612119199819566,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9974435496679965,
+        "unit_squared_distance": 0.005112900664006888,
+        "relative_l2": 0.0747511778463641,
+        "standardized_mse": 0.37630275135935526,
+        "nearest_canonical_correct": true
+      }
+    ]
+  },
+  "action_velocity_scene40_time0.5": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.9935320607620959,
+    "mean_relative_l2": 0.11025767719206422,
+    "within_to_between_unit_distance": 0.376746961777442,
+    "standardized_shift_to_between": 0.4996204713808495,
+    "within_variance_to_between_variance": 0.21671954194554965,
+    "retrieval_accuracy": 0.275,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9916350330551217,
+        "unit_squared_distance": 0.016729933889756396,
+        "relative_l2": 0.1301771346054205,
+        "standardized_mse": 1.120311083234381,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9919089183354146,
+        "unit_squared_distance": 0.01618216332917053,
+        "relative_l2": 0.1282323355995408,
+        "standardized_mse": 1.0843364254099772,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9906907013463195,
+        "unit_squared_distance": 0.01861859730736102,
+        "relative_l2": 0.13613205219484406,
+        "standardized_mse": 1.4459182307277847,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9951087689955853,
+        "unit_squared_distance": 0.009782462008829335,
+        "relative_l2": 0.09916154999401099,
+        "standardized_mse": 0.817531841866253,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9961279354419141,
+        "unit_squared_distance": 0.007744129116171537,
+        "relative_l2": 0.09108148489791064,
+        "standardized_mse": 1.217079393541269,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9941200090509343,
+        "unit_squared_distance": 0.011759981898131298,
+        "relative_l2": 0.1171185553745535,
+        "standardized_mse": 1.1750562332114385,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9958863806838247,
+        "unit_squared_distance": 0.008227238632350442,
+        "relative_l2": 0.09438540841411217,
+        "standardized_mse": 0.8053207735897822,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.9884709679420269,
+        "unit_squared_distance": 0.023058064115945985,
+        "relative_l2": 0.15803544502231553,
+        "standardized_mse": 1.4735928718704148,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9931103512029618,
+        "unit_squared_distance": 0.01377929759407661,
+        "relative_l2": 0.11737271126265054,
+        "standardized_mse": 1.7373406723911604,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9940379077277823,
+        "unit_squared_distance": 0.011924184544435234,
+        "relative_l2": 0.10903534282637273,
+        "standardized_mse": 1.248161721578619,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9980070143921009,
+        "unit_squared_distance": 0.003985971215797892,
+        "relative_l2": 0.06901199240521366,
+        "standardized_mse": 0.40922486089099175,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9932827316518021,
+        "unit_squared_distance": 0.013434536696395695,
+        "relative_l2": 0.12050040273972126,
+        "standardized_mse": 0.8354298663619592,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.9932776705235717,
+        "unit_squared_distance": 0.01344465895285656,
+        "relative_l2": 0.11993974126070439,
+        "standardized_mse": 1.0613157471514825,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9867152399005432,
+        "unit_squared_distance": 0.026569520198913406,
+        "relative_l2": 0.1647162641789638,
+        "standardized_mse": 2.3901478371541884,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9986522244379006,
+        "unit_squared_distance": 0.002695551124198656,
+        "relative_l2": 0.05290639271364109,
+        "standardized_mse": 0.2703831599771874,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9971335351162067,
+        "unit_squared_distance": 0.00573292976758621,
+        "relative_l2": 0.07849048806075024,
+        "standardized_mse": 0.5908043199366222,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9938952662671283,
+        "unit_squared_distance": 0.012209467465743137,
+        "relative_l2": 0.11141605382385394,
+        "standardized_mse": 0.7751668368723793,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9886709719107396,
+        "unit_squared_distance": 0.022658056178520885,
+        "relative_l2": 0.16373735779361082,
+        "standardized_mse": 2.0816793178274766,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9799055837620801,
+        "unit_squared_distance": 0.040188832475839986,
+        "relative_l2": 0.20634848866256628,
+        "standardized_mse": 2.8286862448362697,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9967055242260504,
+        "unit_squared_distance": 0.006588951547899161,
+        "relative_l2": 0.0818168590988499,
+        "standardized_mse": 0.7870767779270006,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9929107230505769,
+        "unit_squared_distance": 0.014178553898846301,
+        "relative_l2": 0.12229185629083107,
+        "standardized_mse": 0.7716852739085012,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9855172711312842,
+        "unit_squared_distance": 0.028965457737431918,
+        "relative_l2": 0.17387082645916993,
+        "standardized_mse": 1.1633948242044951,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9943398555175536,
+        "unit_squared_distance": 0.011320288964892877,
+        "relative_l2": 0.10697819390039716,
+        "standardized_mse": 1.0078772156417164,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.9970954242721979,
+        "unit_squared_distance": 0.005809151455604192,
+        "relative_l2": 0.07855833778125328,
+        "standardized_mse": 0.7160155383185105,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.9953613872401115,
+        "unit_squared_distance": 0.009277225519777207,
+        "relative_l2": 0.10066086695324587,
+        "standardized_mse": 0.4118847157530219,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9917705029192562,
+        "unit_squared_distance": 0.01645899416148779,
+        "relative_l2": 0.12868312028955375,
+        "standardized_mse": 1.497650877149442,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9921897910421473,
+        "unit_squared_distance": 0.015620417915705526,
+        "relative_l2": 0.12550028773499364,
+        "standardized_mse": 1.5257754244762023,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.995661905871728,
+        "unit_squared_distance": 0.008676188256544199,
+        "relative_l2": 0.09307725581968453,
+        "standardized_mse": 1.0015323455361933,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9898556893063928,
+        "unit_squared_distance": 0.020288621387214757,
+        "relative_l2": 0.14232565443358905,
+        "standardized_mse": 1.5037289932866043,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9964180085508574,
+        "unit_squared_distance": 0.007163982898285277,
+        "relative_l2": 0.08731926013083308,
+        "standardized_mse": 0.7873500218629206,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.9984051879933078,
+        "unit_squared_distance": 0.0031896240133842584,
+        "relative_l2": 0.06152031310554547,
+        "standardized_mse": 0.29631941250830574,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9951052482022897,
+        "unit_squared_distance": 0.009789503595420504,
+        "relative_l2": 0.09889416975101949,
+        "standardized_mse": 0.4141963558693975,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9947967712865915,
+        "unit_squared_distance": 0.010406457426816925,
+        "relative_l2": 0.10367232447318789,
+        "standardized_mse": 0.8044363584210398,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9913336618756987,
+        "unit_squared_distance": 0.017332676248602484,
+        "relative_l2": 0.13307435298288495,
+        "standardized_mse": 1.1802627370204237,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9981310978030338,
+        "unit_squared_distance": 0.00373780439393249,
+        "relative_l2": 0.06409299766025219,
+        "standardized_mse": 0.6658064015715145,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9855364829107034,
+        "unit_squared_distance": 0.028927034178593162,
+        "relative_l2": 0.17549045449049616,
+        "standardized_mse": 1.6633453496235848,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9995145894177017,
+        "unit_squared_distance": 0.0009708211645967067,
+        "relative_l2": 0.03117563060254011,
+        "standardized_mse": 0.11856947927011749,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9935192981204435,
+        "unit_squared_distance": 0.012961403759112824,
+        "relative_l2": 0.11370014561896308,
+        "standardized_mse": 1.789824126559077,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9987877451034526,
+        "unit_squared_distance": 0.0024245097930951955,
+        "relative_l2": 0.049532394382197496,
+        "standardized_mse": 0.29766395981303645,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9976890528984999,
+        "unit_squared_distance": 0.004621894203000352,
+        "relative_l2": 0.07027258389232433,
+        "standardized_mse": 0.3014192259734235,
+        "nearest_canonical_correct": true
+      }
+    ]
+  },
+  "action_velocity_scene80_time0.0": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.9940739317766806,
+    "mean_relative_l2": 0.09873197168816543,
+    "within_to_between_unit_distance": 0.17062744678480526,
+    "standardized_shift_to_between": 0.2672107413474544,
+    "within_variance_to_between_variance": 0.10189817375966852,
+    "retrieval_accuracy": 0.35,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9976363162825712,
+        "unit_squared_distance": 0.0047273674348575585,
+        "relative_l2": 0.07432531987690781,
+        "standardized_mse": 0.15601890034793953,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9980258458773283,
+        "unit_squared_distance": 0.003948308245343479,
+        "relative_l2": 0.06736557323102849,
+        "standardized_mse": 0.14157549221649468,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9952287420795798,
+        "unit_squared_distance": 0.009542515840840706,
+        "relative_l2": 0.10209897541735233,
+        "standardized_mse": 0.2933768122465508,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.998347128447607,
+        "unit_squared_distance": 0.0033057431047861328,
+        "relative_l2": 0.05752095255104208,
+        "standardized_mse": 0.2143845544199954,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.997832645582321,
+        "unit_squared_distance": 0.004334708835358011,
+        "relative_l2": 0.06833871571692673,
+        "standardized_mse": 0.19583194202837903,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9979481330500986,
+        "unit_squared_distance": 0.004103733899803005,
+        "relative_l2": 0.06608059670770487,
+        "standardized_mse": 0.2256002998505819,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9988010502673594,
+        "unit_squared_distance": 0.0023978994652811454,
+        "relative_l2": 0.04908782862345338,
+        "standardized_mse": 0.15526767235903902,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.9967747338740802,
+        "unit_squared_distance": 0.0064505322518396985,
+        "relative_l2": 0.08180961056189355,
+        "standardized_mse": 0.2815918049278688,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9987461470168997,
+        "unit_squared_distance": 0.002507705966200701,
+        "relative_l2": 0.050228164821717214,
+        "standardized_mse": 0.13666764586376437,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9990320499581178,
+        "unit_squared_distance": 0.0019359000837641989,
+        "relative_l2": 0.044592916960625076,
+        "standardized_mse": 0.13977824977193823,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9996008070609623,
+        "unit_squared_distance": 0.000798385878075278,
+        "relative_l2": 0.031821006298145466,
+        "standardized_mse": 0.04942208824490737,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9948751711462036,
+        "unit_squared_distance": 0.010249657707592934,
+        "relative_l2": 0.10694326808966129,
+        "standardized_mse": 0.26283817110680746,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.9982782305841696,
+        "unit_squared_distance": 0.003443538831660722,
+        "relative_l2": 0.06281222330647451,
+        "standardized_mse": 0.1321322371894757,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9944292689539308,
+        "unit_squared_distance": 0.011141462092138333,
+        "relative_l2": 0.1058605688490774,
+        "standardized_mse": 0.4164250434468197,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.999229943665759,
+        "unit_squared_distance": 0.0015401126684816584,
+        "relative_l2": 0.04270051869440841,
+        "standardized_mse": 0.08167292301300942,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9992062210235388,
+        "unit_squared_distance": 0.0015875579529221232,
+        "relative_l2": 0.03984405854504593,
+        "standardized_mse": 0.13349900010579568,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9746856400687608,
+        "unit_squared_distance": 0.05062871986247832,
+        "relative_l2": 0.22542118524207894,
+        "standardized_mse": 1.389389625426697,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9875434813555805,
+        "unit_squared_distance": 0.024913037288839087,
+        "relative_l2": 0.15912601584353586,
+        "standardized_mse": 0.9018670291795122,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9877830351357993,
+        "unit_squared_distance": 0.02443392972840133,
+        "relative_l2": 0.1559213186006694,
+        "standardized_mse": 0.8199005692572653,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9992303252826519,
+        "unit_squared_distance": 0.0015393494346964793,
+        "relative_l2": 0.039235887071450135,
+        "standardized_mse": 0.10176200147067059,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9917060128200686,
+        "unit_squared_distance": 0.016587974359862936,
+        "relative_l2": 0.12856452918996347,
+        "standardized_mse": 0.8691059772085801,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.985320220396188,
+        "unit_squared_distance": 0.02935955920762396,
+        "relative_l2": 0.1729604373726466,
+        "standardized_mse": 1.4213547285923256,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9943238807593952,
+        "unit_squared_distance": 0.011352238481209784,
+        "relative_l2": 0.10771365367391532,
+        "standardized_mse": 0.5152074702218279,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.9975333801213105,
+        "unit_squared_distance": 0.0049332397573788695,
+        "relative_l2": 0.07242079679177069,
+        "standardized_mse": 0.25011186748315456,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.9703350023376611,
+        "unit_squared_distance": 0.059329995324677635,
+        "relative_l2": 0.26253380783312424,
+        "standardized_mse": 2.443989114998186,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9880183272985892,
+        "unit_squared_distance": 0.02396334540282173,
+        "relative_l2": 0.15474346003589948,
+        "standardized_mse": 1.2272592366272654,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9868519797349768,
+        "unit_squared_distance": 0.026296040530046107,
+        "relative_l2": 0.16372352301689938,
+        "standardized_mse": 1.5922912728779564,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9976108476548022,
+        "unit_squared_distance": 0.004778304690395761,
+        "relative_l2": 0.07670749254711376,
+        "standardized_mse": 0.31245547920444017,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9957639251171616,
+        "unit_squared_distance": 0.008472149765676779,
+        "relative_l2": 0.0940744189232109,
+        "standardized_mse": 0.32446136478240817,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9953005724097304,
+        "unit_squared_distance": 0.00939885518053935,
+        "relative_l2": 0.10568646429661846,
+        "standardized_mse": 0.4003502926167847,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.9962805993961293,
+        "unit_squared_distance": 0.0074388012077410215,
+        "relative_l2": 0.08622788760865041,
+        "standardized_mse": 0.4473299466395816,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9941053090335694,
+        "unit_squared_distance": 0.011789381932861295,
+        "relative_l2": 0.10998067209139394,
+        "standardized_mse": 0.9246212179500028,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9908705675004085,
+        "unit_squared_distance": 0.018258864999183336,
+        "relative_l2": 0.1364295183530011,
+        "standardized_mse": 1.1943024818195906,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9907573499448754,
+        "unit_squared_distance": 0.018485300110249396,
+        "relative_l2": 0.13579538555636386,
+        "standardized_mse": 1.0640540832825534,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9920634299196582,
+        "unit_squared_distance": 0.015873140160683523,
+        "relative_l2": 0.12573904875924174,
+        "standardized_mse": 1.0802721118553211,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9907907438647271,
+        "unit_squared_distance": 0.01841851227054578,
+        "relative_l2": 0.13540402354099584,
+        "standardized_mse": 1.1996565953713552,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9988717363386213,
+        "unit_squared_distance": 0.002256527322757077,
+        "relative_l2": 0.047946777726090045,
+        "standardized_mse": 0.09579649056929848,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9972129438492565,
+        "unit_squared_distance": 0.005574112301486984,
+        "relative_l2": 0.07503555036062623,
+        "standardized_mse": 0.43139451139521096,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9977796616849635,
+        "unit_squared_distance": 0.004440676630073007,
+        "relative_l2": 0.06665301961305647,
+        "standardized_mse": 0.31831946593158417,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9982258641718109,
+        "unit_squared_distance": 0.003548271656378424,
+        "relative_l2": 0.059803695226835964,
+        "standardized_mse": 0.16062139420048013,
+        "nearest_canonical_correct": true
+      }
+    ]
+  },
+  "action_velocity_scene80_time0.5": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.9939300907660218,
+    "mean_relative_l2": 0.10031422530616958,
+    "within_to_between_unit_distance": 0.1750120303683244,
+    "standardized_shift_to_between": 0.27621110477000754,
+    "within_variance_to_between_variance": 0.1062670516162875,
+    "retrieval_accuracy": 0.35,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9976162353435658,
+        "unit_squared_distance": 0.004767529312868335,
+        "relative_l2": 0.07083757755469756,
+        "standardized_mse": 0.1402538217024921,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9980946470161831,
+        "unit_squared_distance": 0.003810705967633842,
+        "relative_l2": 0.06627204075039733,
+        "standardized_mse": 0.12418209006925376,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9945286357788922,
+        "unit_squared_distance": 0.010942728442215797,
+        "relative_l2": 0.10615131576513186,
+        "standardized_mse": 0.3369375590759892,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9982459871992155,
+        "unit_squared_distance": 0.003508025601569038,
+        "relative_l2": 0.05923184736925402,
+        "standardized_mse": 0.2262270182233451,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.9962416075451075,
+        "unit_squared_distance": 0.00751678490978518,
+        "relative_l2": 0.09706073729738485,
+        "standardized_mse": 0.3870281212535914,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9977509868203459,
+        "unit_squared_distance": 0.004498026359308172,
+        "relative_l2": 0.0744614691532437,
+        "standardized_mse": 0.279107363658586,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.9988067589837177,
+        "unit_squared_distance": 0.0023864820325645445,
+        "relative_l2": 0.04898126783256747,
+        "standardized_mse": 0.16019329672632,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.996785269349379,
+        "unit_squared_distance": 0.006429461301242122,
+        "relative_l2": 0.08467936643645095,
+        "standardized_mse": 0.3158542142564177,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9988602600356484,
+        "unit_squared_distance": 0.002279479928703064,
+        "relative_l2": 0.04800428615506064,
+        "standardized_mse": 0.11860540136065113,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.9989882298179841,
+        "unit_squared_distance": 0.002023540364032049,
+        "relative_l2": 0.04564889936867135,
+        "standardized_mse": 0.13808771347576543,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.999578018516587,
+        "unit_squared_distance": 0.0008439629668258386,
+        "relative_l2": 0.03228683178809065,
+        "standardized_mse": 0.04241526554617857,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.9949308582233661,
+        "unit_squared_distance": 0.01013828355326753,
+        "relative_l2": 0.10207244076817257,
+        "standardized_mse": 0.23941746826516574,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.998409401205791,
+        "unit_squared_distance": 0.003181197588417684,
+        "relative_l2": 0.05757000680440505,
+        "standardized_mse": 0.10987312451633664,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9943113079923276,
+        "unit_squared_distance": 0.011377384015344948,
+        "relative_l2": 0.10653344318286102,
+        "standardized_mse": 0.43417233361240737,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9990669200339406,
+        "unit_squared_distance": 0.001866159932118471,
+        "relative_l2": 0.045225932489265624,
+        "standardized_mse": 0.08071377437737247,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9991857465525675,
+        "unit_squared_distance": 0.0016285068948647498,
+        "relative_l2": 0.04054708674187853,
+        "standardized_mse": 0.11996688589674973,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9747551014303522,
+        "unit_squared_distance": 0.05048979713929564,
+        "relative_l2": 0.2234392330043482,
+        "standardized_mse": 1.383284014233848,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.9875464793672963,
+        "unit_squared_distance": 0.024907041265407093,
+        "relative_l2": 0.15748740781757237,
+        "standardized_mse": 0.9011187265175867,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.987197566737336,
+        "unit_squared_distance": 0.025604866525327674,
+        "relative_l2": 0.16045436320326634,
+        "standardized_mse": 0.9051166049046727,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9992349045260408,
+        "unit_squared_distance": 0.0015301909479183134,
+        "relative_l2": 0.03915065575222211,
+        "standardized_mse": 0.09069878653352427,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9911154763325042,
+        "unit_squared_distance": 0.01776904733499168,
+        "relative_l2": 0.1331188069296564,
+        "standardized_mse": 0.8937184141044064,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9847940347605734,
+        "unit_squared_distance": 0.0304119304788533,
+        "relative_l2": 0.17506815671010525,
+        "standardized_mse": 1.4262087728863655,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.9941410758722445,
+        "unit_squared_distance": 0.011717848255511022,
+        "relative_l2": 0.10984845222498224,
+        "standardized_mse": 0.535696730820973,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.997703016440812,
+        "unit_squared_distance": 0.004593967118375889,
+        "relative_l2": 0.07151314821969638,
+        "standardized_mse": 0.2243447593346636,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.9706093223999435,
+        "unit_squared_distance": 0.05878135520011285,
+        "relative_l2": 0.25936487381526835,
+        "standardized_mse": 2.4582488580106494,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.988693902199372,
+        "unit_squared_distance": 0.022612195601255984,
+        "relative_l2": 0.15084397958126672,
+        "standardized_mse": 1.2556738561385892,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.9874552936190404,
+        "unit_squared_distance": 0.025089412761919234,
+        "relative_l2": 0.16062519530500577,
+        "standardized_mse": 1.579982023910473,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9974092410499188,
+        "unit_squared_distance": 0.005181517900162403,
+        "relative_l2": 0.07702258236302907,
+        "standardized_mse": 0.3263538345984017,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9961190441436761,
+        "unit_squared_distance": 0.0077619117126476265,
+        "relative_l2": 0.08937101661862233,
+        "standardized_mse": 0.3178022633977026,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.9955300122220384,
+        "unit_squared_distance": 0.008939975555923133,
+        "relative_l2": 0.10024625313470878,
+        "standardized_mse": 0.41746850314750755,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.9961539519063336,
+        "unit_squared_distance": 0.007692096187332897,
+        "relative_l2": 0.08828463700290728,
+        "standardized_mse": 0.4399727352228073,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9939007316521993,
+        "unit_squared_distance": 0.012198536695601718,
+        "relative_l2": 0.11235414739852727,
+        "standardized_mse": 0.9838306399303863,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9905619765974606,
+        "unit_squared_distance": 0.01887604680507897,
+        "relative_l2": 0.13787683467350945,
+        "standardized_mse": 1.1887005492841907,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9902824311403771,
+        "unit_squared_distance": 0.019435137719246057,
+        "relative_l2": 0.1394717171195689,
+        "standardized_mse": 1.1269378950695592,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9919446681137785,
+        "unit_squared_distance": 0.01611066377244336,
+        "relative_l2": 0.12668832237029415,
+        "standardized_mse": 1.0897899585222652,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9903433092605245,
+        "unit_squared_distance": 0.01931338147895077,
+        "relative_l2": 0.13867919584602567,
+        "standardized_mse": 1.2946032699681957,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9987292562146035,
+        "unit_squared_distance": 0.0025414875707930286,
+        "relative_l2": 0.05052117610264965,
+        "standardized_mse": 0.09986728624756698,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.9956104027887089,
+        "unit_squared_distance": 0.00877919442258215,
+        "relative_l2": 0.09807636627273685,
+        "standardized_mse": 0.5885138394374465,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9976974776527998,
+        "unit_squared_distance": 0.00460504469440005,
+        "relative_l2": 0.06814071770968595,
+        "standardized_mse": 0.32492572096428624,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9982740837983145,
+        "unit_squared_distance": 0.0034518324033710568,
+        "relative_l2": 0.059357223613594176,
+        "standardized_mse": 0.15398901174531637,
+        "nearest_canonical_correct": true
+      }
+    ]
+  },
+  "umt5_instruction_only": {
+    "n_pairs": 40,
+    "n_tasks": 20,
+    "mean_cosine": 0.8125712088657767,
+    "mean_relative_l2": 0.5855078796403502,
+    "within_to_between_unit_distance": 0.8517889726812347,
+    "standardized_shift_to_between": 0.9425000213086481,
+    "within_variance_to_between_variance": 0.53005565070598,
+    "retrieval_accuracy": 0.8,
+    "details": [
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.8262925365188427,
+        "unit_squared_distance": 0.34741492696231485,
+        "relative_l2": 0.590552653456331,
+        "standardized_mse": 1.782352697037741,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.823946959427611,
+        "unit_squared_distance": 0.3521060811447807,
+        "relative_l2": 0.5903673122363717,
+        "standardized_mse": 1.751566314930764,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.8229323490695286,
+        "unit_squared_distance": 0.3541353018609439,
+        "relative_l2": 0.620965006116757,
+        "standardized_mse": 1.911674521961972,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.8313313994733664,
+        "unit_squared_distance": 0.33733720105326737,
+        "relative_l2": 0.5812106467393491,
+        "standardized_mse": 1.6065919355270069,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "cosine": 0.8049024631762921,
+        "unit_squared_distance": 0.3901950736474157,
+        "relative_l2": 0.6300763238168634,
+        "standardized_mse": 1.9353920242026859,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.7743733067078236,
+        "unit_squared_distance": 0.4512533865843493,
+        "relative_l2": 0.6680329275144423,
+        "standardized_mse": 2.28289013981553,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "cosine": 0.8653660939395826,
+        "unit_squared_distance": 0.2692678121208362,
+        "relative_l2": 0.5095325884674702,
+        "standardized_mse": 1.4098207488649313,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "cosine": 0.6449632613025864,
+        "unit_squared_distance": 0.7100734773948294,
+        "relative_l2": 0.7949954956541438,
+        "standardized_mse": 3.389086329232979,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.852925293990277,
+        "unit_squared_distance": 0.2941494120194444,
+        "relative_l2": 0.5369049623042697,
+        "standardized_mse": 1.4249718915656295,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "cosine": 0.809580211459393,
+        "unit_squared_distance": 0.38083957708121474,
+        "relative_l2": 0.611476702683268,
+        "standardized_mse": 1.815424171831544,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.8725595846177218,
+        "unit_squared_distance": 0.25488083076455326,
+        "relative_l2": 0.4909078889653506,
+        "standardized_mse": 1.3920203716456605,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "cosine": 0.8501699177551891,
+        "unit_squared_distance": 0.2996601644896199,
+        "relative_l2": 0.5318362472077531,
+        "standardized_mse": 1.5794528917615986,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "cosine": 0.8915028835879212,
+        "unit_squared_distance": 0.21699423282415642,
+        "relative_l2": 0.4574081695085534,
+        "standardized_mse": 1.2540620817439632,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.8823836659998202,
+        "unit_squared_distance": 0.2352326680003602,
+        "relative_l2": 0.4922886107560434,
+        "standardized_mse": 1.2424548010694303,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.7617644435882647,
+        "unit_squared_distance": 0.47647111282347065,
+        "relative_l2": 0.659512194180233,
+        "standardized_mse": 2.369725329230742,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.9336308211287282,
+        "unit_squared_distance": 0.13273835774254464,
+        "relative_l2": 0.3641599557300865,
+        "standardized_mse": 0.7571918320369642,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "cosine": 0.7319389379280071,
+        "unit_squared_distance": 0.5361221241439849,
+        "relative_l2": 0.7085269193650784,
+        "standardized_mse": 2.6280458230065125,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.7711683568456154,
+        "unit_squared_distance": 0.4576632863087703,
+        "relative_l2": 0.6460420772584375,
+        "standardized_mse": 2.3743669515991472,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_milk_and_place_it_in_the_basket",
+        "cosine": 0.8086208781532213,
+        "unit_squared_distance": 0.38275824369355793,
+        "relative_l2": 0.5909064520009449,
+        "standardized_mse": 1.9679857013998756,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "cosine": 0.9199157697501185,
+        "unit_squared_distance": 0.16016846049976222,
+        "relative_l2": 0.3978286095533993,
+        "standardized_mse": 0.9536230702618346,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.6805301225958181,
+        "unit_squared_distance": 0.638939754808362,
+        "relative_l2": 0.7582801806326791,
+        "standardized_mse": 3.279372765421345,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.8059502284805422,
+        "unit_squared_distance": 0.3880995430389144,
+        "relative_l2": 0.6309031344302419,
+        "standardized_mse": 2.2822069509588854,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_the_stove",
+        "cosine": 0.63937522907538,
+        "unit_squared_distance": 0.7212495418492376,
+        "relative_l2": 0.8005489496953541,
+        "standardized_mse": 3.5431639034573004,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "cosine": 0.8321283304955938,
+        "unit_squared_distance": 0.33574333900881026,
+        "relative_l2": 0.5698891360835073,
+        "standardized_mse": 2.176577529759823,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_bowl_on_top_of_the_cabinet",
+        "cosine": 0.8581551769716617,
+        "unit_squared_distance": 0.28368964605667446,
+        "relative_l2": 0.5137926860090056,
+        "standardized_mse": 1.7676678389071392,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.8356669030774502,
+        "unit_squared_distance": 0.3286661938450967,
+        "relative_l2": 0.5574244291450109,
+        "standardized_mse": 1.4939725630535121,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "push_the_plate_to_the_front_of_the_stove",
+        "cosine": 0.8356190916148807,
+        "unit_squared_distance": 0.32876181677023897,
+        "relative_l2": 0.5687891823336919,
+        "standardized_mse": 1.546894922138802,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.7379973535872518,
+        "unit_squared_distance": 0.5240052928254917,
+        "relative_l2": 0.7000089756613415,
+        "standardized_mse": 3.21033662663645,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.6653176282079984,
+        "unit_squared_distance": 0.6693647435839996,
+        "relative_l2": 0.7731514113257728,
+        "standardized_mse": 3.6484215190971234,
+        "nearest_canonical_correct": false
+      },
+      {
+        "group": "put_the_cream_cheese_in_the_bowl",
+        "cosine": 0.7473200011981331,
+        "unit_squared_distance": 0.5053599976037308,
+        "relative_l2": 0.6704742641350689,
+        "standardized_mse": 2.846126399203177,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "cosine": 0.7477592604712797,
+        "unit_squared_distance": 0.5044814790574386,
+        "relative_l2": 0.693331382133032,
+        "standardized_mse": 2.611684073603619,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8375085288218234,
+        "unit_squared_distance": 0.3249829423563517,
+        "relative_l2": 0.5543833809113276,
+        "standardized_mse": 1.7611861836105356,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.7723563747595067,
+        "unit_squared_distance": 0.4552872504809864,
+        "relative_l2": 0.646319317502257,
+        "standardized_mse": 2.398959846091813,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.9252656674138011,
+        "unit_squared_distance": 0.1494686651723979,
+        "relative_l2": 0.3824679452276245,
+        "standardized_mse": 0.8284630597991915,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.8153497887763281,
+        "unit_squared_distance": 0.36930042244734373,
+        "relative_l2": 0.595635373960042,
+        "standardized_mse": 2.031030304603759,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "cosine": 0.7826777306383664,
+        "unit_squared_distance": 0.4346445387232669,
+        "relative_l2": 0.6248994159284804,
+        "standardized_mse": 2.140801509780587,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.8743897761607081,
+        "unit_squared_distance": 0.2512204476785824,
+        "relative_l2": 0.486056761844291,
+        "standardized_mse": 1.37770685881536,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "cosine": 0.8371314965346066,
+        "unit_squared_distance": 0.3257370069307865,
+        "relative_l2": 0.5495409821120617,
+        "standardized_mse": 1.7117925092229465,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.855270878063649,
+        "unit_squared_distance": 0.2894582438727009,
+        "relative_l2": 0.5205197667364334,
+        "standardized_mse": 1.4188523761316334,
+        "nearest_canonical_correct": true
+      },
+      {
+        "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "cosine": 0.9368096532663769,
+        "unit_squared_distance": 0.1263806934672448,
+        "relative_l2": 0.3503667662916409,
+        "standardized_mse": 0.5929097913946381,
+        "nearest_canonical_correct": true
+      }
+    ],
+    "centered_retrieval_accuracy": 0.775,
+    "canonical_pairwise_unit_distance": 0.44008268983393956
+  }
+}

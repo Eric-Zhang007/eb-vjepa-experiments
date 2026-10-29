@@ -1,0 +1,13 @@
+{
+  "pid": 3748618,
+  "command": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+    "-u",
+    "/data/users/jiachangzhang/eb_vjepa/scripts/compare_libero_encoder_latents.py",
+    "--root",
+    "/data/users/jiachangzhang/eb_vjepa",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/libero_encoder_latent_comparison_20261021"
+  ],
+  "gpu": 7
+}

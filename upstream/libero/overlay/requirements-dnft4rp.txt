@@ -1,0 +1,14 @@
+# LIBERO runtime overlay for the advisor/Python 3.9 environment.
+# Torch is intentionally inherited from the advisor environment.
+hydra-core==1.2.0
+numpy==1.23.3
+easydict==1.9
+opencv-python==4.6.0.66
+einops==0.4.1
+cloudpickle==2.1.0
+bddl==1.0.1
+robosuite==1.4.0
+gym==0.21.0
+h5py==3.7.0
+huggingface_hub
+tqdm==4.64.1

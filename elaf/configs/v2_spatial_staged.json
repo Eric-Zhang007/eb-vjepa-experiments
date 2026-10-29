@@ -1,0 +1,138 @@
+{
+  "version": "elaf_v2_spatial_staged",
+  "manifest": "/data/users/jiachangzhang/eb_vjepa/data/elaf_v0_grid11k_raw/manifest.json",
+  "seed": 239,
+  "dream_repo": "/data/users/jiachangzhang/eb_vjepa/repos/Dream-VLX",
+  "checkpoint": "/data/users/jiachangzhang/eb_vjepa/checkpoints/dream_vla/Dream-VLA-7B",
+  "future_encoder": {
+    "name": "grid11k",
+    "checkpoint": "/data/users/jiachangzhang/eb_vjepa/experiments/ctp_grid20k_20261008/embodied_vjepa_encoder_011000.pt",
+    "sha256": "468d7af3a5bdae9fb2205718ab0f86a13f5395afcc53700500439d993baf987a",
+    "frozen": true,
+    "feature_dim": 1024,
+    "raw_features_only": true
+  },
+  "backbone_training": "lora",
+  "lora_rank": 32,
+  "lora_alpha": 16,
+  "gradient_checkpointing": false,
+  "precision": "bf16",
+  "batch_size": 8,
+  "gradient_accumulation": 1,
+  "max_steps": 200000,
+  "save_every": 500,
+  "workers": 0,
+  "action_loss_weight": 1.0,
+  "delta_loss_weight": 1.0,
+  "delta_scale": 1.0,
+  "delta_tokens": 32,
+  "action_horizon": 8,
+  "action_dim": 7,
+  "resampler_dim": 256,
+  "resampler_heads": 8,
+  "sampling_steps": 4,
+  "optimizer": {
+    "lora_lr": 1e-05,
+    "resampler_lr": 5e-05,
+    "new_modules_lr": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0,
+    "scheduler": "three_stage",
+    "max_grad_norm": 1.0,
+    "milestones": [
+      100000
+    ],
+    "gamma": 0.1,
+    "warmup_steps": 200,
+    "clip_mode": "group",
+    "clip_partition": "flow"
+  },
+  "diagnostics": {
+    "samples": 1024,
+    "step_zero_required": true,
+    "steps": [
+      0,
+      1000,
+      2000,
+      3000,
+      5000,
+      10000,
+      11000,
+      12000,
+      15000,
+      20000
+    ],
+    "interval_after_1000": 500,
+    "rank_cap": 256
+  },
+  "wandb_project": "eb_vjepa",
+  "wandb_entity": "zjc010100000-xi-an-jiaotong-university-",
+  "wandb_group": "elaf_v2",
+  "image_aug": true,
+  "resampler_fp32": true,
+  "recovery_diagnostics_every": 100,
+  "decision_step": 15000,
+  "lora_gradient_source": "both",
+  "spatial_resampler": {
+    "grid_shape": [
+      2,
+      24,
+      24
+    ],
+    "residual_alpha": 0.1
+  },
+  "preserve_steps": [
+    0,
+    1000,
+    2000,
+    3000,
+    5000,
+    10000,
+    11000,
+    12000,
+    15000,
+    20000
+  ],
+  "full_diagnostic_steps": [
+    0,
+    1000,
+    2000,
+    3000,
+    5000,
+    10000,
+    11000,
+    12000,
+    15000
+  ],
+  "stages": {
+    "freeze_step": 3000,
+    "unfreeze_step": 10000,
+    "stage1_warmup_steps": 200,
+    "stage3_lora_warmup_steps": 1000,
+    "cosine_min_ratio": 0.1,
+    "stage1": {
+      "lora_lr": 1e-05,
+      "resampler_lr": 5e-05,
+      "new_modules_lr": 0.0001
+    },
+    "stage3": {
+      "lora_lr": 2e-06,
+      "resampler_lr": 2e-05,
+      "new_modules_lr": 5e-05
+    },
+    "stage3_min": {
+      "lora_lr": 2e-07,
+      "resampler_lr": 2e-06,
+      "new_modules_lr": 5e-06
+    }
+  },
+  "stability_guard": {
+    "window": 100,
+    "baseline_start": 1000,
+    "gradient_ratio": 10.0,
+    "gradient_absolute_floor": 50.0,
+    "loss_ratio": 1.5,
+    "loss_absolute_increase": 0.05,
+    "consecutive_windows": 3
+  }
+}

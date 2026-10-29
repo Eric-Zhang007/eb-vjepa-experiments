@@ -1,0 +1,3 @@
+{"step": 0, "stage": 1, "lora_trainable": true, "lora_hash": "32dea0431506ec1471be6aba4a2a52b21f89029cc89fe6dbac3da6b3f8f44e44"}
+{"step": 3000, "stage": 2, "lora_trainable": false, "lora_hash": "22c8b00eacad601a7ebc5b5ae86420fef6c6c2154fa2b3d9b354a097cf9be7f8"}
+{"step": 10000, "stage": 3, "lora_trainable": true, "lora_hash": "22c8b00eacad601a7ebc5b5ae86420fef6c6c2154fa2b3d9b354a097cf9be7f8"}

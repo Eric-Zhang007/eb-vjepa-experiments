@@ -1,0 +1,79 @@
+{
+  "n_pairs": 32,
+  "n_episodes": 16,
+  "medians": {
+    "official": {
+      "rms": 1.8810161352157593,
+      "delta_rms": 0.7537046670913696,
+      "relative_delta": 0.4018027037382126,
+      "spatial_var": 2.051070213317871,
+      "spatial_erank": 39.4646110534668,
+      "spatial_mean_cosine": 0.42855657637119293,
+      "temporal_cosine": 0.9239417314529419,
+      "pixel_delta_spearman": 0.7086195392174384,
+      "cka_to_official": 1.0000001788139343,
+      "cka_to_grid11k": 0.7617590129375458
+    },
+    "grid11000": {
+      "rms": 2.0438992977142334,
+      "delta_rms": 0.8527930676937103,
+      "relative_delta": 0.41776683926582336,
+      "spatial_var": 2.4905096292495728,
+      "spatial_erank": 40.072919845581055,
+      "spatial_mean_cosine": 0.4133833348751068,
+      "temporal_cosine": 0.9114398956298828,
+      "pixel_delta_spearman": 0.6761488701954559,
+      "cka_to_official": 0.7617590129375458,
+      "cka_to_grid11k": 1.0000001192092896
+    },
+    "grid12000": {
+      "rms": 2.0710071325302124,
+      "delta_rms": 0.8775496780872345,
+      "relative_delta": 0.424826443195343,
+      "spatial_var": 2.5788737535476685,
+      "spatial_erank": 40.10432052612305,
+      "spatial_mean_cosine": 0.4079032242298126,
+      "temporal_cosine": 0.9088844656944275,
+      "pixel_delta_spearman": 0.6740480857030657,
+      "cka_to_official": 0.7545352876186371,
+      "cka_to_grid11k": 0.9788055121898651
+    },
+    "grid14000": {
+      "rms": 2.110536575317383,
+      "delta_rms": 0.9276677072048187,
+      "relative_delta": 0.43877288699150085,
+      "spatial_var": 2.688612699508667,
+      "spatial_erank": 40.22869110107422,
+      "spatial_mean_cosine": 0.4019465446472168,
+      "temporal_cosine": 0.8985477089881897,
+      "pixel_delta_spearman": 0.6561495950566137,
+      "cka_to_official": 0.7284164130687714,
+      "cka_to_grid11k": 0.9289531409740448
+    },
+    "grid17000": {
+      "rms": 2.1697548627853394,
+      "delta_rms": 0.962820827960968,
+      "relative_delta": 0.44421064853668213,
+      "spatial_var": 2.814391016960144,
+      "spatial_erank": 40.82035255432129,
+      "spatial_mean_cosine": 0.3991289287805557,
+      "temporal_cosine": 0.8988633155822754,
+      "pixel_delta_spearman": 0.6671184222821156,
+      "cka_to_official": 0.773341566324234,
+      "cka_to_grid11k": 0.8877403438091278
+    },
+    "grid17358": {
+      "rms": 2.178999423980713,
+      "delta_rms": 0.9523932933807373,
+      "relative_delta": 0.4374806433916092,
+      "spatial_var": 2.8278459310531616,
+      "spatial_erank": 41.068878173828125,
+      "spatial_mean_cosine": 0.40168917179107666,
+      "temporal_cosine": 0.9025386273860931,
+      "pixel_delta_spearman": 0.6715432045389884,
+      "cka_to_official": 0.7919758260250092,
+      "cka_to_grid11k": 0.8792159557342529
+    }
+  },
+  "caveat": "Descriptive demonstration subset; no object labels, no causal attribution to control performance."
+}

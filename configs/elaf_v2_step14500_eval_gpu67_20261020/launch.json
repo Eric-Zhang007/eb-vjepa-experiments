@@ -1,0 +1,20 @@
+{
+  "pid": 607862,
+  "command": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+    "scripts/run_elaf_v2_success_eval.py",
+    "--root",
+    "/data/users/jiachangzhang/eb_vjepa",
+    "--run",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_lora10x_20261020",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_step14500_eval_gpu67_20261020",
+    "--checkpoint",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_lora10x_20261020/preserved/eval-step-014500",
+    "--gpus",
+    "6,7",
+    "--smoke-result",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_success_eval_20261020/smoke_result.json"
+  ],
+  "diagnostics_migration_pid": 607861
+}

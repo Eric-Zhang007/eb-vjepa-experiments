@@ -1,0 +1,1313 @@
+diff --git a/experiments/libero/eval_libero_single.py b/experiments/libero/eval_libero_single.py
+index 8943f57..0dee7be 100644
+--- a/experiments/libero/eval_libero_single.py
++++ b/experiments/libero/eval_libero_single.py
+@@ -135,9 +135,14 @@ def _predict_action_chunk(obs: dict, task_description: str, model, processor: Fa
+ 
+ 
+ def _get_max_steps(task_suite_name: str) -> int:
+-    return {"libero_spatial": 400, "libero_object": 400, "libero_goal": 400, "libero_10": 700, "libero_90": 700}[
+-        task_suite_name
+-    ]
++    limits = {"libero_spatial": 400, "libero_object": 400, "libero_goal": 400,
++              "libero_10": 700, "libero_90": 700}
++    if task_suite_name in limits:
++        return limits[task_suite_name]
++    for base in ("libero_spatial", "libero_object", "libero_goal", "libero_10"):
++        if task_suite_name in {f"{base}_{suffix}" for suffix in ("lan", "object", "swap", "task")}:
++            return limits[base]
++    raise ValueError(f"Unsupported LIBERO suite: {task_suite_name}")
+ 
+ 
+ def run_single_episode(env, initial_state, task_description: str, model, processor: FastWAMProcessor,
+diff --git a/experiments/libero/libero_utils.py b/experiments/libero/libero_utils.py
+index d3cc8f1..3cda37b 100644
+--- a/experiments/libero/libero_utils.py
++++ b/experiments/libero/libero_utils.py
+@@ -9,15 +9,24 @@ from PIL import Image, ImageDraw
+ import numpy as np
+ from libero.libero import get_libero_path
+ from libero.libero.envs import OffScreenRenderEnv, SubprocVectorEnv
++from libero.libero.envs.bddl_utils import get_problem_info
+ 
+ DATE = time.strftime("%Y_%m_%d")
+ DATE_TIME = time.strftime("%Y_%m_%d-%H_%M_%S")
+ LIBERO_ENV_RESOLUTION = 256  # resolution used to render training data
+ 
+ 
++def get_libero_task_description(task):
++    path = pathlib.Path(get_libero_path("bddl_files")) / task.problem_folder / task.bddl_file
++    instruction = get_problem_info(str(path))["language_instruction"]
++    if not isinstance(instruction, str) or not instruction.strip():
++        raise ValueError(f"Missing task language in {path}")
++    return instruction
++
++
+ def get_libero_env(task, resolution, seed, env_num=1):
+     """Initializes and returns the LIBERO environment, along with the task description."""
+-    task_description = task.language
++    task_description = get_libero_task_description(task)
+     task_bddl_file = (
+         pathlib.Path(get_libero_path("bddl_files"))
+         / task.problem_folder
+diff --git a/scripts/compute_latent_norm_stats.py b/scripts/compute_latent_norm_stats.py
+index 0e447f8..57e8e75 100644
+--- a/scripts/compute_latent_norm_stats.py
++++ b/scripts/compute_latent_norm_stats.py
+@@ -8,15 +8,42 @@ import argparse
+ import json
+ import os
+ import time
++import multiprocessing
++from concurrent.futures import ProcessPoolExecutor
+ 
+ import torch
++from Roboactualizer.utils.encoder_identity import require_encoder_identity
++
++
++def episode_sums(task):
++    fp, encoder_sha, embed_dim = task
++    torch.set_num_threads(1)
++    payload = torch.load(fp, map_location="cpu", weights_only=False, mmap=True)
++    require_encoder_identity(payload, encoder_sha, fp)
++    z = payload["latents"]
++    if z.ndim != 3 or z.shape[-1] != embed_dim:
++        raise ValueError(f"Invalid latent tensor: {fp}")
++    flat = z.reshape(-1, embed_dim)
++    s = torch.zeros(embed_dim, dtype=torch.float64)
++    s2 = torch.zeros_like(s)
++    for chunk in flat.split(8192):
++        if not torch.isfinite(chunk).all():
++            raise ValueError(f"Nonfinite latent tensor: {fp}")
++        x = chunk.to(torch.float64)
++        s += x.sum(0)
++        s2 += x.square().sum(0)
++    return s.numpy(), s2.numpy(), flat.shape[0]
+ 
+ 
+ def main():
+     ap = argparse.ArgumentParser()
+     ap.add_argument("cache_dir", help="e.g. ./data/int2_clip4/libero")
+     ap.add_argument("--out", default=None)
++    ap.add_argument("--workers", type=int, default=1)
+     args = ap.parse_args()
++    if not 1 <= args.workers <= 64:
++        raise ValueError("workers must be in [1, 64]")
++    torch.set_num_threads(1)
+ 
+     cache_dir = args.cache_dir.rstrip("/")
+     out_path = args.out or os.path.join(cache_dir, "latent_norm_stats.json")
+@@ -31,6 +58,12 @@ def main():
+             metas[suite] = json.load(open(mp))
+     if not metas:
+         raise SystemExit(f"No latents_meta.json under {cache_dir}")
++    encoder_sha = next(iter(metas.values())).get("encoder_checkpoint_sha256")
++    selection_sha = next(iter(metas.values())).get("episode_selection_sha256")
++    for suite, meta in metas.items():
++        require_encoder_identity(meta, encoder_sha, suite)
++        if meta.get("episode_selection_sha256") != selection_sha:
++            raise ValueError(f"Episode selection differs across suites: {suite}")
+     ident = {k: {f: m[f] for f in ("embed_dim", "clip_len", "frame_interval",
+                                    "latent_dtype", "backbone_model_name") if f in m}
+              for k, m in metas.items()}
+@@ -44,23 +77,36 @@ def main():
+     files = []
+     for suite in sorted(metas):
+         d = os.path.join(cache_dir, suite)
+-        files += [os.path.join(d, f) for f in sorted(os.listdir(d)) if f.startswith("episode_")]
++        files += [os.path.join(d, f"episode_{int(ep):06d}.pt") for ep in metas[suite]["episodes"]]
++    if not files:
++        raise SystemExit("No completed episodes in cache metadata")
+     print(f"{len(files)} episode files")
+ 
+     s = torch.zeros(embed_dim, dtype=torch.float64)
+     s2 = torch.zeros(embed_dim, dtype=torch.float64)
+     n = 0
+     t0 = time.time()
+-    for i, fp in enumerate(files, 1):
+-        z = torch.load(fp, map_location="cpu", weights_only=False)["latents"]
+-        x = z.reshape(-1, z.shape[-1]).to(torch.float64)
+-        s += x.sum(0)
+-        s2 += (x * x).sum(0)
+-        n += x.shape[0]
+-        if i % 100 == 0 or i == len(files):
+-            el = time.time() - t0
+-            print(f"  {i}/{len(files)}  rows={n:,}  {el:.0f}s  eta={el / i * (len(files) - i):.0f}s",
+-                  flush=True)
++    tasks = [(fp, encoder_sha, embed_dim) for fp in files]
++    pool = None
++    try:
++        if args.workers > 1:
++            pool = ProcessPoolExecutor(max_workers=args.workers,
++                                       mp_context=multiprocessing.get_context("spawn"))
++            results = pool.map(episode_sums, tasks, chunksize=1)
++        else:
++            results = map(episode_sums, tasks)
++        print(f"workers={args.workers}, threads_per_worker=1, chunk_rows=8192", flush=True)
++        for i, (partial_s, partial_s2, rows) in enumerate(results, 1):
++            s += torch.from_numpy(partial_s)
++            s2 += torch.from_numpy(partial_s2)
++            n += rows
++            if i % 100 == 0 or i == len(files):
++                el = time.time() - t0
++                print(f"  {i}/{len(files)}  rows={n:,}  {el:.0f}s  eta={el / i * (len(files) - i):.0f}s",
++                      flush=True)
++    finally:
++        if pool is not None:
++            pool.shutdown(wait=True, cancel_futures=True)
+ 
+     mean = s / n
+     var = (s2 / n - mean * mean).clamp_min(0.0)
+@@ -69,6 +115,8 @@ def main():
+         raise SystemExit("Invalid stats (NaN/Inf or std <= 0)")
+ 
+     payload = {
++        "encoder_checkpoint_sha256": encoder_sha,
++        "episode_selection_sha256": selection_sha,
+         "backbone_model_name": first.get("backbone_model_name"),
+         "embed_dim": embed_dim,
+         "cache_dir": cache_dir,
+@@ -76,6 +124,7 @@ def main():
+         "frame_interval": int(first["frame_interval"]),
+         "latent_dtype": str(first.get("latent_dtype", "float16")),
+         "num_files": len(files),
++        "workers": args.workers,
+         "num_elements": int(n * embed_dim),
+         "method": ("full-pass float64 sum/sumsq over all cached latents (population std), "
+                    f"computed {time.strftime('%Y-%m-%d')}"),
+@@ -85,8 +134,9 @@ def main():
+         "mean": mean.tolist(),
+         "std": std.tolist(),
+     }
+-    with open(out_path, "w") as f:
++    with open(out_path + ".tmp", "w") as f:
+         json.dump(payload, f)
++    os.replace(out_path + ".tmp", out_path)
+     import hashlib
+     sha = hashlib.sha256(open(out_path, "rb").read()).hexdigest()
+     print(f"\nWrote {out_path}")
+diff --git a/scripts/precompute_rgb_latents.py b/scripts/precompute_rgb_latents.py
+index 9a672b2..794e95a 100644
+--- a/scripts/precompute_rgb_latents.py
++++ b/scripts/precompute_rgb_latents.py
+@@ -13,6 +13,7 @@ Writes <cache_dir>/<suite>/episode_XXXXXX.pt and latents_meta.json per suite.
+ """
+ 
+ import json
++import fcntl
+ import logging
+ from pathlib import Path
+ 
+@@ -27,6 +28,12 @@ from Roboactualizer.datasets.robotwin_image import concat_cameras_robotwin
+ from Roboactualizer.datasets.lerobot.lerobot.datasets.video_utils import decode_video_frames
+ from Roboactualizer.datasets.lerobot.lerobot.lerobot_dataset import LeRobotDatasetMetadata
+ from Roboactualizer.utils.logging_config import get_logger, setup_logging
++from Roboactualizer.utils.encoder_identity import checkpoint_sha256, require_encoder_identity
++from Roboactualizer.models.roboactualizer.runtime import load_vjepa2_1_backbone
++from Roboactualizer.utils.config_resolvers import register_default_resolvers
++from Roboactualizer.utils.episode_selection import selected_episode_ids, selection_sha256
++
++register_default_resolvers()
+ 
+ logger = get_logger(__name__)
+ 
+@@ -48,14 +55,26 @@ def _concat_cameras(pixels: torch.Tensor, mode: str) -> torch.Tensor:
+ @hydra.main(config_path="../configs", config_name="train", version_base="1.3")
+ def main(cfg: DictConfig):
+     setup_logging(log_level=logging.INFO)
+-    device = "cuda" if torch.cuda.is_available() else "cpu"
++    device = str(cfg.get("encode_device", "cuda"))
++    if device.startswith("cuda") and not torch.cuda.is_available():
++        raise RuntimeError("CUDA requested for latent precompute but unavailable; set encode_device=cpu explicitly")
++    if device == "cpu":
++        torch.set_num_threads(int(cfg.get("encode_cpu_threads", 2)))
+     data_cfg = cfg.data.train
+ 
+     cache_root = cfg.get("rgb_latent_cache_dir")
+     if not cache_root:
+         raise ValueError("Please pass `rgb_latent_cache_dir=...` (output directory).")
+     cache_root = Path(str(cache_root))
++    encoder_sha = checkpoint_sha256(str(cfg.model.backbone.ckpt_path))
+     enc_batch = int(cfg.get("encode_batch_size", 32))
++    shard = int(cfg.get("encode_shard", 0))
++    shards = int(cfg.get("encode_shards", 1))
++    if not 0 <= shard < shards:
++        raise ValueError("Invalid episode shard")
++    torch.set_num_threads(int(cfg.get("encode_cpu_threads", 2)))
++    if enc_batch < 1:
++        raise ValueError("encode_batch_size must be positive")
+     limit_eps = int(cfg.get("max_episodes_per_suite", 0))  # >0: first N episodes only (debug)
+ 
+     frame_interval = int(cfg.model.get("frame_interval", 2))
+@@ -69,8 +88,12 @@ def main(cfg: DictConfig):
+         raise ValueError(f"clip_len must be an even int >= 2 (V-JEPA tubelet=2), got {clip_len}")
+ 
+     # Only the frozen fp32 backbone is used.
+-    model = instantiate(cfg.model, model_dtype=torch.float32, device=device)
+-    backbone = model.backbone.eval()
++    backbone_cfg = OmegaConf.to_container(cfg.model.backbone, resolve=True)
++    backbone_cfg.pop("_target_", None)
++    backbone, _ = load_vjepa2_1_backbone(
++        **backbone_cfg, num_cameras=int(cfg.model.num_cameras),
++        dtype=torch.float32, device=device)
++    backbone.eval()
+     num_patches, embed_dim = int(backbone.num_patches), int(backbone.embed_dim)
+     backbone_name = str(getattr(backbone, "model_name", "vjepa2_1_vit_large_384"))
+     backbone_size = str(getattr(backbone, "model_size", "large"))
+@@ -84,14 +107,16 @@ def main(cfg: DictConfig):
+     resize_t = ResizeSmallestSideAspectPreserving(args={"img_w": vw, "img_h": vh})
+     crop_t = CenterCrop(args={"img_w": vw, "img_h": vh})
+     norm_t = Normalize(args={"mean": 0.5, "std": 0.5})
++    recipe = {"clip_len": clip_len, "frame_interval": frame_interval,
++              "image_size": [vh, vw], "cam_keys": cam_keys,
++              "concat_multi_camera": concat_mode, "latent_dtype": latent_dtype,
++              "processor": OmegaConf.to_container(data_cfg.processor, resolve=True)}
++    if getattr(backbone, 'independent_views', False):
++        recipe['independent_views'] = True
+ 
+     # Optional episode subset; the same file as data.train.episode_ids_file.
+-    episode_ids = None
+     ids_file = data_cfg.get("episode_ids_file", None)
+-    if ids_file:
+-        with open(Path(str(ids_file)).expanduser()) as f:
+-            episode_ids = sorted({int(i) for i in json.load(f)["episode_ids"]})
+-        logger.info("episode subset %s -> %d", ids_file, len(episode_ids))
++    selection_sha = selection_sha256(ids_file)
+ 
+     logger.info(
+         "RGB clip-latent precompute | backbone=%s(%s) patches=%d dim=%d image_size=%s cams=%s concat=%s "
+@@ -108,27 +133,47 @@ def main(cfg: DictConfig):
+         tol = 1.0 / fps
+         out_dir = cache_root / suite
+         out_dir.mkdir(parents=True, exist_ok=True)
+-
+-        if episode_ids is not None:
+-            bad = [i for i in episode_ids if not 0 <= i < meta.total_episodes]
+-            if bad:
+-                raise ValueError(f"[{suite}] episode ids out of range: {bad[:5]} (total {meta.total_episodes})")
+-            ep_list = list(episode_ids)
+-            logger.info("[%s] encoding %d / %d episodes", suite, len(ep_list), meta.total_episodes)
++        shard_lock = (out_dir / f"encode_{shards}_{shard}.lock").open("a")
++        fcntl.flock(shard_lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
++        identity_lock = (out_dir / "identity.lock").open("a")
++        fcntl.flock(identity_lock, fcntl.LOCK_EX)
++        identity_path = out_dir / "encoder_identity.json"
++        if identity_path.exists():
++            identity = json.loads(identity_path.read_text())
++            require_encoder_identity(identity, encoder_sha, identity_path)
++            if identity.get("recipe") != recipe:
++                raise ValueError(f"Cache preprocessing recipe changed: {identity_path}")
++        elif any(p.suffix != ".lock" for p in out_dir.iterdir()):
++            raise ValueError(f"Refusing unidentified existing cache directory: {out_dir}")
+         else:
+-            n = meta.total_episodes if limit_eps <= 0 else min(limit_eps, meta.total_episodes)
+-            ep_list = list(range(n))
+-        if limit_eps > 0 and episode_ids is not None:
++            identity_path.write_text(json.dumps({"encoder_checkpoint_sha256": encoder_sha, "recipe": recipe}))
++        identity_lock.close()
++
++        ep_list = selected_episode_ids(ids_file, ds_dir, meta.total_episodes)
++        if limit_eps > 0:
+             ep_list = ep_list[:limit_eps]
++        ep_list = ep_list[shard::shards]
+         ep_lengths = {}
+         for ep in tqdm(ep_list, desc=f"[{suite}] episodes"):
+             T = int(meta.episodes[ep]["length"])
++            episode_path = out_dir / f"episode_{ep:06d}.pt"
++            if episode_path.exists():
++                cached = torch.load(episode_path, map_location="cpu", weights_only=False)
++                require_encoder_identity(cached, encoder_sha, episode_path)
++                z = cached["latents"]
++                if (cached["episode_index"] != ep or tuple(z.shape) != (T, num_patches, embed_dim)
++                        or z.dtype != save_dtype or not torch.isfinite(z).all()
++                        or cached["clip_len"] != clip_len or cached["frame_interval"] != frame_interval):
++                    raise ValueError(f"Invalid existing episode cache: {episode_path}")
++                ep_lengths[str(ep)] = T
++                del cached, z
++                continue
+             timestamps = [i / fps for i in range(T)]
+ 
+             cam_imgs = []
+             for ck in cam_keys:
+                 vp = meta.root / meta.get_video_file_path(ep, f"observation.images.{ck}")
+-                frames = decode_video_frames(vp, timestamps, tol)  # [T,C,H,W] float[0,1]
++                frames = decode_video_frames(vp, timestamps, tol, backend="pyav")
+                 if frames.shape[0] != T:
+                     raise RuntimeError(f"{suite} ep{ep} cam {ck}: decoded {frames.shape[0]} != length {T}")
+                 x = (frames * 255).to(torch.uint8)  # as in BaseLerobotDataset._get_image
+@@ -156,28 +201,38 @@ def main(cfg: DictConfig):
+                     latents.append(z.to(save_dtype).cpu())
+             latents = torch.cat(latents, dim=0)              # [T, N, D]
+ 
++            episode_path = out_dir / f"episode_{ep:06d}.pt"
++            temporary = episode_path.with_suffix(".tmp")
+             torch.save(
+                 {"latents": latents, "episode_index": ep, "fps": fps,
++                 "encoder_checkpoint_sha256": encoder_sha,
+                  "num_patches": num_patches, "embed_dim": embed_dim,
+                  "backbone_model_name": backbone_name, "backbone_model_size": backbone_size,
+-                 "frame_interval": frame_interval, "clip_len": clip_len},
+-                out_dir / f"episode_{ep:06d}.pt",
++                 "frame_interval": frame_interval, "clip_len": clip_len,
++                 "independent_views": getattr(backbone, 'independent_views', False)},
++                temporary,
+             )
++            temporary.replace(episode_path)
+             ep_lengths[str(ep)] = T
+ 
+-        with open(out_dir / "latents_meta.json", "w") as f:
++        meta_name = "latents_meta" if shards == 1 else f"latents_meta_shard_{shard:03d}_of_{shards:03d}"
++        with open(out_dir / f"{meta_name}.tmp", "w") as f:
+             json.dump(
+                 {"suite": suite, "dataset_dir": ds_dir, "fps": fps,
++                 "encoder_checkpoint_sha256": encoder_sha,
+                  "episode_ids_file": str(ids_file) if ids_file else None,
++                 "episode_selection_sha256": selection_sha,
+                  "num_episodes_encoded": len(ep_lengths),
+                  "num_patches": num_patches, "embed_dim": embed_dim,
+                  "backbone_model_name": backbone_name, "backbone_model_size": backbone_size,
+                  "image_size": [vh, vw], "concat_multi_camera": concat_mode,
+                  "cam_keys": cam_keys, "latent_dtype": str(save_dtype).split(".")[-1],
+                  "frame_interval": frame_interval, "clip_len": clip_len,
+-                 "episodes": ep_lengths},
++                 "episodes": ep_lengths, "independent_views": getattr(backbone, 'independent_views', False)},
+                 f, indent=2,
+             )
++        (out_dir / f"{meta_name}.tmp").replace(out_dir / f"{meta_name}.json")
++        shard_lock.close()
+         logger.info("Done suite=%s episodes=%d -> %s", suite, len(ep_list), out_dir)
+ 
+ 
+diff --git a/src/Roboactualizer/datasets/lerobot/base_lerobot_dataset.py b/src/Roboactualizer/datasets/lerobot/base_lerobot_dataset.py
+index 811635b..0dc968e 100644
+--- a/src/Roboactualizer/datasets/lerobot/base_lerobot_dataset.py
++++ b/src/Roboactualizer/datasets/lerobot/base_lerobot_dataset.py
+@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
+ import traceback
+ from Roboactualizer.utils.logging_config import get_logger
+ from .processors.base_processor import BaseProcessor
++from Roboactualizer.utils.episode_selection import selected_episode_ids, selection_sha256
+ 
+ logger = get_logger(__name__)
+ 
+@@ -25,6 +26,7 @@ class BaseLerobotDataset(torch.utils.data.Dataset):
+         obs_size: int = 1, # should be
+         past_obs_size: int = 0,
+         past_image_size: int = 0, # extra past image frames only; state/action alignment is unchanged
++        current_images_only: bool = False,
+ 
+         # train vs val
+         val_set_proportion: float = 0.05, 
+@@ -36,6 +38,7 @@ class BaseLerobotDataset(torch.utils.data.Dataset):
+ 
+         # Optional json {"episode_ids": [...]}; precompute and training must use the same file.
+         episode_ids_file: Optional[str] = None,
++        strict_read: bool = False,
+     ):
+         assert len(dataset_dirs) > 0, "At least one dataset directory is required"
+         assert past_image_size >= 0, f"past_image_size must be >=0, got {past_image_size}"
+@@ -43,6 +46,7 @@ class BaseLerobotDataset(torch.utils.data.Dataset):
+         assert action_size == obs_size - 1, "In this dataset, action_size should be obs_size - 1"
+         
+         self.dataset_dirs = dataset_dirs
++        self.strict_read = bool(strict_read)
+         self.shape_meta = shape_meta
+         self.action_size = action_size
+         self.obs_size = obs_size
+@@ -72,7 +76,8 @@ class BaseLerobotDataset(torch.utils.data.Dataset):
+             key = meta["key"]
+             meta["lerobot_key"] = f"observation.images.{key}" if key != "default" else "observation.images"
+             delta_timestamps[meta["lerobot_key"]] = [
+-                (t * global_sample_stride) / fps for t in range(-past_image_size, obs_size)
++                (t * global_sample_stride) / fps
++                for t in range(-past_image_size, 1 if current_images_only else obs_size)
+             ]
+         
+         for meta in self.state_meta:
+@@ -87,20 +92,17 @@ class BaseLerobotDataset(torch.utils.data.Dataset):
+             meta["lerobot_key"] = f"action.{key}" if key != "default" else "action"
+             delta_timestamps[meta["lerobot_key"]] = [(t * global_sample_stride) / fps for t in range(action_size)]
+ 
+-        subset_ids = None
+-        if episode_ids_file is not None:
+-            if len(self.dataset_dirs) != 1:
+-                raise ValueError("`episode_ids_file` supports a single dataset_dir (ids are local).")
+-            import json as _json
+-            with open(Path(str(episode_ids_file)).expanduser()) as f:
+-                subset_ids = sorted({int(i) for i in _json.load(f)["episode_ids"]})
++        self.episode_selection_sha256 = selection_sha256(episode_ids_file)
++        if episode_ids_file and len(self.dataset_dirs) > 1:
++            import json
++            if "datasets" not in json.loads(Path(episode_ids_file).read_text()):
++                raise ValueError("Multi-suite selection requires per-dataset entries")
+ 
+         # Do not wrap repo_id (an absolute path) in [] in logs: the Rich handler parses it as markup.
+         def candidate_episode_indices(meta):
+-            if subset_ids is None:
+-                return list(range(meta.total_episodes))
+-            logger.info(f"Dataset {meta.repo_id}: {len(subset_ids)} / {meta.total_episodes} episodes from {episode_ids_file}")
+-            return list(subset_ids)
++            ids = selected_episode_ids(episode_ids_file, meta.repo_id, meta.total_episodes)
++            logger.info(f"Dataset {meta.repo_id}: {len(ids)} / {meta.total_episodes} episodes from {episode_ids_file}")
++            return ids
+ 
+         episodes = {}
+         for meta in metas:
+@@ -205,6 +207,8 @@ class BaseLerobotDataset(torch.utils.data.Dataset):
+                 lerobot_sample = self._split_lerobot_sample(lerobot_sample)
+                 break
+             except Exception as err:
++                if self.strict_read:
++                    raise RuntimeError(f"Failed to load requested sample {idx}; replacement is disabled") from err
+                 attempt += 1
+                 last_exception = err
+                 logger.warning(
+diff --git a/src/Roboactualizer/datasets/lerobot/lerobot/datasets/video_utils.py b/src/Roboactualizer/datasets/lerobot/lerobot/datasets/video_utils.py
+index 9dd6fee..661ef1f 100644
+--- a/src/Roboactualizer/datasets/lerobot/lerobot/datasets/video_utils.py
++++ b/src/Roboactualizer/datasets/lerobot/lerobot/datasets/video_utils.py
+@@ -68,13 +68,49 @@ def decode_video_frames(
+             warnings.warn(
+                 f"torchcodec video decode failed ({type(err).__name__}: {err}); falling back to torchvision/pyav."
+             )
+-            return decode_video_frames_torchvision(video_path, timestamps, tolerance_s, backend="pyav")
+-    elif backend in ["pyav", "video_reader"]:
++            return decode_video_frames_pyav(video_path, timestamps, tolerance_s)
++    elif backend == "pyav":
++        return decode_video_frames_pyav(video_path, timestamps, tolerance_s)
++    elif backend == "video_reader":
+         return decode_video_frames_torchvision(video_path, timestamps, tolerance_s, backend)
+     else:
+         raise ValueError(f"Unsupported video backend: {backend}")
+ 
+ 
++def decode_video_frames_pyav(video_path, timestamps, tolerance_s):
++    """Native PyAV RGB decoding without torchvision's removed VideoReader API."""
++    queries = torch.as_tensor(timestamps, dtype=torch.float64)
++    if queries.ndim != 1 or not queries.numel() or not torch.isfinite(queries).all():
++        raise ValueError("Expected a nonempty finite timestamp vector")
++    if tolerance_s < 0 or queries.min() < 0:
++        raise ValueError("Timestamps and tolerance must be nonnegative")
++    frames, times = [], []
++    with av.open(str(video_path)) as container:
++        stream = container.streams.video[0]
++        stream.thread_type = "AUTO"
++        container.seek(int(max(0, queries.min().item() - tolerance_s) / float(stream.time_base)),
++                       stream=stream, backward=True, any_frame=False)
++        for frame in container.decode(stream):
++            if frame.time is None:
++                raise RuntimeError(f"Missing frame timestamp: {video_path}")
++            frames.append(torch.from_numpy(frame.to_ndarray(format="rgb24")).permute(2, 0, 1))
++            times.append(float(frame.time))
++            if times[-1] >= queries.max().item():
++                break
++    if not frames:
++        raise RuntimeError(f"No decoded video frames: {video_path}")
++    pts = torch.tensor(times, dtype=torch.float64)
++    if not torch.all(pts[1:] >= pts[:-1]):
++        raise RuntimeError(f"Nonmonotonic frame timestamps: {video_path}")
++    right = torch.searchsorted(pts, queries).clamp(max=len(pts) - 1)
++    left = (right - 1).clamp(min=0)
++    chosen = torch.where((pts[left] - queries).abs() <= (pts[right] - queries).abs(), left, right)
++    error = (pts[chosen] - queries).abs()
++    if torch.any(error > tolerance_s):
++        raise ValueError(f"Video timestamp mismatch {error.max().item():.6f}s: {video_path}")
++    return torch.stack([frames[i] for i in chosen.tolist()]).float().div_(255)
++
++
+ def decode_video_frames_torchvision(
+     video_path: Path | str,
+     timestamps: list[float],
+diff --git a/src/Roboactualizer/datasets/lerobot/robot_video_dataset.py b/src/Roboactualizer/datasets/lerobot/robot_video_dataset.py
+index 599b3fa..27ebde8 100644
+--- a/src/Roboactualizer/datasets/lerobot/robot_video_dataset.py
++++ b/src/Roboactualizer/datasets/lerobot/robot_video_dataset.py
+@@ -1,5 +1,7 @@
+ import hashlib
++import json
+ import os
++from pathlib import Path
+ from typing import Optional
+ import numpy as np
+ import traceback
+@@ -15,6 +17,8 @@ from ..dataset_utils import ResizeSmallestSideAspectPreserving, CenterCrop, Norm
+ from Roboactualizer.utils.logging_config import get_logger
+ from Roboactualizer.utils import misc
+ from accelerate import PartialState
++from Roboactualizer.utils.encoder_identity import checkpoint_sha256, require_encoder_identity
++from Roboactualizer.utils.episode_selection import selection_sha256
+ logger = get_logger(__name__)
+ 
+ 
+@@ -44,9 +48,32 @@ class RobotVideoDataset(torch.utils.data.Dataset):
+         override_instruction: Optional[str] = None, # whether to hardcode a specific instruction for all samples, for debugging
+         rgb_latent_cache_dir: Optional[str] = None, # precomputed V-JEPA latents; skips decoding and encoding
+         episode_ids_file: Optional[str] = None, # optional episode subset; must match the latent precompute
++        action_only: bool = False,
++        encoder_checkpoint_path: Optional[str] = None,
++        strict_read: bool = False,
++        text_cache_suffix: str = 'wan22ti2v5b',
++        independent_views: bool = False,
+     ):
+         self.dataset_dirs = list(dataset_dirs)
++        self.text_cache_suffix = text_cache_suffix
++        self.action_only = bool(action_only)
++        self.strict_read = self.action_only or bool(strict_read)
+         self.rgb_latent_cache_dir = rgb_latent_cache_dir
++        self.encoder_sha = None
++        if self.strict_read and rgb_latent_cache_dir is not None:
++            if not encoder_checkpoint_path:
++                raise ValueError("Action-only latent caches require encoder_checkpoint_path")
++            self.encoder_sha = checkpoint_sha256(encoder_checkpoint_path)
++            for directory in self.dataset_dirs:
++                path = Path(rgb_latent_cache_dir) / Path(directory).name / "latents_meta.json"
++                meta = json.loads(path.read_text())
++                require_encoder_identity(meta, self.encoder_sha, path)
++                if meta.get("episode_selection_sha256") != selection_sha256(episode_ids_file):
++                    raise ValueError(f"Episode selection differs from cache: {path}")
++                if meta["clip_len"] != clip_len or meta["frame_interval"] != frame_interval:
++                    raise ValueError(f"Temporal settings mismatch: {path}")
++                if bool(meta.get('independent_views', False)) != independent_views:
++                    raise ValueError(f'Camera encoding contract mismatch: {path}')
+         self.clip_len = int(clip_len)
+         self.frame_interval = int(frame_interval)
+         # Only the pixel path needs past frames to build each target's clip.
+@@ -57,6 +84,8 @@ class RobotVideoDataset(torch.utils.data.Dataset):
+             obs_size=num_frames,
+             action_size=num_frames - 1,
+             past_image_size=self.past_image_size,
++            current_images_only=self.action_only,
++            strict_read=self.strict_read,
+             val_set_proportion=val_set_proportion,
+             is_training_set=is_training_set,
+             global_sample_stride=global_sample_stride,
+@@ -69,6 +98,8 @@ class RobotVideoDataset(torch.utils.data.Dataset):
+         assert (num_frames - 1) % self.action_video_freq_ratio == 0, \
+             f"num_frames-1 must be divisible by action_video_freq_ratio, got {num_frames - 1} and {self.action_video_freq_ratio}"
+         self.video_sample_indices = list(range(0, num_frames, self.action_video_freq_ratio))
++        if self.action_only:
++            self.video_sample_indices = [0]
+ 
+         self.camera_key = camera_key
+         self.lerobot_dataset._set_return_images(self.rgb_latent_cache_dir is None)
+@@ -249,7 +280,10 @@ class RobotVideoDataset(torch.utils.data.Dataset):
+         f0 = int(sample["frame_index"])
+         suite = os.path.basename(os.path.normpath(self.dataset_dirs[ds_idx]))
+         path = os.path.join(self.rgb_latent_cache_dir, suite, f"episode_{ep:06d}.pt")
+-        latents = torch.load(path, map_location="cpu", mmap=True, weights_only=False)["latents"]  # [T_ep,N,D]
++        payload = torch.load(path, map_location="cpu", mmap=True, weights_only=False)
++        if self.encoder_sha is not None:
++            require_encoder_identity(payload, self.encoder_sha, path)
++        latents = payload["latents"]  # [T_ep,N,D]
+         t_ep = latents.shape[0]
+         frames = [min(max(f0 + i, 0), t_ep - 1) for i in self.video_sample_indices]
+         return latents[frames].clone()  # [T_video, N, D]
+@@ -285,7 +319,7 @@ class RobotVideoDataset(torch.utils.data.Dataset):
+         cache_dir = self.text_embedding_cache_dir
+         os.makedirs(cache_dir, exist_ok=True)
+         hashed = hashlib.sha256(prompt.encode("utf-8")).hexdigest()
+-        cache_path = os.path.join(cache_dir, f"{hashed}.t5_len{self.context_len}.wan22ti2v5b.pt")
++        cache_path = os.path.join(cache_dir, f"{hashed}.t5_len{self.context_len}.{self.text_cache_suffix}.pt")
+         if not os.path.exists(cache_path):
+             raise FileNotFoundError(
+                 f"Missing text embedding cache: {cache_path}. "
+@@ -314,6 +348,8 @@ class RobotVideoDataset(torch.utils.data.Dataset):
+         return context, context_mask
+ 
+     def __getitem__(self, idx):
++        if self.strict_read:
++            return self._get(idx)
+         try:
+             data = self._get(idx)
+         except Exception as e:
+diff --git a/src/Roboactualizer/models/roboactualizer/backbone.py b/src/Roboactualizer/models/roboactualizer/backbone.py
+index 679c86f..ab016a9 100644
+--- a/src/Roboactualizer/models/roboactualizer/backbone.py
++++ b/src/Roboactualizer/models/roboactualizer/backbone.py
+@@ -33,10 +33,12 @@ class VJEPABackbone(Backbone):
+         image_size=(384, 320),
+         patch_size: int = 16,
+         num_cameras: int = 2,
++        independent_views: bool = False,
+         device: str = "cuda",
+         dtype: torch.dtype = torch.float32,
+     ):
+         super().__init__()
++        self.ckpt_path = ckpt_path
+         self.model_name = model_name
+         self.model_size = model_size or parse_model_size(model_name)
+         self.image_size = tuple(int(s) for s in image_size)
+@@ -44,12 +46,16 @@ class VJEPABackbone(Backbone):
+         self.patch_grid = (self.image_size[0] // self.patch_size, self.image_size[1] // self.patch_size)
+         self.num_patches = self.patch_grid[0] * self.patch_grid[1]
+         self.num_cameras = int(num_cameras)
++        self.independent_views = bool(independent_views)
++        if self.independent_views and self.image_size[1] % self.num_cameras:
++            raise ValueError('Packed width must divide into independent camera views')
++        encoder_size = (self.image_size[0], self.image_size[1] // self.num_cameras) if self.independent_views else self.image_size
+         self._dtype = dtype
+ 
+         self.encoder = build_vjepa_encoder(
+             ckpt_path=ckpt_path,
+             model_size=self.model_size,
+-            image_size=self.image_size,
++            image_size=encoder_size,
+             patch_size=self.patch_size,
+             torch_hub_dir=torch_hub_dir,
+         )
+@@ -69,11 +75,23 @@ class VJEPABackbone(Backbone):
+     def encode_clip_last_group(self, clip: torch.Tensor) -> torch.Tensor:
+         """Video-branch encode of ``[B, T, C, H, W]`` in [-1, 1]; returns the last tubelet group [B, N, D]."""
+         b, t, c, hi, wi = clip.shape
++        if self.independent_views:
++            # Packing is transport only. Each camera gets a separate encoder batch
++            # item, so encoder attention never mixes the two camera images.
++            if wi % self.num_cameras:
++                raise ValueError('Clip width does not divide by camera count')
++            clip = torch.stack(clip.chunk(self.num_cameras, dim=-1), dim=1)
++            clip = clip.reshape(b * self.num_cameras, t, c, hi, wi // self.num_cameras)
++            wi //= self.num_cameras
++        encoder_b = clip.shape[0]
+         if t < 2 or t % 2 != 0:
+             raise ValueError(f"clip length must be even and >= 2 (tubelet=2), got {t}")
+-        x = clip.reshape(b * t, c, hi, wi).to(dtype=self._dtype)
++        x = clip.reshape(encoder_b * t, c, hi, wi).to(dtype=self._dtype)
+         x = (x + 1.0) * 0.5
+         x = (x - self._mean) / self._std
+-        x = x.reshape(b, t, c, hi, wi).permute(0, 2, 1, 3, 4)  # [B, C, T, H, W]
++        x = x.reshape(encoder_b, t, c, hi, wi).permute(0, 2, 1, 3, 4)
+         z = self.encoder(x)  # [B, (T/2)*N, D]
++        if self.independent_views:
++            per_view = self.num_patches // self.num_cameras
++            return z[:, -per_view:, :].reshape(b, self.num_cameras * per_view, self.embed_dim)
+         return z[:, -self.num_patches:, :]
+diff --git a/src/Roboactualizer/models/roboactualizer/ckpt_resolve.py b/src/Roboactualizer/models/roboactualizer/ckpt_resolve.py
+index c122b87..8648225 100644
+--- a/src/Roboactualizer/models/roboactualizer/ckpt_resolve.py
++++ b/src/Roboactualizer/models/roboactualizer/ckpt_resolve.py
+@@ -6,12 +6,18 @@ from pathlib import Path
+ 
+ import torch
+ from omegaconf import DictConfig
++from Roboactualizer.utils.encoder_identity import checkpoint_sha256, require_encoder_identity
+ 
+ 
+ def check_ckpt_matches_cfg(ckpt: str, cfg: DictConfig) -> None:
+     """Fail if the config's architecture differs from what the checkpoint was trained with."""
+     meta = torch.load(ckpt, map_location="cpu", weights_only=False).get("metadata", {})
+     m = cfg.model
++    if bool(m.get("action_only", False)):
++        if meta.get("action_only") is not True:
++            raise ValueError("Expected an action-only policy checkpoint")
++        require_encoder_identity(meta.get("backbone", {}),
++                                 checkpoint_sha256(str(m.backbone.ckpt_path)), ckpt)
+     expected = {
+         "dit_size": (meta.get("dit_size", "s"), m.dit_size),
+         "chunk_size": (meta.get("chunk_size"), m.chunk_size),
+diff --git a/src/Roboactualizer/models/roboactualizer/policy.py b/src/Roboactualizer/models/roboactualizer/policy.py
+index 7155616..520ab90 100644
+--- a/src/Roboactualizer/models/roboactualizer/policy.py
++++ b/src/Roboactualizer/models/roboactualizer/policy.py
+@@ -16,17 +16,24 @@ from torch.nn.attention import SDPBackend, sdpa_kernel
+ 
+ from .backbone import Backbone
+ from .modules import FeedForward, RMSNorm, modulate
++from Roboactualizer.utils.encoder_identity import checkpoint_sha256, require_encoder_identity
+ 
+ 
+-def _load_latent_norm_stats(path: str, embed_dim: int, backbone_name: str | None):
++def _load_latent_norm_stats(path: str, embed_dim: int, backbone_name: str | None, checkpoint_path=None):
+     """Load per-channel latent mean/std; returns (mean, std, identity meta)."""
+     with open(path, "rb") as f:
+         raw = f.read()
+     stats = json.loads(raw)
++    if checkpoint_path is not None:
++        require_encoder_identity(stats, checkpoint_sha256(checkpoint_path), path)
++    if backbone_name and stats.get("backbone_model_name") != backbone_name:
++        raise ValueError(f"Backbone model mismatch: {path}")
+     mean = torch.tensor(stats["mean"], dtype=torch.float32)
+     std = torch.tensor(stats["std"], dtype=torch.float32)
+     if mean.shape != (embed_dim,) or std.shape != (embed_dim,):
+         raise ValueError(f"latent norm stats must be [{embed_dim}]: {path}")
++    if not torch.isfinite(mean).all() or not torch.isfinite(std).all() or (std <= 0).any():
++        raise ValueError(f"Invalid latent normalization values: {path}")
+     meta = {
+         "path": os.path.abspath(path),
+         "sha256": hashlib.sha256(raw).hexdigest(),
+@@ -34,6 +41,7 @@ def _load_latent_norm_stats(path: str, embed_dim: int, backbone_name: str | None
+         "embed_dim": int(embed_dim),
+         "cache_dir": stats.get("cache_dir"),
+         "num_elements": stats.get("num_elements"),
++        "encoder_checkpoint_sha256": stats.get("encoder_checkpoint_sha256"),
+     }
+     return mean, std, meta
+ 
+@@ -299,7 +307,7 @@ def attend(q, k, v, heads):
+     Pinned to EFFICIENT: the masked reference path uses it, FLASH would differ by 1 ULP.
+     """
+     q, k, v = (rearrange(t, "b n (h d) -> b h n d", h=heads) for t in (q, k, v))
+-    with sdpa_kernel(SDPBackend.EFFICIENT_ATTENTION):
++    with sdpa_kernel(SDPBackend.EFFICIENT_ATTENTION if q.is_cuda else SDPBackend.MATH):
+         out = F.scaled_dot_product_attention(q, k, v, is_causal=False)
+     return rearrange(out, "b h n d -> b n (h d)")
+ 
+@@ -536,17 +544,22 @@ class FlowPolicy(nn.Module):
+         rgb_latent_dtype: str = "float16",
+         latent_norm_stats_path: str | None = None,
+         eval_encode_fp32: bool = False,
++        action_only: bool = False,
+     ):
+         super().__init__()
+         self.backbone = backbone
+         self.backbone.eval()
+         self.backbone.requires_grad_(False)
++        self.action_only = bool(action_only)
++        if self.action_only and (future_size != 0 or image_predict_weight != 0):
++            raise ValueError("action_only requires future_size=0 and image_predict_weight=0")
+ 
+         # Per-channel latent norm; stats come from a file when training, from the ckpt otherwise.
+         self.latent_norm_stats_meta = None
+         if latent_norm_stats_path:
+             ln_mean, ln_std, self.latent_norm_stats_meta = _load_latent_norm_stats(
+-                str(latent_norm_stats_path), int(backbone.embed_dim), getattr(backbone, "model_name", None)
++                str(latent_norm_stats_path), int(backbone.embed_dim), getattr(backbone, "model_name", None),
++                getattr(backbone, "ckpt_path", None) if self.action_only else None,
+             )
+         else:
+             ln_mean = torch.zeros(int(backbone.embed_dim), dtype=torch.float32)
+@@ -575,9 +588,9 @@ class FlowPolicy(nn.Module):
+         self.image_time_embedder = TimeEmbedder(d_model, freq_dim=freq_dim)
+         self.action_time_embedder = TimeEmbedder(d_model, freq_dim=freq_dim)
+         self.joint_expert = JointDiT(num_layers, d_model, num_heads, dim_head, mlp_dim, dropout)
+-        self.image_decoder = ImageDecoder(d_model, backbone.embed_dim)
++        self.image_decoder = nn.Identity() if self.action_only else ImageDecoder(d_model, backbone.embed_dim)
+         self.action_decoder = ActionDecoder(d_model, action_dim)
+-        self.image_scheduler = FlowMatchScheduler(num_train_timesteps, shift)
++        self.image_scheduler = None if self.action_only else FlowMatchScheduler(num_train_timesteps, shift)
+         self.action_scheduler = FlowMatchScheduler(num_train_timesteps, shift)
+ 
+         # Non-persistent RoPE buffers: static addresses for CUDA graphs, absent from ckpts.
+@@ -729,8 +742,14 @@ class FlowPolicy(nn.Module):
+         z = self._normalize_latent(z.reshape(b, t, self.num_patches, self.backbone.embed_dim))
+         return z[:, 0], z[:, 1 : 1 + self.future_size]
+ 
++    def forward(self, batch):
++        """Keep training inside the DDP wrapper's forward/backward lifecycle."""
++        return self.training_loss(batch)
++
+     def training_loss(self, batch):
+         """Joint flow-matching loss over the action chunk and future image latents."""
++        if self.action_only:
++            return self._action_training_loss(batch)
+         text_context = batch["text_context"]
+         text_mask = batch["text_mask"]
+         proprio = batch["proprio"]
+@@ -774,6 +793,37 @@ class FlowPolicy(nn.Module):
+         }
+         return loss, logs
+ 
++    def _action_training_loss(self, batch):
++        if "z_future" in batch:
++            raise ValueError("Action-only batches must not supply future latents")
++        if "z0" in batch:
++            z0 = self._normalize_latent(batch["z0"].detach())
++        else:
++            pixels = batch["pixels"]
++            if pixels.ndim != 6 or pixels.shape[1] != 1:
++                raise ValueError("Expected one current observation clip [B,1,T,C,H,W]")
++            with torch.no_grad(), torch.autocast(device_type=pixels.device.type, enabled=False):
++                z0 = self.backbone.encode_clip_last_group(pixels[:, 0].float())
++            z0 = self._normalize_latent(z0.to(self.rgb_latent_dtype).float())
++        image_context, context_mask = self.image_context_builder(
++            batch["text_context"], batch["text_mask"], batch["proprio"])
++        action_context, _ = self.action_context_builder(
++            batch["text_context"], batch["text_mask"], batch["proprio"])
++        action = batch["action_chunk"]
++        sigma, timestep = self.action_scheduler.sample_train(action.shape[0], action.device)
++        noisy = self.action_scheduler.add_noise(action, torch.randn_like(action), sigma)
++        target = self.action_scheduler.velocity_target(action, noisy, sigma)
++        prediction = self._action_only_forward(
++            z0, noisy, image_context, action_context, context_mask, timestep)
++        velocity = self.action_scheduler.x_pred_to_velocity(prediction, noisy, sigma)
++        token_loss = F.mse_loss(velocity.float(), target.float(), reduction="none").mean(dim=2)
++        loss = self._masked_mean(token_loss, batch.get("action_is_pad")).mean()
++        return self.action_weight * loss, {
++            "action_loss": loss.detach(),
++            "image_loss": loss.detach().new_zeros(()),
++            "action_sigma_mean": sigma.mean().detach(),
++        }
++
+     @torch.no_grad()
+     def generate(
+         self,
+@@ -895,4 +945,20 @@ class FlowPolicy(nn.Module):
+ 
+     def load_checkpoint(self, path: str, optimizer=None):
+         payload = torch.load(path, map_location="cpu", weights_only=False)
+-        self.load_state_dict(payload["model"] if "model" in payload else payload, strict=False)
++        state = payload["model"] if "model" in payload else payload
++        if self.action_only:
++            encoder_path = getattr(self.backbone, "ckpt_path", None)
++            if encoder_path is not None:
++                require_encoder_identity(payload.get("metadata", {}).get("backbone", {}),
++                                         checkpoint_sha256(encoder_path), path)
++            expected = self._trainable_state_dict()
++            if set(state) != set(expected):
++                raise ValueError(
++                    f"Action-only checkpoint mismatch: missing={sorted(set(expected) - set(state))}, "
++                    f"unexpected={sorted(set(state) - set(expected))}")
++            # Backbone is external and frozen; all other tensors must match strictly.
++            merged = {k: v for k, v in self.state_dict().items() if k.startswith("backbone.")}
++            merged.update(state)
++            self.load_state_dict(merged, strict=True)
++        else:
++            self.load_state_dict(state, strict=False)
+diff --git a/src/Roboactualizer/models/roboactualizer/runtime.py b/src/Roboactualizer/models/roboactualizer/runtime.py
+index 82badbf..59c6fcc 100644
+--- a/src/Roboactualizer/models/roboactualizer/runtime.py
++++ b/src/Roboactualizer/models/roboactualizer/runtime.py
+@@ -6,6 +6,7 @@ import torch
+ from omegaconf import DictConfig, OmegaConf
+ 
+ from .backbone import VJEPABackbone
++from Roboactualizer.utils.encoder_identity import checkpoint_sha256
+ from .policy import FlowPolicy
+ from .vjepa import official_ckpt_url
+ 
+@@ -29,6 +30,7 @@ def load_vjepa2_1_backbone(
+     image_size=(384, 320),
+     patch_size: int = 16,
+     num_cameras: int = 2,
++    independent_views: bool = False,
+     device: str = "cuda",
+     dtype: torch.dtype = torch.float32,
+ ):
+@@ -49,6 +51,7 @@ def load_vjepa2_1_backbone(
+         image_size=image_size,
+         patch_size=patch_size,
+         num_cameras=num_cameras,
++        independent_views=independent_views,
+         device=device,
+         dtype=dtype,
+     )
+@@ -56,6 +59,7 @@ def load_vjepa2_1_backbone(
+         "model_name": model_name,
+         "model_size": backbone.model_size,
+         "ckpt_path": os.path.abspath(ckpt_path),
++        "encoder_checkpoint_sha256": checkpoint_sha256(ckpt_path),
+         "cache_dir": cache_dir,
+         "patch_grid": list(backbone.patch_grid),
+         "num_patches": backbone.num_patches,
+@@ -63,6 +67,7 @@ def load_vjepa2_1_backbone(
+         "embed_dim": backbone.embed_dim,
+         "patch_size": patch_size,
+         "image_size": list(image_size),
++        "independent_views": independent_views,
+     }
+     return backbone, metadata
+ 
+@@ -121,6 +126,7 @@ def create_joint_predict_fm(
+     num_inference_steps: int = 10,
+     action_weight: float = 1.0,
+     image_predict_weight: float = 1.0,
++    action_only: bool = False,
+     rgb_latent_dtype: str = "float16",
+     latent_norm_stats_path: str | None = None,
+     eval_encode_fp32: bool = False,
+@@ -141,7 +147,15 @@ def create_joint_predict_fm(
+     if action_dim != raw_action_dim:
+         raise ValueError(f"action_dim ({action_dim}) must equal raw_action_dim ({raw_action_dim}).")
+ 
+-    policy = FlowPolicy(
++    policy_class = FlowPolicy
++    policy_options = {}
++    if extra_cfg.get('predictive_context', False):
++        from .predictive_context import PredictiveContextPolicy
++        policy_class = PredictiveContextPolicy
++        policy_options['predictor_checkpointing'] = extra_cfg.get('predictor_checkpointing', True)
++        policy_options['future_loss_type'] = extra_cfg.get('future_loss_type', 'mse')
++        policy_options['latent_normalization'] = extra_cfg.get('latent_normalization', 'channel_stats')
++    policy = policy_class(
+         vbackbone,
+         chunk_size=chunk_size,
+         future_size=future_size,
+@@ -161,9 +175,11 @@ def create_joint_predict_fm(
+         num_inference_steps=num_inference_steps,
+         action_weight=action_weight,
+         image_predict_weight=image_predict_weight,
++        action_only=action_only,
+         rgb_latent_dtype=rgb_latent_dtype,
+         latent_norm_stats_path=latent_norm_stats_path,
+         eval_encode_fp32=eval_encode_fp32,
++        **policy_options,
+     )
+     # Trainable modules in model_dtype; the frozen backbone stays fp32.
+     for name in ("image_context_builder", "action_context_builder", "image_token_encoder",
+@@ -175,6 +191,7 @@ def create_joint_predict_fm(
+     policy.metadata = {
+         "backbone": backbone_meta,
+         "raw_action_dim": raw_action_dim,
++        "action_only": action_only,
+         "action_dim": action_dim,
+         "chunk_size": chunk_size,
+         "future_size": future_size,
+diff --git a/src/Roboactualizer/models/wan22/helpers/loader.py b/src/Roboactualizer/models/wan22/helpers/loader.py
+index a20c180..a07a60b 100644
+--- a/src/Roboactualizer/models/wan22/helpers/loader.py
++++ b/src/Roboactualizer/models/wan22/helpers/loader.py
+@@ -22,7 +22,7 @@ def _load_registered_model(path, model_name: str, torch_dtype: torch.dtype, devi
+     if matched is None:
+         raise ValueError(f"Cannot detect model type for {model_name}. File: {path}. Hash: {model_hash}.")
+     model = matched["model_class"]()
+-    model.load_state_dict(load_state_dict(path, torch_dtype=torch_dtype, device="cpu"), strict=False)
++    model.load_state_dict(load_state_dict(path, torch_dtype=torch_dtype, device="cpu"), strict=True)
+     return model.to(device=device, dtype=torch_dtype)
+ 
+ 
+diff --git a/src/Roboactualizer/runtime.py b/src/Roboactualizer/runtime.py
+index 450ac43..f72ef46 100644
+--- a/src/Roboactualizer/runtime.py
++++ b/src/Roboactualizer/runtime.py
+@@ -1,5 +1,8 @@
+ import logging
+ import os
++import hashlib
++import json
++import shutil
+ from pathlib import Path
+ 
+ import torch
+@@ -26,8 +29,9 @@ def _mixed_precision_to_model_dtype(mixed_precision: str) -> torch.dtype:
+     ]
+ 
+ 
+-def build_datasets(data_cfg: DictConfig):
+-    train_ds = instantiate(data_cfg.train)
++def build_datasets(data_cfg: DictConfig, resume_stats=None):
++    overrides = {"pretrained_norm_stats": str(resume_stats)} if resume_stats else {}
++    train_ds = instantiate(data_cfg.train, **overrides)
+     if data_cfg.get("val") is None:
+         val_ds = train_ds
+     else:
+@@ -71,7 +75,24 @@ def run_training(cfg: DictConfig):
+         model_dtype = torch.float32
+     model = instantiate(cfg.model, model_dtype=model_dtype, device=model_device)
+     model.metadata["fp32_master_weights"] = fp32_master_weights
+-    train_ds, val_ds = build_datasets(cfg.data)
++    resume_stats = None
++    if cfg.get('resume') and Path(str(cfg.resume)).is_dir():
++        state_dir = Path(str(cfg.resume))
++        state_file = state_dir / 'trainer_state.json'
++        if state_file.is_file():
++            expected = json.loads(state_file.read_text()).get('resume_contract', {}).get('dataset_stats_sha256')
++            if expected:
++                resume_stats = state_dir.parents[2] / 'dataset_stats.json'
++                if not resume_stats.is_file() or hashlib.sha256(resume_stats.read_bytes()).hexdigest() != expected:
++                    raise ValueError('Resume source normalization is missing or has changed')
++    train_ds, val_ds = build_datasets(cfg.data, resume_stats=resume_stats)
++    if resume_stats:
++        destination = Path(cfg.output_dir) / 'dataset_stats.json'
++        if resume_stats.resolve() != destination.resolve():
++            from accelerate import PartialState
++            if PartialState().is_main_process:
++                shutil.copyfile(resume_stats, destination)
++            PartialState().wait_for_everyone()
+ 
+     from .trainer_jointfm import JointPredictFMTrainer
+     JointPredictFMTrainer(cfg=cfg, model=model, train_dataset=train_ds, val_dataset=val_ds).train()
+diff --git a/src/Roboactualizer/trainer_jointfm.py b/src/Roboactualizer/trainer_jointfm.py
+index 6f64bd3..2fb0c67 100644
+--- a/src/Roboactualizer/trainer_jointfm.py
++++ b/src/Roboactualizer/trainer_jointfm.py
+@@ -7,11 +7,13 @@ import os
+ import re
+ import shutil
+ import time
++import uuid
+ from math import ceil
+ from pathlib import Path
+ 
+ import torch
+ from accelerate import Accelerator
++from accelerate.utils import DistributedDataParallelKwargs
+ from omegaconf import DictConfig, OmegaConf
+ from torch.optim.lr_scheduler import ConstantLR, CosineAnnealingLR, LinearLR, SequentialLR
+ from torch.utils.data import DataLoader
+@@ -20,6 +22,7 @@ from .utils.fs import ensure_dir
+ from .utils.logging_config import get_logger
+ from .utils.pytorch_utils import set_global_seed
+ from .utils.samplers import ResumableEpochSampler
++from .utils.continuation_schedule import continuation_lr
+ 
+ logger = get_logger(__name__)
+ 
+@@ -73,14 +76,23 @@ class JointPredictFMTrainer:
+ 
+         # Cache clip settings and normalization go into ckpt metadata.
+         self._clip_meta = self._read_cache_clip_meta()
+-        if self.model.latent_norm_stats_meta is None:
++        uses_channel_stats = getattr(self.model, "latent_normalization", "channel_stats") == "channel_stats"
++        if uses_channel_stats and self.model.latent_norm_stats_meta is None:
+             raise ValueError("Training requires model.latent_norm_stats_path.")
+         self._record_norm_metadata()
++        selection_sha = self.model.metadata.get("episode_selection_sha256")
++        if uses_channel_stats and selection_sha:
++            stats = json.loads(Path(str(cfg.model.latent_norm_stats_path)).read_text())
++            if stats.get("episode_selection_sha256") != selection_sha:
++                raise ValueError("Latent normalization statistics use a different episode selection")
+ 
+         self.accelerator = Accelerator(
+             gradient_accumulation_steps=self.gradient_accumulation_steps,
+             mixed_precision=self.mixed_precision,
+             step_scheduler_with_optimizer=False,
++            kwargs_handlers=[DistributedDataParallelKwargs(
++                find_unused_parameters=True, gradient_as_bucket_view=True
++            )] if self.model.action_only else [],
+         )
+ 
+         logger.info(
+@@ -139,8 +151,10 @@ class JointPredictFMTrainer:
+         )
+         self.optimizer.zero_grad(set_to_none=True)
+         self.wandb_run = None
+-        self._init_wandb()
++        self.wandb_identity = None
+         self._resume_or_load_checkpoint()
++        self._apply_continuation_lr()
++        self._init_wandb()
+ 
+         val_size = len(self.val_dataset) if self.val_dataset is not None else len(self.train_dataset)
+         logger.info("Train/val dataset size: %d/%d", len(self.train_dataset), val_size)
+@@ -155,14 +169,34 @@ class JointPredictFMTrainer:
+                 "wandb logging is enabled in config (`wandb.enabled=true`) but wandb is not installed."
+             ) from e
+ 
++        identity_path = Path(self.output_dir) / "wandb_run.json"
++        identity = self.wandb_identity
++        is_resume = identity is not None
++        if self.resume and Path(str(self.resume)).is_dir() and identity is None:
++            raise ValueError("W&B resume requires run identity in the training checkpoint")
++        if identity is None:
++            if identity_path.exists():
++                raise ValueError("Output already has a W&B run; use full-state resume or a new output directory")
++            identity = {"id": uuid.uuid4().hex[:8], "project": str(self.cfg.wandb.project),
++                        "workspace": self.cfg.wandb.workspace}
++        if (identity["project"] != str(self.cfg.wandb.project)
++                or identity["workspace"] != self.cfg.wandb.workspace):
++            raise ValueError("W&B project/workspace differs from the resumed run")
+         self.wandb_run = wandb.init(
++            id=identity["id"],
++            resume="must" if is_resume else "never",
+             entity=self.cfg.wandb.workspace,
+             project=self.cfg.wandb.project,
+             name=self.cfg.wandb.name,
+             group=None if self.cfg.wandb.group in (None, "null", "") else str(self.cfg.wandb.group),
+             mode=self.cfg.wandb.mode,
+             dir=self.output_dir,
++            config=OmegaConf.to_container(self.cfg, resolve=True),
+         )
++        self.wandb_identity = identity
++        temporary = identity_path.with_suffix(".tmp")
++        temporary.write_text(json.dumps(identity, indent=2))
++        os.replace(temporary, identity_path)
+         logger.info(
+             "Initialized wandb run: workspace=%s project=%s name=%s",
+             self.cfg.wandb.workspace,
+@@ -314,7 +348,9 @@ class JointPredictFMTrainer:
+         n_future = self.future_size
+         if "video_latent" in sample:
+             latents = sample["video_latent"].to(device).float()  # [B,T,N,D]
+-            visual = {"z0": latents[:, 0], "z_future": latents[:, 1 : 1 + n_future]}
++            visual = {"z0": latents[:, 0]}
++            if not self.cfg.model.get("action_only", False):
++                visual["z_future"] = latents[:, 1 : 1 + n_future]
+         else:
+             video = sample["video"].to(device)
+             visual = {"pixels": video[:, 0 : 1 + n_future]}
+@@ -393,6 +429,7 @@ class JointPredictFMTrainer:
+             "norm_default_mode": str(processor.norm_default_mode),
+             "norm_exception_mode": exc,
+             "dataset_stats_sha256": sha,
++            "episode_selection_sha256": self.train_dataset.lerobot_dataset.episode_selection_sha256,
+         })
+ 
+     def _assert_future_size_available(self):
+@@ -452,10 +489,40 @@ class JointPredictFMTrainer:
+             "global_step": int(self.global_step),
+             "epoch": int(self.epoch),
+             "batch_in_epoch": int(self.batch_in_epoch),
++            "resume_contract": self._resume_contract(),
++            "wandb_identity": getattr(self, "wandb_identity", None),
+         }
+         with open(state_file, "w", encoding="utf-8") as f:
+             json.dump(payload, f, ensure_ascii=True, indent=2)
+ 
++    def _resume_contract(self):
++        model = self.accelerator.unwrap_model(self.model)
++        contract = {
++            "model": OmegaConf.to_container(self.cfg.model, resolve=True),
++            "data": OmegaConf.to_container(self.cfg.data.train, resolve=True),
++            "encoder_sha256": model.metadata.get("backbone", {}).get("encoder_checkpoint_sha256"),
++            "latent_stats_sha256": (model.latent_norm_stats_meta or {}).get("sha256"),
++            "dataset_stats_sha256": model.metadata.get("dataset_stats_sha256"),
++            "episode_selection_sha256": model.metadata.get("episode_selection_sha256"),
++            "world_size": self.accelerator.num_processes,
++            "batch_size": self.batch_size,
++            "gradient_accumulation_steps": self.gradient_accumulation_steps,
++            "seed": self.seed, "max_steps": self.max_steps,
++            "learning_rate": self.learning_rate, "weight_decay": self.weight_decay,
++            "mixed_precision": self.mixed_precision,
++            "lr_scheduler_type": self.cfg.lr_scheduler_type,
++        }
++        if self.cfg.get('continuation_schedule'):
++            contract['continuation_schedule'] = OmegaConf.to_container(self.cfg.continuation_schedule, resolve=True)
++        return contract
++
++    def _apply_continuation_lr(self):
++        config = self.cfg.get('continuation_schedule')
++        if config:
++            lr = continuation_lr(self.global_step, self.max_steps, config)
++            for group in self.optimizer.param_groups:
++                group['lr'] = lr
++
+     def save_checkpoint(self):
+         step_tag = f"step_{self.global_step:06d}"
+ 
+@@ -465,26 +532,60 @@ class JointPredictFMTrainer:
+             ckpt_path = self._save_weights_checkpoint(step_tag=step_tag)
+         self.accelerator.wait_for_everyone()
+ 
+-        # Keep only the latest resumable state.
++        # Do not discard the last complete state until its replacement is saved.
+         state_path = os.path.join(self.state_dir, "latest")
+-        if self.accelerator.is_main_process and os.path.isdir(state_path):
+-            shutil.rmtree(state_path)
++        pending = os.path.join(self.state_dir, "pending")
++        previous = os.path.join(self.state_dir, "previous")
++        if self.accelerator.is_main_process and os.path.isdir(pending):
++            shutil.rmtree(pending)
+         self.accelerator.wait_for_everyone()
+-        ensure_dir(state_path)
+-        self.accelerator.save_state(output_dir=state_path)
++        ensure_dir(pending)
++        self.accelerator.save_state(output_dir=pending)
+         if self.accelerator.is_main_process:
+-            self._save_trainer_state(state_path)
++            self._save_trainer_state(pending)
++            if os.path.isdir(previous):
++                shutil.rmtree(previous)
++            if os.path.isdir(state_path):
++                os.replace(state_path, previous)
++            os.replace(pending, state_path)
+         self.accelerator.wait_for_everyone()
+ 
+         return {"weights_path": ckpt_path, "state_path": state_path}
+ 
+     def load_training_state(self, state_dir: str):
+-        self.accelerator.load_state(input_dir=state_dir)
+         state_file = Path(state_dir) / "trainer_state.json"
++        if (self.accelerator.unwrap_model(self.model).action_only
++                or self.cfg.model.get('predictive_context', False)):
++            if not state_file.is_file():
++                raise ValueError("Action-only resume requires a complete trainer_state.json")
++            payload = json.loads(state_file.read_text())
++            if not {"global_step", "epoch", "batch_in_epoch"}.issubset(payload):
++                raise ValueError("Action-only resume is missing dataloader progress")
++            saved_contract = payload.get("resume_contract")
++            current_contract = self._resume_contract()
++            comparable_saved = dict(saved_contract or {})
++            comparable_current = dict(current_contract)
++            # A continuation may extend the schedule; all model/data/optimizer
++            # settings still need to match exactly.
++            saved_max_steps = comparable_saved.pop("max_steps", None)
++            current_max_steps = comparable_current.pop("max_steps", None)
++            extension = comparable_current.get('continuation_schedule')
++            if extension and 'continuation_schedule' not in comparable_saved:
++                if payload['global_step'] != extension['start_step'] or payload['global_step'] != saved_max_steps:
++                    raise ValueError('Continuation must start at the completed source schedule')
++                comparable_current.pop('continuation_schedule')
++            if (comparable_saved != comparable_current
++                    or saved_max_steps is None
++                    or current_max_steps is None
++                    or current_max_steps < saved_max_steps
++                    or (current_max_steps != saved_max_steps and not extension)):
++                raise ValueError("Action-only resume contract mismatch; refusing incompatible state")
++        self.accelerator.load_state(input_dir=state_dir)
+         if state_file.exists():
+             with open(state_file, "r", encoding="utf-8") as f:
+                 payload = json.load(f)
+             self.global_step = int(payload["global_step"])
++            self.wandb_identity = payload.get("wandb_identity")
+ 
+             if "epoch" in payload and "batch_in_epoch" in payload:
+                 self.epoch = int(payload["epoch"])
+@@ -546,11 +647,12 @@ class JointPredictFMTrainer:
+                 continue
+ 
+             with self.accelerator.accumulate(self.model):
+-                train_model = self.model if hasattr(self.model, "training_loss") else self.accelerator.unwrap_model(self.model)
+                 batch = self._prepare_jointfm_batch(sample)
+ 
+                 with self.accelerator.autocast():
+-                    loss, loss_dict = train_model.training_loss(batch)
++                    # All objectives must enter DDP.forward(), including joint WM
++                    # training, so reducer preparation and accumulation are correct.
++                    loss, loss_dict = self.model(batch)
+                 self.accelerator.backward(loss)
+ 
+                 if self.accelerator.sync_gradients:
+@@ -560,6 +662,7 @@ class JointPredictFMTrainer:
+                         self.scheduler.step()
+                     self.optimizer.zero_grad(set_to_none=True)
+                     self.global_step += 1
++                    self._apply_continuation_lr()
+                     global_loss = float(
+                         self.accelerator.gather(loss.detach().float().reshape(1)).mean().item()
+                     )
+@@ -588,7 +691,7 @@ class JointPredictFMTrainer:
+                         description += "lr=%.2e speed=%.2f step/s, %.2f samples/s eta=%s" % (
+                             current_lr,
+                             steps_per_sec,
+-                            steps_per_sec * self.batch_size * self.accelerator.num_processes,
++                            steps_per_sec * self.batch_size * self.accelerator.num_processes * self.gradient_accumulation_steps,
+                             eta_str,
+                         )
+                         logger.info(description)
+@@ -598,11 +701,13 @@ class JointPredictFMTrainer:
+                             "train/grad_norm": global_grad_norm,
+                             "train/lr": current_lr,
+                             "performance/steps_per_sec": steps_per_sec,
+-                            "performance/samples_per_sec": steps_per_sec * self.batch_size * self.accelerator.num_processes,
++                            "performance/samples_per_sec": steps_per_sec * self.batch_size * self.accelerator.num_processes * self.gradient_accumulation_steps,
+                         }
+                         for key, value in global_loss_metrics.items():
+                             wandb_payload[f"train/{key}"] = value
+                         self._wandb_log(wandb_payload)
++                        with (Path(self.output_dir) / "train_metrics.jsonl").open("a") as stream:
++                            stream.write(json.dumps({"step": self.global_step, **wandb_payload}) + "\n")
+ 
+                     if (
+                         self.eval_every > 0
+@@ -627,7 +732,21 @@ class JointPredictFMTrainer:
+                                 }
+                             )
+ 
+-                    if self.save_every > 0 and self.global_step % self.save_every == 0:
++                    # Rank zero reads the file; all ranks agree before saving.
++                    pause = torch.tensor(int(self.accelerator.is_main_process and
++                        (Path(self.output_dir) / 'PAUSE_REQUEST').exists()),
++                        device=self.accelerator.device)
++                    pause = self.accelerator.reduce(pause, reduction='sum')
++                    if pause.item():
++                        self.save_checkpoint()
++                        if self.accelerator.is_main_process:
++                            (Path(self.output_dir) / 'pause_receipt.json').write_text(
++                                json.dumps(dict(step=self.global_step, status='paused'), indent=2))
++                        self._finish_wandb()
++                        return
++
++                    if (self.save_every > 0 and self.global_step % self.save_every == 0
++                            and self.global_step < self.max_steps):
+                         ckpt_info = self.save_checkpoint()
+                         if self.accelerator.is_main_process:
+                             logger.info(

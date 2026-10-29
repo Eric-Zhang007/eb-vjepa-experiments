@@ -1,0 +1,13 @@
+{
+  "pid": 3267087,
+  "argv": [
+    "bash",
+    "/data/users/jiachangzhang/eb_vjepa/scripts/launch_elaf_v1.sh",
+    "--config",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/configs/v1_infra.json",
+    "--resume",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v1_grid11k_72token/checkpoints/generation_000583_90999138a5ba4b1593ab93ebfba5dbfe",
+    "--infra-migration",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_infra_resume_20261019/migration.json"
+  ]
+}

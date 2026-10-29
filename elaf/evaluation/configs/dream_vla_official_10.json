@@ -1,0 +1,13 @@
+{
+  "type": "dream_vla_official",
+  "repo": "/data/users/jiachangzhang/eb_vjepa/repos/Dream-VLX",
+  "checkpoint": "/data/users/jiachangzhang/eb_vjepa/experiments/dream_vla_official_6gpu/libero_10_no_noops/Dream_VLA_7B_libero_10_no_noops_b8_lr_0_0001_patch_64_lora_r32_dropout_0_0__image_aug__Dream_VLA_official_6gpu_latest_best/checkpoints/latest",
+  "base_checkpoint": "/data/users/jiachangzhang/eb_vjepa/checkpoints/dream_vla/Dream-VLA-7B",
+  "suite_norm_map": {
+    "libero_10": "libero_10_no_noops"
+  },
+  "num_steps": 1,
+  "center_crop": true,
+  "device": "cuda:0",
+  "cpu_threads": 2
+}

@@ -1,0 +1,2 @@
+
+/data/users/jiachangzhang/eb_vjepa/envs/eb_vjepa_pretrain/bin/python: No module named pip

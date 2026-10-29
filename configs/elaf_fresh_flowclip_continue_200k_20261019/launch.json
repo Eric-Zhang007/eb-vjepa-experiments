@@ -1,0 +1,24 @@
+{
+  "pid": 1497417,
+  "command": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+    "-m",
+    "torch.distributed.run",
+    "--standalone",
+    "--nnodes=1",
+    "--nproc-per-node=6",
+    "-m",
+    "elaf.v0_train",
+    "--config",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/configs/fresh_flowclip_continue_200k.json",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_fresh_flowclip_2k_20261019",
+    "--resume",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_fresh_flowclip_2k_20261019/checkpoints/generation_002001_a00c0a2861c74d6090e79be49b6abd5d",
+    "--infra-migration",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_fresh_flowclip_2k_20261019/continuation_to_200k.json"
+  ],
+  "source_step": 2001,
+  "target_step": 200000,
+  "wandb_run_id": "j2mi08sz"
+}

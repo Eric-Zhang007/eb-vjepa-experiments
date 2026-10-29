@@ -1,0 +1,21 @@
+# @package _global_
+defaults:
+  - libero_action_only
+  - _self_
+
+encoder_tag: ctp_final_030000
+output_dir: /data/users/jiachangzhang/eb_vjepa/experiments/action_only/train_final
+model:
+  backbone:
+    ckpt_path: /data/users/jiachangzhang/eb_vjepa/experiments/ctp_v1/embodied_vjepa_encoder_030000.pt
+  latent_norm_stats_path: /data/users/jiachangzhang/eb_vjepa/experiments/action_only/cache_final_030000/latent_norm_stats.json
+data:
+  train:
+    dataset_dirs:
+      - /data/public/zhongy/starvla/Datasets/LEROBOT_LIBERO_DATA/libero_spatial_no_noops_1.0.0_lerobot
+      - /data/public/zhongy/starvla/Datasets/LEROBOT_LIBERO_DATA/libero_object_no_noops_1.0.0_lerobot
+      - /data/public/zhongy/starvla/Datasets/LEROBOT_LIBERO_DATA/libero_goal_no_noops_1.0.0_lerobot
+      - /data/public/zhongy/starvla/Datasets/LEROBOT_LIBERO_DATA/libero_10_no_noops_1.0.0_lerobot
+    episode_ids_file: /data/users/jiachangzhang/eb_vjepa/experiments/libero_episode_selection.json
+    rgb_latent_cache_dir: /data/users/jiachangzhang/eb_vjepa/experiments/action_only/cache_final_030000
+    text_embedding_cache_dir: /data/users/jiachangzhang/eb_vjepa/experiments/action_only/text_cache

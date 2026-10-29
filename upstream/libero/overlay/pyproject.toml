@@ -1,0 +1,29 @@
+[project]
+name = "libero-dnft4rp-runtime"
+version = "0.1.0"
+description = "LIBERO benchmark runtime overlay for DNFT4RP"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.9"
+dependencies = [
+  "hydra-core==1.2.0",
+  "numpy==1.23.3",
+  "easydict==1.9",
+  "opencv-python==4.6.0.66",
+  "einops==0.4.1",
+  "cloudpickle==2.1.0",
+  "bddl==1.0.1",
+  "robosuite==1.4.0",
+  "gym==0.25.2",
+  "h5py==3.7.0",
+  "huggingface_hub",
+  "tqdm==4.64.1",
+  "termcolor==2.0.1",
+  "future==0.18.2",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = false

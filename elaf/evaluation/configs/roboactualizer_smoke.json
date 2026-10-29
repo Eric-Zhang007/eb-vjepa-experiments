@@ -1,0 +1,9 @@
+{
+  "type": "roboactualizer_action_only",
+  "run": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/ctp_grid20k_search/encoder_011000/train_action_only_011000",
+  "step": 20000,
+  "repo": "/data/users/jiachangzhang/eb_vjepa/repos/RoboActualizer",
+  "text_cache": "/data/users/jiachangzhang/eb_vjepa/experiments/action_only/libero_10k_egl_200/text_cache",
+  "device": "cuda:0",
+  "num_steps": 4
+}

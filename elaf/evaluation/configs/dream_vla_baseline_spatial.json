@@ -1,0 +1,11 @@
+{
+  "type": "dream_vla_custom_deprecated",
+  "checkpoint": "/data/users/jiachangzhang/eb_vjepa/experiments/dream_baseline/spatial/checkpoints/step_020000",
+  "unnorm_key": "spatial",
+  "num_steps": 4,
+  "center_crop": true,
+  "device": "cuda:0",
+  "cpu_threads": 2,
+  "deprecated": true,
+  "note": "Custom adapter.pt format only. Not official Dream-VLX finetune output; do not use for requested official baseline."
+}

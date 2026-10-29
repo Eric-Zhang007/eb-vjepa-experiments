@@ -1,0 +1,32 @@
+{
+  "dream_repo": "/data/users/jiachangzhang/eb_vjepa/repos/Dream-VLX",
+  "checkpoint": "/data/users/jiachangzhang/eb_vjepa/checkpoints/dream_vla/Dream-VLA-7B",
+  "manifest": "/data/users/jiachangzhang/eb_vjepa/experiments/elaf/data_smoke_grid11k/manifest.json",
+  "tiny": true,
+  "allow_smoke_data": true,
+  "device": "cuda",
+  "precision": "bf16",
+  "backbone_training": "lora",
+  "lora_rank": 4,
+  "gradient_checkpointing": false,
+  "batch_size": 1,
+  "gradient_accumulation": 1,
+  "workers": 0,
+  "max_steps": 2,
+  "save_every": 1,
+  "learning_rate": 0.00002,
+  "weight_decay": 0.01,
+  "warmup_steps": 2,
+  "max_grad_norm": 1.0,
+  "seed": 42,
+  "model": {
+    "action_dim": 7,
+    "action_horizon": 8,
+    "latent_dim": 1024,
+    "latent_tokens": 16,
+    "proprio_dim": 8,
+    "lambda_latent": 1.0,
+    "latent_zero_probability": 0.1,
+    "action_only": false
+  }
+}

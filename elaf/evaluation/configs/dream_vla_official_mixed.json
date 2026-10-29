@@ -1,0 +1,16 @@
+{
+  "type": "dream_vla_official",
+  "repo": "/data/users/jiachangzhang/eb_vjepa/repos/Dream-VLX",
+  "checkpoint": "/REPLACE_WITH_COMPLETED_MIXED_CHECKPOINT",
+  "base_checkpoint": "/data/users/jiachangzhang/eb_vjepa/checkpoints/dream_vla/Dream-VLA-7B",
+  "suite_norm_map": {
+    "libero_10": "libero_10_no_noops",
+    "libero_goal": "libero_goal_no_noops",
+    "libero_object": "libero_object_no_noops",
+    "libero_spatial": "libero_spatial_no_noops"
+  },
+  "num_steps": 4,
+  "center_crop": true,
+  "device": "cuda:0",
+  "cpu_threads": 2
+}

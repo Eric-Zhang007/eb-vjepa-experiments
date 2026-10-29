@@ -1,0 +1,82 @@
+[
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/archive_ctp_grid_local.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/archive_grid_checkpoint.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/ckpt_resume_loop.sh",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/migration_cached_stream_remote.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/migration_export_remote.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/migration_extra_remote.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/migration_inventory_remote.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/migration_make_batches_remote.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/migration_pause_at_round.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/migration_plan_remote.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/migration_stream_remote.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/retire_cancelled_50k_cache.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/retry_old10k_start.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/stop_plus_memory_fit.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/test_grid_archive.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/test_grid_storage.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/test_watch_elaf_v0.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/watch_action_pipeline.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/watch_elaf_v0.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  },
+  {
+    "path": "/data/users/jiachangzhang/eb_vjepa/scripts/watch_full_ctp_action_pipeline.py",
+    "reason": "migration/storage/watchdog utility; local backup retained"
+  }
+]

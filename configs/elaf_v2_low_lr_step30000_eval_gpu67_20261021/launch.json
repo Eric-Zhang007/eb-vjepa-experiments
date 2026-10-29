@@ -1,0 +1,23 @@
+{
+  "pid": 3536876,
+  "command": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+    "/data/users/jiachangzhang/eb_vjepa/scripts/run_elaf_v2_success_eval.py",
+    "--root",
+    "/data/users/jiachangzhang/eb_vjepa",
+    "--run",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_low_lr_20k_to30k_20261020",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_low_lr_step30000_eval_gpu67_20261021",
+    "--checkpoint",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_low_lr_20k_to30k_20261020/preserved/step-030000",
+    "--gpus",
+    "6,7",
+    "--smoke-result",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_success_eval_20261020/smoke_result.json",
+    "--name",
+    "elaf-v2-low-lr-step30000-libero200-plus280"
+  ],
+  "diagnostics_temporarily_suspended": 3449617,
+  "automatic_diagnostics_resume": true
+}

@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-29",
+  "cpu_tests": {"windows": "4 passed", "wsl_linux": "4 passed"},
+  "real_pinned_source_restore": ["dream_vla_baseline", "dream_jepa_final", "roboactualizer", "vjepa2", "libero", "libero_plus"],
+  "repeated_source_restore": "passed without recloning or patch reapplication",
+  "python310_dependency_resolution": "uv pip compile passed with torch 2.5.1 and torchvision 0.20.1 constraints; env installs CUDA121 wheels first",
+  "target_gpu_install_rollout_and_exact_resume": "not tested; requires target cluster"
+}

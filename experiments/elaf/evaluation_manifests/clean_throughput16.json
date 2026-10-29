@@ -1,0 +1,130 @@
+[
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "trial": 0,
+    "seed": 239,
+    "env_seed": 239
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "trial": 1,
+    "seed": 240,
+    "env_seed": 239
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "trial": 2,
+    "seed": 241,
+    "env_seed": 239
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "trial": 3,
+    "seed": 242,
+    "env_seed": 239
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "trial": 4,
+    "seed": 243,
+    "env_seed": 239
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 1,
+    "trial": 0,
+    "seed": 244,
+    "env_seed": 244
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 1,
+    "trial": 1,
+    "seed": 245,
+    "env_seed": 244
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 1,
+    "trial": 2,
+    "seed": 246,
+    "env_seed": 244
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 1,
+    "trial": 3,
+    "seed": 247,
+    "env_seed": 244
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 1,
+    "trial": 4,
+    "seed": 248,
+    "env_seed": 244
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 2,
+    "trial": 0,
+    "seed": 249,
+    "env_seed": 249
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 2,
+    "trial": 1,
+    "seed": 250,
+    "env_seed": 249
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 2,
+    "trial": 2,
+    "seed": 251,
+    "env_seed": 249
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 2,
+    "trial": 3,
+    "seed": 252,
+    "env_seed": 249
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 2,
+    "trial": 4,
+    "seed": 253,
+    "env_seed": 249
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 3,
+    "trial": 0,
+    "seed": 254,
+    "env_seed": 254
+  }
+]

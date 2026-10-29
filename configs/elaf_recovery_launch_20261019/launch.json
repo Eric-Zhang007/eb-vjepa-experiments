@@ -1,0 +1,21 @@
+{
+  "pid": 424201,
+  "command": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+    "-m",
+    "torch.distributed.run",
+    "--standalone",
+    "--nnodes=1",
+    "--nproc-per-node=6",
+    "-m",
+    "elaf.v0_train",
+    "--config",
+    "/data/users/jiachangzhang/eb_vjepa/elaf/configs/recovery_5000.json",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_recovery_from5000_20261019",
+    "--fork-from",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v1_grid11k_72token/checkpoints/generation_005000_f819a8cb3c004288b5d38d218eb7dd9f",
+    "--stop-after-updates",
+    "2"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "elaf",
+  "checkpoint": "/data/users/jiachangzhang/eb_vjepa/experiments/elaf/tiny_smoke_v2/checkpoints/step_000002",
+  "device": "cuda:0",
+  "num_steps": 4,
+  "mode": "joint"
+}

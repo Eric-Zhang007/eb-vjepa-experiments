@@ -1,0 +1,22 @@
+{
+  "trainer_pid": 3449616,
+  "diagnostics_pid": 3449617,
+  "command": [
+    "/data/users/jiachangzhang/eb_vjepa/envs/dream_vla_official/bin/python",
+    "-m",
+    "torch.distributed.run",
+    "--standalone",
+    "--nproc_per_node",
+    "6",
+    "-m",
+    "elaf.v2_train",
+    "--config",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_low_lr_to200k_20261021/config.json",
+    "--output",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_low_lr_to200k_20261021",
+    "--resume",
+    "/data/users/jiachangzhang/eb_vjepa/experiments/elaf_v2_low_lr_to200k_20261021/fork_checkpoint",
+    "--wandb-mode",
+    "online"
+  ]
+}

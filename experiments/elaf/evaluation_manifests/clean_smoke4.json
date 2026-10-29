@@ -1,0 +1,34 @@
+[
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "trial": 0,
+    "seed": 239,
+    "env_seed": 239
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "trial": 1,
+    "seed": 240,
+    "env_seed": 239
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "trial": 2,
+    "seed": 241,
+    "env_seed": 239
+  },
+  {
+    "benchmark": "clean",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "trial": 3,
+    "seed": 242,
+    "env_seed": 239
+  }
+]

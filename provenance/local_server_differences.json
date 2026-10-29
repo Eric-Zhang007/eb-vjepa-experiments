@@ -1,0 +1,68 @@
+[
+  {
+    "path": "scripts/compare_libero_encoder_latents.py",
+    "chosen": "server snapshot",
+    "local_sha256": "c38d9c0fc0ee5334955fae5d72cea97206cf53c702c17123ab6ba3c76e6f5677",
+    "server_sha256": "56db6f55928b71dc0736b87e6b32ed759f059ad2142990cbe7e09eac0b1cac59"
+  },
+  {
+    "path": "scripts/robodojo/download_assets.py",
+    "chosen": "server snapshot",
+    "local_sha256": "29fb927bb22f5a36fe557900cd6e76f4bddababce5d45e0c21a2afb9b950d209",
+    "server_sha256": "0b5055c296860530847b77bf6a3ce5509a303fc1a85d9744e5a090d6dd33afe3"
+  },
+  {
+    "path": "scripts/robodojo/launch_bridge.sh",
+    "chosen": "server snapshot",
+    "local_sha256": "b3b923a9b7979cc887b6aba87330525270f646a2cbe59fdd17a64633118c803f",
+    "server_sha256": "07a2df71f75f563cc76f880c583fdf4e45c5a5f4bece2d9de188b3aea34a29d7"
+  },
+  {
+    "path": "scripts/robodojo/register_policy.sh",
+    "chosen": "server snapshot",
+    "local_sha256": "72f8215a7c631d78b29270beef32e07c5705bf81189ecd3a90225f3adc5f2042",
+    "server_sha256": "6afe05885925c03e152cb9d051862e1f0e750e68011e47d568d63dd96eeca540"
+  },
+  {
+    "path": "scripts/robodojo/render_smoke.py",
+    "chosen": "server snapshot",
+    "local_sha256": "b88ebbc054eaaaa372618679195e5653015c60c9c5714c5da97b8ac99551d940",
+    "server_sha256": "c671137830f5f76b27b6b6e28f1eca2065d468dcfb2be400b8380520b218e58d"
+  },
+  {
+    "path": "scripts/robodojo/setup_dream_official.sh",
+    "chosen": "server snapshot",
+    "local_sha256": "c90445d06ca4cb0fc2f9fdbb1ec8e4fbcaea2a794e60cc381d7f068c38531b4d",
+    "server_sha256": "dfa2e3f4dfb879096a8ecbdbc1ce17ba51e1fa09c5cb9c1626b3ce5c92c693a2"
+  },
+  {
+    "path": "scripts/robodojo/setup_remote.sh",
+    "chosen": "server snapshot",
+    "local_sha256": "e2ec1ec75b77f69283562229f1e66b8906cf5acafba5b90d51423ebe7c2346bd",
+    "server_sha256": "1f6a1fbaa99296c083f609738e7633d80ef12a2bd1c78e89d642513f3accbc12"
+  },
+  {
+    "path": "scripts/robodojo/elaf_policy/deploy.py",
+    "chosen": "server snapshot",
+    "local_sha256": "8b5ac42d6621cf7b4df1ecb43a3afbda8c942ab757408acd993a44d6bab6bdc2",
+    "server_sha256": "a0690d1781264d493ba0f2ec9b1c60ab2161e1986cfbbe3fccef0a42efa135a4"
+  },
+  {
+    "path": "scripts/robodojo/elaf_policy/deploy.yml",
+    "chosen": "server snapshot",
+    "local_sha256": "ec4dff73143b24464bd184236cf4dea52c66b8ff898ca9f5de315882440687d6",
+    "server_sha256": "a1dcacbc3785f735d0b7f9cc40da8adda65fc9806bed6b67bc960ee4aaa8e64f"
+  },
+  {
+    "path": "scripts/robodojo/elaf_policy/model.py",
+    "chosen": "server snapshot",
+    "local_sha256": "46f589298094bd1d53b41bfafae2c058b1b0ace89b73f5f4b4d136430c07d92b",
+    "server_sha256": "e7db79895cda9d58dc1632805b06fcb891f212da9c490194f8c0126ef6eca5c2"
+  },
+  {
+    "path": "scripts/robodojo/elaf_policy/__init__.py",
+    "chosen": "server snapshot",
+    "local_sha256": "b499d4fa9b1fe67523a553b8114ada0b2a8b25692ac78a5c5c5495c390d646e2",
+    "server_sha256": "a34d87055c526235f2b808e987da7b586ef5dafd95374d15a166f10cd1d38332"
+  }
+]

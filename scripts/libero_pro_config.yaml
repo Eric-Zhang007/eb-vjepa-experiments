@@ -1,0 +1,5 @@
+benchmark_root: /data/users/jiachangzhang/eb_vjepa/repos/LIBERO-PRO-official/libero/libero
+bddl_files: /data/users/jiachangzhang/eb_vjepa/checkpoints/benchmark_assets/libero_pro/bddl_files
+init_states: /data/users/jiachangzhang/eb_vjepa/checkpoints/benchmark_assets/libero_pro/init_files
+assets: /data/users/jiachangzhang/eb_vjepa/repos/LIBERO-PRO-official/libero/libero/assets
+datasets: /data/users/jiachangzhang/DNFT4RP/upstream/libero/libero/datasets

@@ -1,0 +1,2 @@
+
+/data/users/jiachangzhang/eb_vjepa/envs/elaf/bin/python: No module named pip
