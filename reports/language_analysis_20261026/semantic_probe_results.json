@@ -1,0 +1,247 @@
+{
+  "protocol": {
+    "description": "semantic-slot ridge probe with leave-one-paraphrase-out evaluation",
+    "n_tasks": 20,
+    "n_eval_tasks": 13,
+    "n_paraphrases": 40,
+    "slots": [
+      "action",
+      "object",
+      "source",
+      "destination",
+      "state"
+    ],
+    "behavioral_probe": false
+  },
+  "representations": {
+    "umt5_instruction_only": {
+      "slot_accuracy": {
+        "action": [
+          0.9230769230769231,
+          0.9230769230769231
+        ],
+        "object": [
+          0.9230769230769231,
+          0.8461538461538461
+        ],
+        "source": [
+          0.23076923076923078,
+          0.23076923076923078
+        ],
+        "destination": [
+          0.7692307692307693,
+          0.7692307692307693
+        ],
+        "state": [
+          0.9230769230769231,
+          0.7692307692307693
+        ]
+      },
+      "full_task_accuracy": [
+        0.7692307692307693,
+        0.6153846153846154
+      ],
+      "full_task_accuracy_mean": 0.6923076923076923,
+      "slot_accuracy_mean": {
+        "action": 0.9230769230769231,
+        "object": 0.8846153846153846,
+        "source": 0.23076923076923078,
+        "destination": 0.7692307692307693,
+        "state": 0.8461538461538463
+      }
+    },
+    "dream_input_embedding": {
+      "slot_accuracy": {
+        "action": [
+          0.9230769230769231,
+          0.8461538461538461
+        ],
+        "object": [
+          0.8461538461538461,
+          0.7692307692307693
+        ],
+        "source": [
+          0.38461538461538464,
+          0.46153846153846156
+        ],
+        "destination": [
+          0.8461538461538461,
+          0.8461538461538461
+        ],
+        "state": [
+          0.9230769230769231,
+          0.8461538461538461
+        ]
+      },
+      "full_task_accuracy": [
+        0.8461538461538461,
+        0.6153846153846154
+      ],
+      "full_task_accuracy_mean": 0.7307692307692308,
+      "slot_accuracy_mean": {
+        "action": 0.8846153846153846,
+        "object": 0.8076923076923077,
+        "source": 0.42307692307692313,
+        "destination": 0.8461538461538461,
+        "state": 0.8846153846153846
+      }
+    },
+    "dream_scene40_time0.0": {
+      "slot_accuracy": {
+        "action": [
+          0.15384615384615385,
+          0.5384615384615384
+        ],
+        "object": [
+          0.07692307692307693,
+          0.15384615384615385
+        ],
+        "source": [
+          0.5384615384615384,
+          0.3076923076923077
+        ],
+        "destination": [
+          0.07692307692307693,
+          0.38461538461538464
+        ],
+        "state": [
+          1.0,
+          1.0
+        ]
+      },
+      "full_task_accuracy": [
+        0.15384615384615385,
+        0.23076923076923078
+      ],
+      "full_task_accuracy_mean": 0.19230769230769232,
+      "slot_accuracy_mean": {
+        "action": 0.34615384615384615,
+        "object": 0.11538461538461539,
+        "source": 0.4230769230769231,
+        "destination": 0.23076923076923078,
+        "state": 1.0
+      }
+    },
+    "dream_scene40_time0.5": {
+      "slot_accuracy": {
+        "action": [
+          0.3076923076923077,
+          0.5384615384615384
+        ],
+        "object": [
+          0.5384615384615384,
+          0.38461538461538464
+        ],
+        "source": [
+          0.07692307692307693,
+          0.15384615384615385
+        ],
+        "destination": [
+          0.6153846153846154,
+          0.46153846153846156
+        ],
+        "state": [
+          1.0,
+          1.0
+        ]
+      },
+      "full_task_accuracy": [
+        0.46153846153846156,
+        0.46153846153846156
+      ],
+      "full_task_accuracy_mean": 0.46153846153846156,
+      "slot_accuracy_mean": {
+        "action": 0.4230769230769231,
+        "object": 0.46153846153846156,
+        "source": 0.11538461538461539,
+        "destination": 0.5384615384615385,
+        "state": 1.0
+      }
+    },
+    "dream_scene80_time0.0": {
+      "slot_accuracy": {
+        "action": [
+          0.6923076923076923,
+          0.5384615384615384
+        ],
+        "object": [
+          0.15384615384615385,
+          0.07692307692307693
+        ],
+        "source": [
+          0.07692307692307693,
+          0.07692307692307693
+        ],
+        "destination": [
+          0.23076923076923078,
+          0.5384615384615384
+        ],
+        "state": [
+          1.0,
+          1.0
+        ]
+      },
+      "full_task_accuracy": [
+        0.07692307692307693,
+        0.15384615384615385
+      ],
+      "full_task_accuracy_mean": 0.11538461538461539,
+      "slot_accuracy_mean": {
+        "action": 0.6153846153846154,
+        "object": 0.11538461538461539,
+        "source": 0.07692307692307693,
+        "destination": 0.3846153846153846,
+        "state": 1.0
+      }
+    },
+    "dream_scene80_time0.5": {
+      "slot_accuracy": {
+        "action": [
+          0.6923076923076923,
+          0.5384615384615384
+        ],
+        "object": [
+          0.3076923076923077,
+          0.3076923076923077
+        ],
+        "source": [
+          0.15384615384615385,
+          0.07692307692307693
+        ],
+        "destination": [
+          0.6153846153846154,
+          0.5384615384615384
+        ],
+        "state": [
+          1.0,
+          1.0
+        ]
+      },
+      "full_task_accuracy": [
+        0.23076923076923078,
+        0.07692307692307693
+      ],
+      "full_task_accuracy_mean": 0.15384615384615385,
+      "slot_accuracy_mean": {
+        "action": 0.6153846153846154,
+        "object": 0.3076923076923077,
+        "source": 0.11538461538461539,
+        "destination": 0.5769230769230769,
+        "state": 1.0
+      }
+    }
+  },
+  "old_retrieval_baseline": {
+    "umt5_valid_token_mean": 0.75,
+    "dream_scene40_time0.0": 0.175,
+    "dream_scene40_time0.5": 0.25,
+    "dream_input_embedding": 0.775,
+    "dream_scene80_time0.0": 0.35,
+    "dream_scene80_time0.5": 0.375,
+    "action_velocity_scene40_time0.0": 0.25,
+    "action_velocity_scene40_time0.5": 0.275,
+    "action_velocity_scene80_time0.0": 0.35,
+    "action_velocity_scene80_time0.5": 0.35,
+    "umt5_instruction_only": 0.8
+  }
+}

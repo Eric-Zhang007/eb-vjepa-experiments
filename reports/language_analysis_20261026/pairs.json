@@ -1,0 +1,282 @@
+[
+  {
+    "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+    "paraphrase": "could you move the black bowl thats between the plate and the ramekin onto the plate itself",
+    "suite": "libero_spatial",
+    "task_id": 997
+  },
+  {
+    "group": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+    "paraphrase": "could you move the black bowl thats between the plate and the ramekin onto the plate for me",
+    "suite": "libero_spatial",
+    "task_id": 1012
+  },
+  {
+    "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl on the cookie box and place it on the plate",
+    "paraphrase": "can you place the black bowl thats on the cookie box onto the plate",
+    "suite": "libero_spatial",
+    "task_id": 1106
+  },
+  {
+    "group": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl on the cookie box and place it on the plate",
+    "paraphrase": "lift the dark bowl situated on the biscuit container and set it on the dish",
+    "suite": "libero_spatial",
+    "task_id": 1121
+  },
+  {
+    "group": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl on the ramekin and place it on the plate",
+    "paraphrase": "pick up the darkcolored concave dish on the small ceramic dish and place it on the broad flat dish serving as a base for meals",
+    "suite": "libero_spatial",
+    "task_id": 1173
+  },
+  {
+    "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl next to the cookie box and place it on the plate",
+    "paraphrase": "pick up the darkcolored rounded container adjacent to the package containing baked sweets and place it on the flat dish designed for serving food",
+    "suite": "libero_spatial",
+    "task_id": 1206
+  },
+  {
+    "group": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl next to the cookie box and place it on the plate",
+    "paraphrase": "grasp the dark bowl beside the biscuit container and set it on the dish",
+    "suite": "libero_spatial",
+    "task_id": 1227
+  },
+  {
+    "group": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl next to the plate and place it on the plate",
+    "paraphrase": "for aesthetic balance the black bowl should be centered on the plate please make that adjustment now",
+    "suite": "libero_spatial",
+    "task_id": 1295
+  },
+  {
+    "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl on the wooden cabinet and place it on the plate",
+    "paraphrase": "heres what we need to do first pick up the black bowl from the wooden cabinet then place it on the plate",
+    "suite": "libero_spatial",
+    "task_id": 1333
+  },
+  {
+    "group": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+    "canonical": "pick up the black bowl on the wooden cabinet and place it on the plate",
+    "paraphrase": "id appreciate if you could pick up the black bowl from the wooden cabinet right now and place it on the plate",
+    "suite": "libero_spatial",
+    "task_id": 1340
+  },
+  {
+    "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+    "canonical": "pick up the alphabet soup and place it in the basket",
+    "paraphrase": "to complete this step pick up the alphabet soup carefully and place it in the basket",
+    "suite": "libero_object",
+    "task_id": 1048
+  },
+  {
+    "group": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+    "canonical": "pick up the alphabet soup and place it in the basket",
+    "paraphrase": "pick up the container of noodle letters and place it in the woven holder",
+    "suite": "libero_object",
+    "task_id": 1055
+  },
+  {
+    "group": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+    "canonical": "pick up the cream cheese and place it in the basket",
+    "paraphrase": "grasp the cream cheese and position it inside the basket",
+    "suite": "libero_object",
+    "task_id": 1087
+  },
+  {
+    "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+    "canonical": "pick up the tomato sauce and place it in the basket",
+    "paraphrase": "please put the tomato sauce in the basket",
+    "suite": "libero_object",
+    "task_id": 1206
+  },
+  {
+    "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+    "canonical": "pick up the tomato sauce and place it in the basket",
+    "paraphrase": "could you please pick up the tomato sauce and put it in the basket id really appreciate it",
+    "suite": "libero_object",
+    "task_id": 1212
+  },
+  {
+    "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+    "canonical": "pick up the tomato sauce and place it in the basket",
+    "paraphrase": "collect the tomato sauce and set it in the basket",
+    "suite": "libero_object",
+    "task_id": 1217
+  },
+  {
+    "group": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+    "canonical": "pick up the tomato sauce and place it in the basket",
+    "paraphrase": "lift the cylindrical container of red pasta condiment and set it inside the woven carrier",
+    "suite": "libero_object",
+    "task_id": 1233
+  },
+  {
+    "group": "pick_up_the_milk_and_place_it_in_the_basket",
+    "canonical": "pick up the milk and place it in the basket",
+    "paraphrase": "grasp the liquid dairy product and deposit it into the woven container",
+    "suite": "libero_object",
+    "task_id": 1265
+  },
+  {
+    "group": "pick_up_the_milk_and_place_it_in_the_basket",
+    "canonical": "pick up the milk and place it in the basket",
+    "paraphrase": "grasp the container of cows beverage and deposit it in the woven holder",
+    "suite": "libero_object",
+    "task_id": 1268
+  },
+  {
+    "group": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+    "canonical": "pick up the orange juice and place it in the basket",
+    "paraphrase": "collect the orange juice and deposit it in the basket",
+    "suite": "libero_object",
+    "task_id": 1357
+  },
+  {
+    "group": "put_the_bowl_on_the_stove",
+    "canonical": "put the bowl on the stove",
+    "paraphrase": "place the bowl on the stove please its time to start cooking",
+    "suite": "libero_goal",
+    "task_id": 1150
+  },
+  {
+    "group": "put_the_bowl_on_the_stove",
+    "canonical": "put the bowl on the stove",
+    "paraphrase": "position the dish on the cooktop",
+    "suite": "libero_goal",
+    "task_id": 1152
+  },
+  {
+    "group": "put_the_bowl_on_the_stove",
+    "canonical": "put the bowl on the stove",
+    "paraphrase": "the bowl should be placed on the stove before we proceed with mixing",
+    "suite": "libero_goal",
+    "task_id": 1160
+  },
+  {
+    "group": "put_the_wine_bottle_on_top_of_the_cabinet",
+    "canonical": "put the wine bottle on top of the cabinet",
+    "paraphrase": "after dinner remember to put the wine bottle on top of the kitchen cabinet",
+    "suite": "libero_goal",
+    "task_id": 1175
+  },
+  {
+    "group": "put_the_bowl_on_top_of_the_cabinet",
+    "canonical": "put the bowl on top of the cabinet",
+    "paraphrase": "place the basin on the upper surface of the cupboard",
+    "suite": "libero_goal",
+    "task_id": 1275
+  },
+  {
+    "group": "push_the_plate_to_the_front_of_the_stove",
+    "canonical": "push the plate to the front of the stove",
+    "paraphrase": "slide the dish to the forefront of the cooker",
+    "suite": "libero_goal",
+    "task_id": 1298
+  },
+  {
+    "group": "push_the_plate_to_the_front_of_the_stove",
+    "canonical": "push the plate to the front of the stove",
+    "paraphrase": "nudge the dish toward the front of the cooker",
+    "suite": "libero_goal",
+    "task_id": 1330
+  },
+  {
+    "group": "put_the_cream_cheese_in_the_bowl",
+    "canonical": "put the cream cheese in the bowl",
+    "paraphrase": "would you mind putting the cream cheese in the mixing bowl for me",
+    "suite": "libero_goal",
+    "task_id": 1340
+  },
+  {
+    "group": "put_the_cream_cheese_in_the_bowl",
+    "canonical": "put the cream cheese in the bowl",
+    "paraphrase": "place the spreadable dairy product into the dish used for mixing or serving foods",
+    "suite": "libero_goal",
+    "task_id": 1366
+  },
+  {
+    "group": "put_the_cream_cheese_in_the_bowl",
+    "canonical": "put the cream cheese in the bowl",
+    "paraphrase": "for our cheesecake preparation begin by putting the cream cheese in the bowl",
+    "suite": "libero_goal",
+    "task_id": 1369
+  },
+  {
+    "group": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+    "canonical": "turn on the stove and put the moka pot on it",
+    "paraphrase": "activate the cooking appliance and place the italian coffee maker on its surface",
+    "suite": "libero_10",
+    "task_id": 1199
+  },
+  {
+    "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+    "canonical": "put the black bowl in the bottom drawer of the cabinet and close it",
+    "paraphrase": "as part of our daily routine please place the black bowl in the bottom drawer of the cabinet and confirm the drawer is closed",
+    "suite": "libero_10",
+    "task_id": 1230
+  },
+  {
+    "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+    "canonical": "put the black bowl in the bottom drawer of the cabinet and close it",
+    "paraphrase": "would you be so kind as to store the black bowl in the bottom drawer of the cabinet and please ensure the drawer is shut afterwards",
+    "suite": "libero_10",
+    "task_id": 1236
+  },
+  {
+    "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+    "canonical": "put the black bowl in the bottom drawer of the cabinet and close it",
+    "paraphrase": "position the dark bowl inside the lowest compartment of the cupboard and shut it",
+    "suite": "libero_10",
+    "task_id": 1237
+  },
+  {
+    "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+    "canonical": "put the black bowl in the bottom drawer of the cabinet and close it",
+    "paraphrase": "the black bowl should go in the bottom drawer please put it there now and dont leave the drawer open",
+    "suite": "libero_10",
+    "task_id": 1242
+  },
+  {
+    "group": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+    "canonical": "put the black bowl in the bottom drawer of the cabinet and close it",
+    "paraphrase": "place the darkcolored dish used for serving or eating food into the lowest sliding storage compartment of the storage unit and secure it shut",
+    "suite": "libero_10",
+    "task_id": 1246
+  },
+  {
+    "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+    "canonical": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+    "paraphrase": "before the party starts make sure to put the white mug on the left plate and the yellow and white mug on the right plate",
+    "suite": "libero_10",
+    "task_id": 1264
+  },
+  {
+    "group": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+    "canonical": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+    "paraphrase": "place the white ceramic drinking container on the left dish designated for main courses and place the yellow and white ceramic drinking container on the right dish designated for main courses",
+    "suite": "libero_10",
+    "task_id": 1290
+  },
+  {
+    "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+    "canonical": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+    "paraphrase": "remember how grandma likes it put the white mug on the plate and the chocolate pudding to the right",
+    "suite": "libero_10",
+    "task_id": 1329
+  },
+  {
+    "group": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+    "canonical": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+    "paraphrase": "position the white cup on the dish and place the chocolate pudding to the right of the dish",
+    "suite": "libero_10",
+    "task_id": 1332
+  }
+]

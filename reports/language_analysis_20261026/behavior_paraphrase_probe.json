@@ -1,0 +1,352 @@
+{
+  "protocol": {
+    "type": "cached_fixed_observation_action_velocity_paraphrase_probe",
+    "semantic_switch_probe": false,
+    "scenes": [
+      "scene40",
+      "scene80"
+    ],
+    "flow_times": [
+      0.0,
+      0.5
+    ]
+  },
+  "cases": {
+    "scene40_time0.0": {
+      "pick up the black bowl on the wooden cabinet and place it on the plate": [
+        {
+          "text": "heres what we need to do first pick up the black bowl from the wooden cabinet then place it on the plate",
+          "relative_l2_to_canonical": 0.1167546347403806,
+          "cosine_to_canonical": 0.9931717728606358
+        },
+        {
+          "text": "id appreciate if you could pick up the black bowl from the wooden cabinet right now and place it on the plate",
+          "relative_l2_to_canonical": 0.10982865405079001,
+          "cosine_to_canonical": 0.9939562735242903
+        }
+      ],
+      "pick up the milk and place it in the basket": [
+        {
+          "text": "grasp the liquid dairy product and deposit it into the woven container",
+          "relative_l2_to_canonical": 0.17346055326995305,
+          "cosine_to_canonical": 0.9880099256340961
+        },
+        {
+          "text": "grasp the container of cows beverage and deposit it in the woven holder",
+          "relative_l2_to_canonical": 0.20999559830051773,
+          "cosine_to_canonical": 0.9793576126043575
+        }
+      ],
+      "push the plate to the front of the stove": [
+        {
+          "text": "slide the dish to the forefront of the cooker",
+          "relative_l2_to_canonical": 0.13135546000903672,
+          "cosine_to_canonical": 0.9914112872352855
+        },
+        {
+          "text": "nudge the dish toward the front of the cooker",
+          "relative_l2_to_canonical": 0.12723887699536984,
+          "cosine_to_canonical": 0.9921119972497678
+        }
+      ],
+      "put the cream cheese in the bowl": [
+        {
+          "text": "would you mind putting the cream cheese in the mixing bowl for me",
+          "relative_l2_to_canonical": 0.09029703809772352,
+          "cosine_to_canonical": 0.9959362342571124
+        },
+        {
+          "text": "place the spreadable dairy product into the dish used for mixing or serving foods",
+          "relative_l2_to_canonical": 0.14187172997742414,
+          "cosine_to_canonical": 0.9901132672299388
+        },
+        {
+          "text": "for our cheesecake preparation begin by putting the cream cheese in the bowl",
+          "relative_l2_to_canonical": 0.08420762456511832,
+          "cosine_to_canonical": 0.9965764427219176
+        }
+      ],
+      "put the black bowl in the bottom drawer of the cabinet and close it": [
+        {
+          "text": "as part of our daily routine please place the black bowl in the bottom drawer of the cabinet and confirm the drawer is closed",
+          "relative_l2_to_canonical": 0.09862460839279236,
+          "cosine_to_canonical": 0.995132203356905
+        },
+        {
+          "text": "would you be so kind as to store the black bowl in the bottom drawer of the cabinet and please ensure the drawer is shut afterwards",
+          "relative_l2_to_canonical": 0.07567225168832475,
+          "cosine_to_canonical": 0.997132803811731
+        },
+        {
+          "text": "position the dark bowl inside the lowest compartment of the cupboard and shut it",
+          "relative_l2_to_canonical": 0.13124920723221153,
+          "cosine_to_canonical": 0.9915822251793807
+        },
+        {
+          "text": "the black bowl should go in the bottom drawer please put it there now and dont leave the drawer open",
+          "relative_l2_to_canonical": 0.06274094904487218,
+          "cosine_to_canonical": 0.9982355307183342
+        },
+        {
+          "text": "place the darkcolored dish used for serving or eating food into the lowest sliding storage compartment of the storage unit and secure it shut",
+          "relative_l2_to_canonical": 0.16970181127006842,
+          "cosine_to_canonical": 0.9857833746256783
+        }
+      ]
+    },
+    "scene40_time0.5": {
+      "pick up the black bowl on the wooden cabinet and place it on the plate": [
+        {
+          "text": "heres what we need to do first pick up the black bowl from the wooden cabinet then place it on the plate",
+          "relative_l2_to_canonical": 0.11737271118874974,
+          "cosine_to_canonical": 0.9931103499437904
+        },
+        {
+          "text": "id appreciate if you could pick up the black bowl from the wooden cabinet right now and place it on the plate",
+          "relative_l2_to_canonical": 0.10903534275772134,
+          "cosine_to_canonical": 0.9940379064721209
+        }
+      ],
+      "pick up the milk and place it in the basket": [
+        {
+          "text": "grasp the liquid dairy product and deposit it into the woven container",
+          "relative_l2_to_canonical": 0.1637373576972442,
+          "cosine_to_canonical": 0.9886709706986142
+        },
+        {
+          "text": "grasp the container of cows beverage and deposit it in the woven holder",
+          "relative_l2_to_canonical": 0.20634848854112117,
+          "cosine_to_canonical": 0.9799055825632574
+        }
+      ],
+      "push the plate to the front of the stove": [
+        {
+          "text": "slide the dish to the forefront of the cooker",
+          "relative_l2_to_canonical": 0.12868312020665354,
+          "cosine_to_canonical": 0.9917705016444309
+        },
+        {
+          "text": "nudge the dish toward the front of the cooker",
+          "relative_l2_to_canonical": 0.12550028765414387,
+          "cosine_to_canonical": 0.9921897897675873
+        }
+      ],
+      "put the cream cheese in the bowl": [
+        {
+          "text": "would you mind putting the cream cheese in the mixing bowl for me",
+          "relative_l2_to_canonical": 0.09307725576017037,
+          "cosine_to_canonical": 0.9956619045972596
+        },
+        {
+          "text": "place the spreadable dairy product into the dish used for mixing or serving foods",
+          "relative_l2_to_canonical": 0.14232565434258518,
+          "cosine_to_canonical": 0.9898556880285819
+        },
+        {
+          "text": "for our cheesecake preparation begin by putting the cream cheese in the bowl",
+          "relative_l2_to_canonical": 0.08731926007500061,
+          "cosine_to_canonical": 0.9964180072880007
+        }
+      ],
+      "put the black bowl in the bottom drawer of the cabinet and close it": [
+        {
+          "text": "as part of our daily routine please place the black bowl in the bottom drawer of the cabinet and confirm the drawer is closed",
+          "relative_l2_to_canonical": 0.09889416968661476,
+          "cosine_to_canonical": 0.9951052469054629
+        },
+        {
+          "text": "would you be so kind as to store the black bowl in the bottom drawer of the cabinet and please ensure the drawer is shut afterwards",
+          "relative_l2_to_canonical": 0.10367232440567138,
+          "cosine_to_canonical": 0.9947967699998123
+        },
+        {
+          "text": "position the dark bowl inside the lowest compartment of the cupboard and shut it",
+          "relative_l2_to_canonical": 0.13307435289622038,
+          "cosine_to_canonical": 0.9913336605925065
+        },
+        {
+          "text": "the black bowl should go in the bottom drawer please put it there now and dont leave the drawer open",
+          "relative_l2_to_canonical": 0.06409299761851167,
+          "cosine_to_canonical": 0.9981310965141246
+        },
+        {
+          "text": "place the darkcolored dish used for serving or eating food into the lowest sliding storage compartment of the storage unit and secure it shut",
+          "relative_l2_to_canonical": 0.17549045437620817,
+          "cosine_to_canonical": 0.9855364816464228
+        }
+      ]
+    },
+    "scene80_time0.0": {
+      "pick up the black bowl on the wooden cabinet and place it on the plate": [
+        {
+          "text": "heres what we need to do first pick up the black bowl from the wooden cabinet then place it on the plate",
+          "relative_l2_to_canonical": 0.05022816475890269,
+          "cosine_to_canonical": 0.9987461445224014
+        },
+        {
+          "text": "id appreciate if you could pick up the black bowl from the wooden cabinet right now and place it on the plate",
+          "relative_l2_to_canonical": 0.04459291690485789,
+          "cosine_to_canonical": 0.9990320474672558
+        }
+      ],
+      "pick up the milk and place it in the basket": [
+        {
+          "text": "grasp the liquid dairy product and deposit it into the woven container",
+          "relative_l2_to_canonical": 0.1591260156457908,
+          "cosine_to_canonical": 0.9875434788550717
+        },
+        {
+          "text": "grasp the container of cows beverage and deposit it in the woven holder",
+          "relative_l2_to_canonical": 0.15592131840690682,
+          "cosine_to_canonical": 0.987783032659047
+        }
+      ],
+      "push the plate to the front of the stove": [
+        {
+          "text": "slide the dish to the forefront of the cooker",
+          "relative_l2_to_canonical": 0.15474345984407342,
+          "cosine_to_canonical": 0.9880183248199325
+        },
+        {
+          "text": "nudge the dish toward the front of the cooker",
+          "relative_l2_to_canonical": 0.16372352281394129,
+          "cosine_to_canonical": 0.9868519772382954
+        }
+      ],
+      "put the cream cheese in the bowl": [
+        {
+          "text": "would you mind putting the cream cheese in the mixing bowl for me",
+          "relative_l2_to_canonical": 0.076707492446084,
+          "cosine_to_canonical": 0.9976108450663836
+        },
+        {
+          "text": "place the spreadable dairy product into the dish used for mixing or serving foods",
+          "relative_l2_to_canonical": 0.09407441879930756,
+          "cosine_to_canonical": 0.9957639225143834
+        },
+        {
+          "text": "for our cheesecake preparation begin by putting the cream cheese in the bowl",
+          "relative_l2_to_canonical": 0.10568646415742113,
+          "cosine_to_canonical": 0.9953005698355085
+        }
+      ],
+      "put the black bowl in the bottom drawer of the cabinet and close it": [
+        {
+          "text": "as part of our daily routine please place the black bowl in the bottom drawer of the cabinet and confirm the drawer is closed",
+          "relative_l2_to_canonical": 0.10998067195125392,
+          "cosine_to_canonical": 0.9941053065158744
+        },
+        {
+          "text": "would you be so kind as to store the black bowl in the bottom drawer of the cabinet and please ensure the drawer is shut afterwards",
+          "relative_l2_to_canonical": 0.13642951817915933,
+          "cosine_to_canonical": 0.9908705649899351
+        },
+        {
+          "text": "position the dark bowl inside the lowest compartment of the cupboard and shut it",
+          "relative_l2_to_canonical": 0.13579538538333014,
+          "cosine_to_canonical": 0.9907573474163385
+        },
+        {
+          "text": "the black bowl should go in the bottom drawer please put it there now and dont leave the drawer open",
+          "relative_l2_to_canonical": 0.12573904859902202,
+          "cosine_to_canonical": 0.9920634273818326
+        },
+        {
+          "text": "place the darkcolored dish used for serving or eating food into the lowest sliding storage compartment of the storage unit and secure it shut",
+          "relative_l2_to_canonical": 0.1354040233684608,
+          "cosine_to_canonical": 0.9907907413270614
+        }
+      ]
+    },
+    "scene80_time0.5": {
+      "pick up the black bowl on the wooden cabinet and place it on the plate": [
+        {
+          "text": "heres what we need to do first pick up the black bowl from the wooden cabinet then place it on the plate",
+          "relative_l2_to_canonical": 0.0480042861226149,
+          "cosine_to_canonical": 0.9988602586880815
+        },
+        {
+          "text": "id appreciate if you could pick up the black bowl from the wooden cabinet right now and place it on the plate",
+          "relative_l2_to_canonical": 0.0456488993378176,
+          "cosine_to_canonical": 0.9989882284721389
+        }
+      ],
+      "pick up the milk and place it in the basket": [
+        {
+          "text": "grasp the liquid dairy product and deposit it into the woven container",
+          "relative_l2_to_canonical": 0.15748740771117128,
+          "cosine_to_canonical": 0.9875464780195884
+        },
+        {
+          "text": "grasp the container of cows beverage and deposit it in the woven holder",
+          "relative_l2_to_canonical": 0.16045436309486072,
+          "cosine_to_canonical": 0.9871975654064902
+        }
+      ],
+      "push the plate to the front of the stove": [
+        {
+          "text": "slide the dish to the forefront of the cooker",
+          "relative_l2_to_canonical": 0.1508439794814371,
+          "cosine_to_canonical": 0.9886939008720652
+        },
+        {
+          "text": "nudge the dish toward the front of the cooker",
+          "relative_l2_to_canonical": 0.16062519519870289,
+          "cosine_to_canonical": 0.9874552922833706
+        }
+      ],
+      "put the cream cheese in the bowl": [
+        {
+          "text": "would you mind putting the cream cheese in the mixing bowl for me",
+          "relative_l2_to_canonical": 0.07702258230902469,
+          "cosine_to_canonical": 0.9974092396682654
+        },
+        {
+          "text": "place the spreadable dairy product into the dish used for mixing or serving foods",
+          "relative_l2_to_canonical": 0.08937101655595985,
+          "cosine_to_canonical": 0.996119042754842
+        },
+        {
+          "text": "for our cheesecake preparation begin by putting the cream cheese in the bowl",
+          "relative_l2_to_canonical": 0.10024625306442113,
+          "cosine_to_canonical": 0.9955300108457679
+        }
+      ],
+      "put the black bowl in the bottom drawer of the cabinet and close it": [
+        {
+          "text": "as part of our daily routine please place the black bowl in the bottom drawer of the cabinet and confirm the drawer is closed",
+          "relative_l2_to_canonical": 0.11235414732218758,
+          "cosine_to_canonical": 0.9939007303118164
+        },
+        {
+          "text": "would you be so kind as to store the black bowl in the bottom drawer of the cabinet and please ensure the drawer is shut afterwards",
+          "relative_l2_to_canonical": 0.13787683457982822,
+          "cosine_to_canonical": 0.9905619752550536
+        },
+        {
+          "text": "position the dark bowl inside the lowest compartment of the cupboard and shut it",
+          "relative_l2_to_canonical": 0.13947171702480402,
+          "cosine_to_canonical": 0.9902824297952414
+        },
+        {
+          "text": "the black bowl should go in the bottom drawer please put it there now and dont leave the drawer open",
+          "relative_l2_to_canonical": 0.12668832228421503,
+          "cosine_to_canonical": 0.9919446667589407
+        },
+        {
+          "text": "place the darkcolored dish used for serving or eating food into the lowest sliding storage compartment of the storage unit and secure it shut",
+          "relative_l2_to_canonical": 0.13867919575179927,
+          "cosine_to_canonical": 0.9903433079105218
+        }
+      ]
+    }
+  },
+  "summary": {
+    "n_cases": 5,
+    "n_comparisons": 56,
+    "mean_relative_l2": 0.12079552492747421,
+    "median_relative_l2": 0.12621368544161854,
+    "mean_cosine": 0.9922340315236234,
+    "min_cosine": 0.9793576126043575
+  }
+}
